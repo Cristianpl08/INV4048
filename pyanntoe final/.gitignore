@@ -1,0 +1,22 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python and Jupyter artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+
+# Generated media and large source material
+*.wav
+*.mov
+*.mp4
+*.avi
+*.mkv
+
+# Operating-system files
+.DS_Store

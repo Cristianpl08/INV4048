@@ -1,0 +1,72 @@
+[
+  {
+    "frame_number": 0,
+    "filename": "keyframe_0.jpg",
+    "description": "La imagen muestra un círculo negro sólido sobre un fondo blanco. El círculo está centrado en la imagen y ocupa gran parte del espacio visual. No hay otros elementos visuales o detalles adicionales.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Objetos: Descripción de la forma y ubicación del círculo.",
+    "tokens_used": 3298
+  },
+  {
+    "frame_number": 150,
+    "filename": "keyframe_150.jpg",
+    "description": "La imagen muestra un logotipo compuesto por dos letras, \"a\" y \"d\", estilizadas y entrelazadas. La letra \"a\" está en color azul y la letra \"d\" en rojo. Juntas, forman una silueta que recuerda al símbolo de infinito o un lazo. El fondo es blanco, lo que resalta el diseño colorido del logotipo.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n- Logos y Elementos Gráficos Identificativos: Se describe el logotipo por su forma y colores predominantes, destacando su diseño visual y simbólico en el contexto de la imagen.",
+    "tokens_used": 3366
+  },
+  {
+    "frame_number": 165,
+    "filename": "keyframe_165.jpg",
+    "description": "La imagen muestra un logotipo colorido sobre un fondo blanco. El texto principal está compuesto por letras de diferentes colores, cada una representando un ícono o elemento visual como una casa, un balón de fútbol y un engranaje. Debajo, en letras más pequeñas de color gris, hay un texto adicional. El diseño del logotipo es alegre y transmite la idea de colaboración y desarrollo conjunto.\n\n- **Logos y Elementos Gráficos Identificativos**: El texto y los íconos coloridos destacan la creatividad y el esfuerzo colectivo.\n- **Forma y Composición Visual**: Cada letra tiene un diseño particular que incorpora gráficos relacionados con construcción o comunidad.\n- **Colores Predominantes**: Tonos variados como rojo, verde, azul y amarillo que resaltan contra el fondo blanco.",
+    "attention_mechanisms": "",
+    "tokens_used": 3404
+  },
+  {
+    "frame_number": 180,
+    "filename": "keyframe_180.jpg",
+    "description": "La imagen presenta un logotipo colorido con las palabras \"Juntos Construyendo\" en letras grandes y creativas. Cada letra tiene un estilo distinto, incorporando elementos gráficos como una casa, una rueda dentada y un balón, lo que sugiere diversidad y colaboración en diferentes áreas. Debajo, en un texto más sencillo, aparece \"Gobernación del Meta\", indicando una posible iniciativa gubernamental. El diseño utiliza una variedad de colores brillantes como rojo, verde, azul, y amarillo, transmitiendo energía y positividad.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados**: \n- Logos y elementos gráficos identificativos: Descripción del logotipo, formas y colores.",
+    "tokens_used": 3377
+  },
+  {
+    "frame_number": 195,
+    "filename": "keyframe_195.jpg",
+    "description": "La imagen presenta un logotipo de diseño colorido que forma las palabras \"Juntos Construyendo\". Cada letra está estilizada con elementos gráficos distintivos, como una casa, un balón de fútbol, y engranajes. Encima de la letra \"Y\" hay una pequeña figura humana que parece estar colocando un ladrillo. Abajo, en letras más pequeñas y de color gris, aparece el texto \"Gobernación del Meta\". El fondo es blanco, lo que resalta los colores vibrantes del logotipo.\n\n**",
+    "attention_mechanisms": "Mecanismos de atención:**\n\n- **Logos y Elementos Gráficos Identificativos:** Se describe la forma, los colores y los detalles del logotipo.\n- **Elementos Gráficos Distintivos:** Se menciona la figura humana y los iconos dentro de las letras.",
+    "tokens_used": 3407
+  },
+  {
+    "frame_number": 210,
+    "filename": "keyframe_210.jpg",
+    "description": "La imagen presenta un logotipo que combina letras y gráficos coloridos. Las letras que forman la palabra principal están estilizadas con diferentes elementos visuales: una casa en \"U\", un engranaje en \"O\" y una persona en la parte superior de otra letra. Los colores incluyen rojo, verde, azul, naranja y morado, cada uno utilizado en distintas letras o gráficos. Debajo de la palabra principal, hay un texto secundario en letras negras.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n\n- **Logos y Elementos Gráficos Identificativos:** Se describe la composición visual del logotipo, sus colores y su posible significado.",
+    "tokens_used": 3372
+  },
+  {
+    "frame_number": 225,
+    "filename": "keyframe_225.jpg",
+    "description": "La imagen presenta un logotipo en el centro con las palabras \"Juntos Construyendo\" en letras coloridas, cada letra tiene un diseño único. Algunas letras incorporan elementos visuales, como una casa en la \"U\", un balón en la \"O\" y un engranaje en la \"C\". Sobre la letra \"Y\", se observa la silueta de una persona en bicicleta. Debajo, en letras más pequeñas y oscuras, está el texto \"Gobernación del Meta\". El fondo es blanco, lo que resalta los colores vibrantes del logotipo.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n\n- Logos y Elementos Gráficos Identificativos: Describe el logotipo y su diseño distintivo.\n- Forma y Composición Visual: Explica la disposición y el uso de elementos gráficos en las letras.",
+    "tokens_used": 3411
+  },
+  {
+    "frame_number": 240,
+    "filename": "keyframe_240.jpg",
+    "description": "La imagen muestra un logotipo con el texto \"Juntos Construyendo\" en letras multicolores. Cada letra incorpora un elemento gráfico distintivo: por ejemplo, la \"O\" es un balón de fútbol, la \"C\" tiene un engranaje rojo, y hay una figura de una persona trabajando sobre la \"Y\". Debajo, el texto \"Gobernación del Meta\" aparece en letras negras, proporcionando contexto institucional. El diseño es colorido y lúdico, sugiriendo colaboración y construcción colectiva.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Logos y Elementos Gráficos Identificativos: Descripción del logotipo, colores y elementos gráficos distintivos.",
+    "tokens_used": 3378
+  },
+  {
+    "frame_number": 255,
+    "filename": "keyframe_255.jpg",
+    "description": "La imagen presenta un logotipo sobre un fondo gris claro. En el centro, las palabras \"Juntos Construyendo\" se escriben en letras grandes y coloridas. Cada letra tiene un diseño distintivo: algunas incorporan elementos visuales como engranajes en rojo, un balón de fútbol, una casa y una escoba. Debajo, en letras más pequeñas y de color negro, se lee \"Gobernación del Meta\". El uso de colores vivos y gráficos integrados sugiere una temática de colaboración y desarrollo comunitario.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Logos y Elementos Gráficos Identificativos: Las letras tienen elementos visuales distintivos que refuerzan el mensaje del logotipo.\n- Colores predominantes: Uso de múltiples colores vivos en el texto principal.",
+    "tokens_used": 3403
+  },
+  {
+    "frame_number": 300,
+    "filename": "keyframe_300.jpg",
+    "description": "La imagen está completamente en negro, lo que indica que no hay elementos visibles para describir.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Ninguno, debido a la falta de elementos visuales.",
+    "tokens_used": 3279
+  }
+]

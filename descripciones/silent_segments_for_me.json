@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "start": 4580,
+    "end": 7030,
+    "description":"Pista de BMX: vibrante y serpenteante.",
+    "prosody":"Alegría 30%",
+    "prosody2":"Serenidad"
+  },
+  {
+    "id": 2,
+    "start": 7030,
+    "end": 9040,
+    "description":"Logotipo de camarógrafo.",
+    "prosody":"Confianza 100%",
+    "prosody2":"Aceptación"
+  },
+  {
+    "id": 3,
+    "start": 9040,
+    "end": 14450,
+    "description":"Camarógrafo y cámara negra sobre celeste, borde blanco. Profesionalismo.",
+    "prosody":"Confianza 100%",
+    "prosody2":"Aceptación"
+  },
+  {
+    "id": 4,
+    "start": 35410,
+    "end": 39110,
+    "description":"Brillante explosión verde, letras dinámicas al lado.",
+    "prosody":"Sorpresa 50%",
+    "prosody2":"Asombro"
+  },
+  {
+    "id": 5,
+    "start": 41980,
+    "end": 44090,
+    "description":"¡A la carrera! Bicis al mar.",
+    "prosody":"Alegría 100%",
+    "prosody2":"Éxtasis"
+  },
+  {
+    "id": 6,
+    "start": 44090,
+    "end": 49530,
+    "description":"Diversión al aire libre en bicicletas, con un emotivo salto.",
+    "prosody":"Confianza 40%",
+    "prosody2":"Admiración"
+  },
+  {
+    "id": 7,
+    "start": 93200,
+    "end": 95670,
+    "description":"",
+    "prosody":"",
+    "prosody2":""
+  },
+  {
+    "id": 8,
+    "start": 129520,
+    "end": 132040,
+    "description":"Camaradería bajo palmeras soleadas.",
+    "prosody":"Confianza 40%",
+    "prosody2":"Aceptación"
+  },
+  {
+    "id": 9,
+    "start": 146460,
+    "end": 148740,
+    "description":"Un hombre anciano sonríe relajado.",
+    "prosody":"Tristeza 100%",
+    "prosody2":"Pensamiento profundo"
+  },
+  {
+    "id": 10,
+    "start": 148900,
+    "end": 152310,
+    "description":"Un niño en bicicleta pedalea junto a palmeras.",
+    "prosody":"Alegría 80%",
+    "prosody2":"Serenidad"
+  },
+  {
+    "id": 11,
+    "start": 170550,
+    "end": 176360,
+    "description":"Un ciclista cruza la meta en un ambiente costero, rodeado de aplausos y júbilo.",
+    "prosody":"Alegría 90%",
+    "prosody2":"Éxtasis"
+  },
+  {
+    "id": 12,
+    "start": 213370,
+    "end": 215050,
+    "description":"Asfalto con manchas.",
+    "prosody":"Confianza 100%",
+    "prosody2":"Aceptación"
+  },
+  {
+    "id": 13,
+    "start": 231960,
+    "end": 237920,
+    "description":"Personaje animado con auriculares sostiene una cámara, concentrado en el enfoque.",
+    "prosody":"Confianza 100%",
+    "prosody2":"Aceptación"
+  },
+  {
+    "id": 14,
+    "start": 245730,
+    "end": 247590,
+    "description":"Gato curioso y tranquilo.",
+    "prosody":"Alegría 30%",
+    "prosody2":"Serenidad"
+  },
+  {
+    "id": 15,
+    "start": 294190,
+    "end": 296250,
+    "description":"Joven sorprendido sobre bici.",
+    "prosody":"Sorpresa 40%",
+    "prosody2":"Asombro"
+  },
+  {
+    "id": 16,
+    "start": 322100,
+    "end": 324650,
+    "description":"Rostros expectantes, ojos atentos.",
+    "prosody":"Anticipación 40%",
+    "prosody2":"Vigilancia"
+  },
+  {
+    "id": 17,
+    "start": 345570,
+    "end": 348920,
+    "description":"Niña pedalea en parque vibrante.",
+    "prosody":"Anticipación 30%",
+    "prosody2":"Interés"
+  },
+  {
+    "id": 18,
+    "start": 396270,
+    "end": 402100,
+    "description":"Un joven levanta los brazos con entusiasmo en una playa. La multitud celebra alegre.",
+    "prosody":"Alegría 100%",
+    "prosody2":"Éxtasis"
+  },
+  {
+    "id": 19,
+    "start": 434800,
+    "end": 437000,
+    "description":"Triunfadoras en el podio",
+    "prosody":"Confianza 40%",
+    "prosody2":"Admiración"
+  },
+  {
+    "id": 20,
+    "start": 465450,
+    "end": 471350,
+    "description":"Una cabaña rústica con techo morado brilla tenue en colina estrellada.",
+    "prosody":"Alegría 30%",
+    "prosody2":"Serenidad"
+  },
+  {
+    "id": 21,
+    "start": 483070,
+    "end": 485520,
+    "description":"Patrón geométrico irradia calma.",
+    "prosody":"Alegría 40%",
+    "prosody2":"Serenidad"
+  }
+] 

@@ -1,0 +1,25 @@
+// src/segments.js
+export default [
+    { "id": 1, "start": 4.325, "end": 14.265, "duration": 9.94 },
+    { "id": 2, "start": 34.985, "end": 39.565, "duration": 4.58 },
+    { "id": 3, "start": 41.565, "end": 49.705, "duration": 8.14 },
+    { "id": 4, "start": 70.265, "end": 72.465, "duration": 2.2 },
+    { "id": 5, "start": 92.345, "end": 95.785, "duration": 3.44 },
+    { "id": 6, "start": 110.565, "end": 112.705, "duration": 2.14 },
+    { "id": 7, "start": 126.605, "end": 129.085, "duration": 2.48 },
+    { "id": 8, "start": 129.445, "end": 132.065, "duration": 2.62 },
+    { "id": 9, "start": 146.045, "end": 148.665, "duration": 2.62 },
+    { "id": 10, "start": 149.605, "end": 152.505, "duration": 2.9 },
+    { "id": 11, "start": 170.325, "end": 173.145, "duration": 2.82 },
+    { "id": 12, "start": 173.365, "end": 176.545, "duration": 3.18 },
+    { "id": 13, "start": 205.525, "end": 207.705, "duration": 2.18 },
+    { "id": 14, "start": 212.985, "end": 215.185, "duration": 2.2 },
+    { "id": 15, "start": 231.725, "end": 237.585, "duration": 5.86 },
+    { "id": 16, "start": 245.385, "end": 247.705, "duration": 2.32 },
+    { "id": 17, "start": 294.005, "end": 296.085, "duration": 2.08 },
+    { "id": 18, "start": 382.405, "end": 384.525, "duration": 2.12 },
+    { "id": 19, "start": 399.345, "end": 401.985, "duration": 2.64 },
+    { "id": 20, "start": 465.005, "end": 471.225, "duration": 6.22 },
+    { "id": 21, "start": 482.145, "end": 502.845, "duration": 20.7 },
+    { "id": 22, "start": 510.705, "end": 530.63, "duration": 19.925 }
+  ];

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "start": 1000,
+    "end": 5000,
+    "duration": 4000,
+    "description": "Segmento de ejemplo 1",
+    "prosody": "Alegría 100%",
+    "prosody2": "Serenidad"
+  },
+  {
+    "id": 2,
+    "start": 5000,
+    "end": 10000,
+    "duration": 5000,
+    "description": "Segmento de ejemplo 2",
+    "prosody": "Confianza 80%",
+    "prosody2": "Aceptación"
+  },
+  {
+    "id": 3,
+    "start": 10000,
+    "end": 15000,
+    "duration": 5000,
+    "description": "Segmento de ejemplo 3",
+    "prosody": "Sorpresa 60%",
+    "prosody2": "Asombro"
+  },
+  {
+    "id": 4,
+    "start": 15000,
+    "end": 20000,
+    "duration": 5000,
+    "description": "Segmento de ejemplo 4",
+    "prosody": "Tristeza 40%",
+    "prosody2": "Melancolía"
+  },
+  {
+    "id": 5,
+    "start": 20000,
+    "end": 25000,
+    "duration": 5000,
+    "description": "Segmento de ejemplo 5",
+    "prosody": "Ira 20%",
+    "prosody2": "Frustración"
+  }
+] 

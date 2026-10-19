@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "start": 1000,
+    "end": 5000,
+    "description": "Segmento válido"
+  },
+  {
+    "id": 2,
+    "start": 5000,
+    "description": "Segmento sin campo 'end'"
+  },
+  {
+    "start": 10000,
+    "end": 15000,
+    "description": "Segmento sin campo 'id'"
+  },
+  {
+    "id": 4,
+    "end": 20000,
+    "description": "Segmento sin campo 'start'"
+  }
+] 

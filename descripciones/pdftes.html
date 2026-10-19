@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF Viewer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .controls {
+      background: #fff;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .url-input {
+      width: 70%;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .load-btn {
+      padding: 8px 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+
+    .load-btn:hover {
+      background: #0056b3;
+    }
+
+    #pdf-container {
+      flex: 1;
+      background: #fff;
+      position: relative;
+    }
+
+    #pdf-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .pdf-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .error-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #dc3545;
+      font-size: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <input type="text" id="pdf-url" class="url-input" placeholder="Ingresa la URL del PDF..." 
+             value="https://members.myaocconnect.com/wp-content/uploads/Funding-academic-mission-with-Imaging-and-Xray-Ancillary.pdf">
+      <button id="load-pdf" class="load-btn">Cargar PDF</button>
+    </div>
+    <div id="pdf-container">
+      <iframe id="pdf-iframe" src=""></iframe>
+      <div id="error-message" class="error-message" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlInput = document.getElementById('pdf-url');
+      const loadBtn = document.getElementById('load-pdf');
+      const pdfIframe = document.getElementById('pdf-iframe');
+      const errorMessage = document.getElementById('error-message');
+
+      // Protección contra clic derecho y teclas de descarga
+      function addProtection() {
+        // Deshabilitar clic derecho en toda la página
+        document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+          return false;
+        });
+
+        // Deshabilitar teclas de descarga y copia
+        document.addEventListener('keydown', function(e) {
+          // Ctrl+S (Guardar)
+          if (e.ctrlKey && e.keyCode === 83) {
+            e.preventDefault();
+            return false;
+          }
+          // Ctrl+A (Seleccionar todo)
+          if (e.ctrlKey && e.keyCode === 65) {
+            e.preventDefault();
+            return false;
+          }
+          // Ctrl+C (Copiar)
+          if (e.ctrlKey && e.keyCode === 67) {
+            e.preventDefault();
+            return false;
+          }
+          // Ctrl+P (Imprimir)
+          if (e.ctrlKey && e.keyCode === 80) {
+            e.preventDefault();
+            return false;
+          }
+          // F12 (Herramientas de desarrollador)
+          if (e.keyCode === 123) {
+            e.preventDefault();
+            return false;
+          }
+          // Ctrl+Shift+I (Inspeccionar elemento)
+          if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+            e.preventDefault();
+            return false;
+          }
+        });
+
+        // Deshabilitar selección de texto
+        document.addEventListener('selectstart', function(e) {
+          e.preventDefault();
+          return false;
+        });
+
+        // Deshabilitar arrastrar y soltar
+        document.addEventListener('dragstart', function(e) {
+          e.preventDefault();
+          return false;
+        });
+
+        // Proteger el iframe específicamente
+        pdfIframe.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+          return false;
+        });
+
+        pdfIframe.addEventListener('dragstart', function(e) {
+          e.preventDefault();
+          return false;
+        });
+      }
+
+      function loadPDF() {
+        const url = urlInput.value.trim();
+        
+        if (!url) {
+          showError('Por favor ingresa una URL válida');
+          return;
+        }
+
+        // Verificar si es una URL de PDF
+        if (!url.toLowerCase().includes('.pdf') && !url.includes('pdf')) {
+          showError('La URL debe apuntar a un archivo PDF');
+          return;
+        }
+
+        hideError();
+        
+        // Configurar el iframe para mostrar el PDF con protecciones adicionales
+        // Usar Google Docs Viewer para mayor protección
+        const protectedUrl = `https://docs.google.com/gview?url=${encodeURIComponent(url)}&embedded=true`;
+        pdfIframe.src = protectedUrl;
+        
+        // Manejar errores de carga del iframe
+        pdfIframe.onerror = function() {
+          showError('Error al cargar el PDF. Verifica que la URL sea correcta y que el archivo sea accesible.');
+        };
+
+        pdfIframe.onload = function() {
+          hideError();
+        };
+      }
+
+      function showError(message) {
+        errorMessage.textContent = message;
+        errorMessage.style.display = 'block';
+        pdfIframe.style.display = 'none';
+      }
+
+      function hideError() {
+        errorMessage.style.display = 'none';
+        pdfIframe.style.display = 'block';
+      }
+
+      // Event listeners
+      loadBtn.addEventListener('click', loadPDF);
+      
+      urlInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          loadPDF();
+        }
+      });
+
+      // Activar protecciones
+      addProtection();
+
+      // Cargar PDF por defecto al iniciar
+      loadPDF();
+    });
+  </script>
+</body>
+</html>

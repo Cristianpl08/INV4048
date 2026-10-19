@@ -1,0 +1,2195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 450px;
+            min-width: 350px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        .form-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #C15C2E!important;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .form-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .form-label {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333333;
+            margin-bottom: 4px;
+        }
+
+        .form-select {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            color: #333333;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            background-size: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .form-select:hover {
+            border-color: #d0d0d0;
+            background-color: #f0f0f0;
+        }
+
+        .form-select:focus {
+            outline: none;
+            border-color: #C15C2E;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .form-select:disabled {
+            background-color: #f5f5f5;
+            color: #666666;
+            cursor: not-allowed;
+            border-color: #e0e0e0;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+        }
+
+        .form-select option {
+            padding: 12px;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .next-button {
+            width: 100%;
+            padding: 18px 24px;
+            background-color: #C15C2E;
+            color: #ffffff;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 24px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .next-button:hover {
+            background-color: #C15C2E;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+        }
+
+        .next-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+            opacity: 0.7;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .next-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+        }
+
+        .back-button {
+            width: 100%;
+            padding: 18px 24px;
+            background-color: #6c757d;
+            color: #ffffff;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 12px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #5a6268;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+        }
+
+        .back-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(108, 117, 125, 0.3);
+        }
+
+        .button-container {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        .button-container .next-button,
+        .button-container .back-button {
+            flex: 1;
+            margin-top: 0;
+        }
+
+        .required {
+            color: #e74c3c;
+        }
+
+        .person-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333333;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .billing-note {
+            font-size: 14px;
+            color: #666666;
+            text-align: center;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            color: #333333;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .form-input:hover {
+            border-color: #d0d0d0;
+            background-color: #f0f0f0;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #C15C2E;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .form-input:read-only {
+            background-color: #f0f0f0;
+            color: #666666;
+            cursor: not-allowed;
+        }
+
+        .checkbox-group {
+            display: flex;
+            gap: 24px;
+            margin-top: 8px;
+            align-items: center;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+            color: #333333;
+            gap: 8px;
+            padding: 4px 0;
+        }
+
+        .checkbox-label input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #C15C2E;
+            margin: 0;
+        }
+
+        .checkbox-text {
+            font-weight: 500;
+        }
+
+        .person-form {
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom Dropdown Styles */
+        .custom-dropdown {
+            position: relative;
+            width: 100%;
+            min-height: 56px;
+        }
+
+        .dropdown-input {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            color: #333333;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+            margin: 0;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            min-height: 56px;
+            height: auto;
+        }
+
+        .dropdown-input:hover {
+            border-color: #d0d0d0;
+            background-color: #f0f0f0;
+        }
+
+        .dropdown-input:focus {
+            outline: none;
+            border-color: #C15C2E;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .dropdown-input:disabled {
+            background-color: #f5f5f5;
+            color: #666666;
+            cursor: not-allowed;
+            border-color: #e0e0e0;
+        }
+
+        .dropdown-icons {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            pointer-events: none;
+        }
+
+        .search-icon, .dropdown-arrow {
+            color: #C15C2E;
+            font-size: 18px;
+            transition: all 0.2s ease;
+        }
+
+        .search-icon {
+            cursor: pointer;
+            pointer-events: auto;
+            padding: 6px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            background-color: rgba(255, 107, 53, 0.1);
+            border: 1px solid rgba(255, 107, 53, 0.3);
+        }
+
+        .search-icon:hover {
+            color: #ffffff;
+            background-color: #C15C2E;
+            border-color: #C15C2E;
+            transform: scale(1.1);
+            box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+        }
+
+        .search-icon:active {
+            transform: scale(0.95);
+        }
+
+        .dropdown-arrow {
+            transition: transform 0.2s ease;
+        }
+
+        .custom-dropdown.open .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #ffffff;
+            border: 2px solid #e5e5e5;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.2s ease;
+        }
+
+        .custom-dropdown.show .dropdown-list {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f8f8f8;
+            color: #C15C2E;
+        }
+
+        .dropdown-item.selected {
+            background-color: #C15C2E;
+            color: #ffffff;
+        }
+
+        /* Search Modal Styles */
+        .search-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .search-modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .search-modal-content {
+            background-color: #ffffff;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .search-modal.show .search-modal-content {
+            transform: scale(1);
+        }
+
+        .search-modal-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-modal-header h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: #333333;
+        }
+
+        .search-modal-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #666666;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+
+        .search-modal-close:hover {
+            background-color: #f0f0f0;
+            color: #333333;
+        }
+
+        .search-modal-body {
+            padding: 24px;
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #333333;
+            margin-bottom: 16px;
+            transition: all 0.2s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #C15C2E;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .search-results {
+            flex: 1;
+            overflow-y: auto;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            max-height: 300px;
+        }
+
+        .search-result-item {
+            padding: 12px 16px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+
+        .search-result-item:hover {
+            background-color: #f8f8f8;
+            color: #C15C2E;
+        }
+
+        .search-result-item.selected {
+            background-color: #C15C2E;
+            color: #ffffff;
+        }
+
+        .search-result-item.custom-other {
+            border-left: 4px solid #C15C2E;
+            background-color: #fff5f2;
+        }
+
+        .search-result-item.custom-other:hover {
+            background-color: #ffe8e0;
+        }
+
+        .search-result-item.custom-other.selected {
+            background-color: #C15C2E;
+            color: #ffffff;
+        }
+
+        .search-modal-footer {
+            padding: 20px 24px;
+            border-top: 1px solid #e5e5e5;
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+        }
+
+        .search-modal-cancel, .search-modal-add {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .search-modal-cancel {
+            background-color: #f0f0f0;
+            color: #666666;
+        }
+
+        .search-modal-cancel:hover {
+            background-color: #e0e0e0;
+        }
+
+        .search-modal-add {
+            background-color: #C15C2E;
+            color: #ffffff;
+        }
+
+        .search-modal-add:hover:not(:disabled) {
+            background-color: #C15C2E;
+        }
+
+        .search-modal-add:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+
+        /* Other Institution Group */
+        .other-institution-group {
+            margin-top: 12px;
+            animation: slideDown 0.3s ease;
+        }
+
+        .other-institution-group .form-input {
+            margin-top: 8px;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Additional consistency improvements */
+        .form-label {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333333;
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+
+        /* Ensure all form elements have consistent height */
+        .form-input,
+        .form-select,
+        .dropdown-input {
+            min-height: 56px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Improve focus states consistency */
+        .form-input:focus,
+        .form-select:focus,
+        .dropdown-input:focus {
+            outline: none;
+            border-color: #C15C2E;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        /* Softr and iframe compatibility */
+        html, body {
+            width: 100% !important;
+            overflow-x: hidden;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .form-container {
+                padding: 24px;
+                margin: 0 auto;
+                min-width: 300px;
+            }
+            
+            .search-modal-content {
+                width: 95%;
+                margin: 20px;
+            }
+            
+            .search-modal-header, .search-modal-body, .search-modal-footer {
+                padding: 16px;
+            }
+            
+            .dropdown-list {
+                max-height: 250px;
+            }
+
+            .form-group {
+                margin-bottom: 16px;
+            }
+
+            .checkbox-group {
+                gap: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 20px;
+                min-width: 280px;
+            }
+            
+            .form-title {
+                font-size: 24px;
+            }
+            
+            .person-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Register Now!</h1>
+        
+        <div class="form-group">
+            <label for="ticketType" class="form-label">Select Your Ticket Type<span class="required">*</span></label>
+            <select id="ticketType" class="form-select" required>
+                <option value="">Please select an option</option>
+                <option value="aoc-distinguished-lecturers">AOC Distinguished Lecturers</option>
+                <option value="aoc-member">AOC Member</option>
+                <option value="aoc-staff">AOC Staff</option>
+                <option value="corporate-partner">Corporate Partner</option>
+                <option value="department-table">Department Table</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="numberOfPeople" class="form-label">Number of Attendees<span class="required">*</span></label>
+            <select id="numberOfPeople" class="form-select" required>
+                <option value="">Please select number of people</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8 </option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+
+        <button type="submit" class="next-button">Next</button>
+    </div>
+
+    <script>
+        let currentPerson = 1;
+        let totalPeople = 0;
+        let ticketType = '';
+        let registrationData = [];
+        let firstPersonName = '';
+        let teamTableAffiliation = ''; // Store the first person's affiliation for Team Table
+        let teamTableOtherInstitution = ''; // Store the first person's other institution for Team Table
+
+        // Add event listener for ticket type changes
+        document.getElementById('ticketType').addEventListener('change', function() {
+            const selectedTicketType = this.value;
+            updateFormFieldsVisibility(selectedTicketType);
+            
+            // Reset team table affiliation when ticket type changes
+            teamTableAffiliation = '';
+            teamTableOtherInstitution = '';
+            
+            const numberOfPeopleSelect = document.getElementById('numberOfPeople');
+            
+            // Auto-set number of people to 8 and disable field when Team Table is selected
+            if (selectedTicketType === 'department-table') {
+                numberOfPeopleSelect.value = '8';
+                numberOfPeopleSelect.disabled = true;
+            } else {
+                // Re-enable the field for other ticket types
+                numberOfPeopleSelect.disabled = false;
+            }
+        });
+
+        // Function to update form fields visibility based on ticket type
+        function updateFormFieldsVisibility(ticketType) {
+            const academicAffiliationField = document.getElementById('field_5');
+            const primaryRoleField = document.getElementById('role');
+            const jobTitleField = document.getElementById('jobTitle');
+            const companyNameField = document.getElementById('companyName');
+            
+            if (ticketType === 'corporate-partner') {
+                // Show Job Title and Company's Name fields (but make them optional)
+                if (jobTitleField) {
+                    jobTitleField.closest('.form-group').style.display = 'block';
+                    jobTitleField.required = false;
+                }
+                if (companyNameField) {
+                    companyNameField.closest('.form-group').style.display = 'block';
+                    companyNameField.required = false;
+                }
+                
+                // Hide Academic Affiliation and Primary Functional Role fields
+                if (academicAffiliationField) {
+                    academicAffiliationField.closest('.form-group').style.display = 'none';
+                    academicAffiliationField.required = false;
+                    academicAffiliationField.value = '';
+                }
+                if (primaryRoleField) {
+                    primaryRoleField.closest('.form-group').style.display = 'none';
+                    primaryRoleField.required = false;
+                    primaryRoleField.value = '';
+                }
+            } else {
+                // Show Academic Affiliation and Primary Functional Role fields (but make them optional)
+                if (academicAffiliationField) {
+                    academicAffiliationField.closest('.form-group').style.display = 'block';
+                    academicAffiliationField.required = false;
+                }
+                if (primaryRoleField) {
+                    primaryRoleField.closest('.form-group').style.display = 'block';
+                    primaryRoleField.required = false;
+                }
+                
+                // Hide Job Title and Company's Name fields
+                if (jobTitleField) {
+                    jobTitleField.closest('.form-group').style.display = 'none';
+                    jobTitleField.required = false;
+                    jobTitleField.value = '';
+                }
+                if (companyNameField) {
+                    companyNameField.closest('.form-group').style.display = 'none';
+                    companyNameField.required = false;
+                    companyNameField.value = '';
+                }
+            }
+        }
+
+        // Add event listener for number of people changes
+        document.getElementById('numberOfPeople').addEventListener('change', function() {
+            // Don't reset if field is disabled (Team Table)
+            if (this.disabled) {
+                return;
+            }
+            
+            // Reset form state when number of people changes
+            if (totalPeople > 0) {
+                // Reset all variables
+                currentPerson = 1;
+                totalPeople = 0;
+                ticketType = '';
+                registrationData = [];
+                firstPersonName = '';
+                teamTableAffiliation = ''; // Reset team table affiliation
+                teamTableOtherInstitution = ''; // Reset team table other institution
+                
+                // Remove any existing person forms
+                const personForm = document.querySelector('.person-form');
+                if (personForm) {
+                    personForm.remove();
+                }
+                
+                // Show initial form again
+                const initialForm = document.querySelector('.form-group');
+                const nextButton = document.querySelector('.next-button');
+                if (initialForm) initialForm.style.display = 'block';
+                if (nextButton) nextButton.style.display = 'block';
+            }
+        });
+
+        document.querySelector('.next-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const ticketTypeValue = document.getElementById('ticketType').value;
+            const numberOfPeopleValue = document.getElementById('numberOfPeople').value;
+            
+            if (!ticketTypeValue || !numberOfPeopleValue) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // First step: collect ticket type and number of people
+            if (currentPerson === 1 && totalPeople === 0) {
+                ticketType = ticketTypeValue;
+                totalPeople = parseInt(numberOfPeopleValue);
+                showPersonForm();
+                return;
+            }
+            
+            // Collect current person's data
+            collectPersonData();
+        });
+
+        function showPersonForm() {
+            const formContainer = document.querySelector('.form-container');
+            
+            // Hide both Ticket Type and Number of Attendees fields, and next button
+            const ticketTypeField = document.getElementById('ticketType').closest('.form-group');
+            const numberOfPeopleField = document.getElementById('numberOfPeople').closest('.form-group');
+            const nextButton = document.querySelector('.next-button');
+            ticketTypeField.style.display = 'none';
+            numberOfPeopleField.style.display = 'none';
+            nextButton.style.display = 'none';
+            
+            // Create person form
+            const personFormHTML = `
+                <div class="person-form">
+                    <h2 class="person-title">Attendee #${currentPerson} Information</h2>
+                    
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name<span class="required">*</span></label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address<span class="required">*</span></label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Cell Phone<span class="required">*</span></label>
+                        <input type="tel" id="phone" class="form-input" required>
+                    </div>
+
+                     <div class="form-group">
+                        <label for="field_5" class="form-label">Academic Affiliation/Employer<span class="required">*</span></label>
+                        <div class="custom-dropdown">
+                            <input type="text" name="institution" id="field_5" class="dropdown-input" readonly  ${(ticketType === 'department-table' && currentPerson > 1) ? 'disabled' : ''} ${(ticketType === 'department-table' && currentPerson > 1 && teamTableAffiliation) ? `value="${teamTableAffiliation}"` : ''}>
+                            <div class="dropdown-icons">
+                                <i class="fas fa-search search-icon" id="search-icon" ${(ticketType === 'department-table' && currentPerson > 1) ? 'style="display: none;"' : ''}></i>
+                                <i class="fas fa-chevron-down dropdown-arrow" ${(ticketType === 'department-table' && currentPerson > 1) ? 'style="display: none;"' : ''}></i>
+                            </div>
+                            <div class="dropdown-list" id="institution-dropdown">
+                                <div class="dropdown-item" data-value="AdaptHealth">AdaptHealth</div>
+                                <div class="dropdown-item" data-value="Adena Health">Adena Health</div>
+                                <div class="dropdown-item" data-value="Advanced Center for Orthopedics and Plastic Surgery">Advanced Center for Orthopedics and Plastic Surgery</div>
+                                <div class="dropdown-item" data-value="Advanced Orthopedic &amp; Sports Medicine Center">Advanced Orthopedic &amp; Sports Medicine Center</div>
+                                <div class="dropdown-item" data-value="Albany Medical Center">Albany Medical Center</div>
+                                <div class="dropdown-item" data-value="Albert Einstein College of Medicine">Albert Einstein College of Medicine</div>
+                                <div class="dropdown-item" data-value="Allegheny Health Network">Allegheny Health Network</div>
+                                <div class="dropdown-item" data-value="Allina Health">Allina Health</div>
+                                <div class="dropdown-item" data-value="American Society of Orthopedic Professionals (ASOP)">American Society of Orthopedic Professionals (ASOP)</div>
+                                <div class="dropdown-item" data-value="Anderson Clinic">Anderson Clinic</div>
+                                <div class="dropdown-item" data-value="AOC">AOC</div>
+                                <div class="dropdown-item" data-value="Arizona Maternity &amp; Women&#039;s Clinic">Arizona Maternity &amp; Women&#039;s Clinic</div>
+                                <div class="dropdown-item" data-value="Arizona State University">Arizona State University</div>
+                                <div class="dropdown-item" data-value="Ascension Providence">Ascension Providence</div>
+                                <div class="dropdown-item" data-value="Atlantis Orthopedics">Atlantis Orthopedics</div>
+                                <div class="dropdown-item" data-value="Atrium Health">Atrium Health</div>
+                                <div class="dropdown-item" data-value="Atrium Health Wake Forest Baptist">Atrium Health Wake Forest Baptist</div>
+                                <div class="dropdown-item" data-value="Augusta University">Augusta University</div>
+                                <div class="dropdown-item" data-value="Baptist Health">Baptist Health</div>
+                                <div class="dropdown-item" data-value="Baptist Health System">Baptist Health System</div>
+                                <div class="dropdown-item" data-value="Barrington Orthopedic Specialists">Barrington Orthopedic Specialists</div>
+                                <div class="dropdown-item" data-value="Bay Area Orthopaedic Specialists">Bay Area Orthopaedic Specialists</div>
+                                <div class="dropdown-item" data-value="Baylor College of Medicine">Baylor College of Medicine</div>
+                                <div class="dropdown-item" data-value="Baylor University">Baylor University</div>
+                                <div class="dropdown-item" data-value="Beaumont Health">Beaumont Health</div>
+                                <div class="dropdown-item" data-value="Beth Israel Deaconess Medical Center">Beth Israel Deaconess Medical Center</div>
+                                <div class="dropdown-item" data-value="Biomechanics Lab, Sport Science Dpt, Democritus University of Thrace">Biomechanics Lab, Sport Science Dpt, Democritus University of Thrace</div>
+                                <div class="dropdown-item" data-value="Bluegrass Orthopaedics">Bluegrass Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Boston Children&#039;s Hospital">Boston Children&#039;s Hospital</div>
+                                <div class="dropdown-item" data-value="Boston University">Boston University</div>
+                                <div class="dropdown-item" data-value="Breg">Breg</div>
+                                <div class="dropdown-item" data-value="Bridger Orthopedic &amp; Sports Medicine">Bridger Orthopedic &amp; Sports Medicine</div>
+                                <div class="dropdown-item" data-value="Brown University">Brown University</div>
+                                <div class="dropdown-item" data-value="BSI Group">BSI Group</div>
+                                <div class="dropdown-item" data-value="Buffalo State University">Buffalo State University</div>
+                                <div class="dropdown-item" data-value="California Pacific Orthopaedics">California Pacific Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Carilion Clinic">Carilion Clinic</div>
+                                <div class="dropdown-item" data-value="Cascade Orthopedics &amp; Sports Medicine Center">Cascade Orthopedics &amp; Sports Medicine Center</div>
+                                <div class="dropdown-item" data-value="Catalyst Medical Group">Catalyst Medical Group</div>
+                                <div class="dropdown-item" data-value="Cedars-Sinai Department of Orthopaedic Surgery">Cedars-Sinai Department of Orthopaedic Surgery</div>
+                                <div class="dropdown-item" data-value="Center For Orthopaedics &amp; Spine, LLC">Center For Orthopaedics &amp; Spine, LLC</div>
+                                <div class="dropdown-item" data-value="Centers for Advanced Orthopaedics">Centers for Advanced Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Central Maine Healthcare">Central Maine Healthcare</div>
+                                <div class="dropdown-item" data-value="CHI Health Clinic">CHI Health Clinic</div>
+                                <div class="dropdown-item" data-value="Children&#039;s Healthcare of Atlanta">Children&#039;s Healthcare of Atlanta</div>
+                                <div class="dropdown-item" data-value="Children&#039;s Hospital of Philadelphia">Children&#039;s Hospital of Philadelphia</div>
+                                <div class="dropdown-item" data-value="Children&#039;s Mercy Kansas City">Children&#039;s Mercy Kansas City</div>
+                                <div class="dropdown-item" data-value="Children&#039;s National Hospital">Children&#039;s National Hospital</div>
+                                <div class="dropdown-item" data-value="Children's of Alabama Pediatric Orthopedics">Children's of Alabama Pediatric Orthopedics</div>
+                                <div class="dropdown-item" data-value="Children's Wisconsin">Children's Wisconsin</div>
+                                <div class="dropdown-item" data-value="Christiana Care Health System">Christiana Care Health System</div>
+                                <div class="dropdown-item" data-value="City Orthopaedics">City Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Cleveland Clinic">Cleveland Clinic</div>
+                                <div class="dropdown-item" data-value="Cleveland Clinic Florida">Cleveland Clinic Florida</div>
+                                <div class="dropdown-item" data-value="Colorado State">Colorado State</div>
+                                <div class="dropdown-item" data-value="Colorado State University">Colorado State University</div>
+                                <div class="dropdown-item" data-value="Colorado University">Colorado University</div>
+                                <div class="dropdown-item" data-value="Columbia Orthopaedic Group">Columbia Orthopaedic Group</div>
+                                <div class="dropdown-item" data-value="Columbia University">Columbia University</div>
+                                <div class="dropdown-item" data-value="Complete Orthopedics">Complete Orthopedics</div>
+                                <div class="dropdown-item" data-value="Concord Orthopaedics">Concord Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Concordia University Irvine">Concordia University Irvine</div>
+                                <div class="dropdown-item" data-value="Cone Health">Cone Health</div>
+                                <div class="dropdown-item" data-value="Confluence Athletic Therapy">Confluence Athletic Therapy</div>
+                                <div class="dropdown-item" data-value="Connecticut Orthopedics">Connecticut Orthopedics</div>
+                                <div class="dropdown-item" data-value="Cooper Medical School of Rowan University">Cooper Medical School of Rowan University</div>
+                                <div class="dropdown-item" data-value="Cornell University">Cornell University</div>
+                                <div class="dropdown-item" data-value="Crystal Clinic">Crystal Clinic</div>
+                                <div class="dropdown-item" data-value="Dartmouth-Hitchcock Medical Center">Dartmouth-Hitchcock Medical Center</div>
+                                <div class="dropdown-item" data-value="De Los Andes University">De Los Andes University</div>
+                                <div class="dropdown-item" data-value="Delaware Orthopaedic Specialists">Delaware Orthopaedic Specialists</div>
+                                <div class="dropdown-item" data-value="Des Moines Orthopaedic Surgeons">Des Moines Orthopaedic Surgeons</div>
+                                <div class="dropdown-item" data-value="Detroit Medical Center">Detroit Medical Center</div>
+                                <div class="dropdown-item" data-value="Drexel University">Drexel University</div>
+                                <div class="dropdown-item" data-value="Dube Orthopedics">Dube Orthopedics</div>
+                                <div class="dropdown-item" data-value="Duke University">Duke University</div>
+                                <div class="dropdown-item" data-value="Duly Health Care">Duly Health Care</div>
+                                <div class="dropdown-item" data-value="East Carolina University">East Carolina University</div>
+                                <div class="dropdown-item" data-value="East Suffolk and North Essex NHS Foundation Trust">East Suffolk and North Essex NHS Foundation Trust</div>
+                                <div class="dropdown-item" data-value="EmergeOrtho">EmergeOrtho</div>
+                                <div class="dropdown-item" data-value="Emory">Emory</div>
+                                <div class="dropdown-item" data-value="Emory University + Morehouse University">Emory University + Morehouse University</div>
+                                <div class="dropdown-item" data-value="Empire Med Group, LLC">Empire Med Group, LLC</div>
+                                <div class="dropdown-item" data-value="Epic">Epic</div>
+                                <div class="dropdown-item" data-value="Eruptr">Eruptr</div>
+                                <div class="dropdown-item" data-value="Essentia Health">Essentia Health</div>
+                                <div class="dropdown-item" data-value="Excelsior Orthopaedics">Excelsior Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Fast Pace Health">Fast Pace Health</div>
+                                <div class="dropdown-item" data-value="Flagstaff Bone &amp; Joint">Flagstaff Bone &amp; Joint</div>
+                                <div class="dropdown-item" data-value="Flinders University">Flinders University</div>
+                                <div class="dropdown-item" data-value="Flinders University, Biomedical Engineering">Flinders University, Biomedical Engineering</div>
+                                <div class="dropdown-item" data-value="Florida International University">Florida International University</div>
+                                <div class="dropdown-item" data-value="Florida Medical Clinic">Florida Medical Clinic</div>
+                                <div class="dropdown-item" data-value="Florida Orthopaedic Institute">Florida Orthopaedic Institute</div>
+                                <div class="dropdown-item" data-value="Florida State University">Florida State University</div>
+                                <div class="dropdown-item" data-value="Fort Belvoir Community Hospital">Fort Belvoir Community Hospital</div>
+                                <div class="dropdown-item" data-value="Fort Wayne Orthopedics">Fort Wayne Orthopedics</div>
+                                <div class="dropdown-item" data-value="Forte Sports Medicine and Orthopedics">Forte Sports Medicine and Orthopedics</div>
+                                <div class="dropdown-item" data-value="Fox Valley Orthopedics">Fox Valley Orthopedics</div>
+                                <div class="dropdown-item" data-value="Geisinger Health System">Geisinger Health System</div>
+                                <div class="dropdown-item" data-value="George Washington University">George Washington University</div>
+                                <div class="dropdown-item" data-value="Georgetown University">Georgetown University</div>
+                                <div class="dropdown-item" data-value="Georgia Southern University">Georgia Southern University</div>
+                                <div class="dropdown-item" data-value="Ghent University">Ghent University</div>
+                                <div class="dropdown-item" data-value="Harvard Combined Orthopaedic Residency Program">Harvard Combined Orthopaedic Residency Program</div>
+                                <div class="dropdown-item" data-value="Harvard University/Boston Children&#039;s Hospital">Harvard University/Boston Children&#039;s Hospital</div>
+                                <div class="dropdown-item" data-value="Harvard University/Brigham and Women&#039;s">Harvard University/Brigham and Women&#039;s</div>
+                                <div class="dropdown-item" data-value="Harvard University/Massachusetts General Hospital">Harvard University/Massachusetts General Hospital</div>
+                                <div class="dropdown-item" data-value="HCA Florida North Florida Hospital">HCA Florida North Florida Hospital</div>
+                                <div class="dropdown-item" data-value="Henry Ford Health">Henry Ford Health</div>
+                                <div class="dropdown-item" data-value="High Desert Medical College">High Desert Medical College</div>
+                                <div class="dropdown-item" data-value="Hinsdale Orthopaedics">Hinsdale Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Hoag Orthopedics">Hoag Orthopedics</div>
+                                <div class="dropdown-item" data-value="Hofstra University">Hofstra University</div>
+                                <div class="dropdown-item" data-value="Holy Cross Orthopaedic Institute">Holy Cross Orthopaedic Institute</div>
+                                <div class="dropdown-item" data-value="Hospital for Special Surgery">Hospital for Special Surgery</div>
+                                <div class="dropdown-item" data-value="Houston Methodist">Houston Methodist</div>
+                                <div class="dropdown-item" data-value="Howard University">Howard University</div>
+                                <div class="dropdown-item" data-value="Huff Orthopaedics &amp; Sports Medicine">Huff Orthopaedics &amp; Sports Medicine</div>
+                                <div class="dropdown-item" data-value="Illinois Bone &amp; Joint Institute">Illinois Bone &amp; Joint Institute</div>
+                                <div class="dropdown-item" data-value="Illinois State University">Illinois State University</div>
+                                <div class="dropdown-item" data-value="Indiana Hand to Shoulder Center">Indiana Hand to Shoulder Center</div>
+                                <div class="dropdown-item" data-value="Indiana University Health">Indiana University Health</div>
+                                <div class="dropdown-item" data-value="Inland Orthopaedic Surgery and Sports Medicine Clinic">Inland Orthopaedic Surgery and Sports Medicine Clinic</div>
+                                <div class="dropdown-item" data-value="Inova Fairfax Medical Campus-Virginia Commonwealth University">Inova Fairfax Medical Campus-Virginia Commonwealth University</div>
+                                <div class="dropdown-item" data-value="Intermountain Healthcare">Intermountain Healthcare</div>
+                                <div class="dropdown-item" data-value="International Medical Center - Jeddah Saudi Arabia">International Medical Center - Jeddah Saudi Arabia</div>
+                                <div class="dropdown-item" data-value="J3P Healthcare Solutions">J3P Healthcare Solutions</div>
+                                <div class="dropdown-item" data-value="Jack Hughston Memorial Hospital">Jack Hughston Memorial Hospital</div>
+                                <div class="dropdown-item" data-value="John Peter Smith Hospital">John Peter Smith Hospital</div>
+                                <div class="dropdown-item" data-value="Johns Hopkins">Johns Hopkins</div>
+                                <div class="dropdown-item" data-value="Joint Implant Surgeons">Joint Implant Surgeons</div>
+                                <div class="dropdown-item" data-value="JPS Health Network">JPS Health Network</div>
+                                <div class="dropdown-item" data-value="Kaiser Permanente">Kaiser Permanente</div>
+                                <div class="dropdown-item" data-value="Kansas Orthopaedic Center">Kansas Orthopaedic Center</div>
+                                <div class="dropdown-item" data-value="Knoxville Orthopaedic Clinic">Knoxville Orthopaedic Clinic</div>
+                                <div class="dropdown-item" data-value="KU Leuven">KU Leuven</div>
+                                <div class="dropdown-item" data-value="Kyiv Institute of Orthopaedics and Traumatology">Kyiv Institute of Orthopaedics and Traumatology</div>
+                                <div class="dropdown-item" data-value="Lausanne University Hospital">Lausanne University Hospital</div>
+                                <div class="dropdown-item" data-value="Lehigh University">Lehigh University</div>
+                                <div class="dropdown-item" data-value="Lehigh Valley Health Network">Lehigh Valley Health Network</div>
+                                <div class="dropdown-item" data-value="LifeBridge Health">LifeBridge Health</div>
+                                <div class="dropdown-item" data-value="Lilienthal Hospital">Lilienthal Hospital</div>
+                                <div class="dropdown-item" data-value="Loma Linda University">Loma Linda University</div>
+                                <div class="dropdown-item" data-value="Los Angeles Orthopaedic Center">Los Angeles Orthopaedic Center</div>
+                                <div class="dropdown-item" data-value="Louisiana Orthopedic Specialists">Louisiana Orthopedic Specialists</div>
+                                <div class="dropdown-item" data-value="Loyola University Medical Center">Loyola University Medical Center</div>
+                                <div class="dropdown-item" data-value="LSU Health">LSU Health</div>
+                                <div class="dropdown-item" data-value="LSU Health Shreveport">LSU Health Shreveport</div>
+                                <div class="dropdown-item" data-value="Lund University">Lund University</div>
+                                <div class="dropdown-item" data-value="Madigan Army Medical Center">Madigan Army Medical Center</div>
+                                <div class="dropdown-item" data-value="Maimonides Medical Center">Maimonides Medical Center</div>
+                                <div class="dropdown-item" data-value="Maine Health Institute for Research">Maine Health Institute for Research</div>
+                                <div class="dropdown-item" data-value="Management &amp; Science University">Management &amp; Science University</div>
+                                <div class="dropdown-item" data-value="Mansfield Orthopaedics">Mansfield Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Marquette University">Marquette University</div>
+                                <div class="dropdown-item" data-value="Marshall University">Marshall University</div>
+                                <div class="dropdown-item" data-value="Mass General Brigham">Mass General Brigham</div>
+                                <div class="dropdown-item" data-value="Maui Health">Maui Health</div>
+                                <div class="dropdown-item" data-value="Mayo Clinic College of Medicine and Science (Rochester)">Mayo Clinic College of Medicine and Science (Rochester)</div>
+                                <div class="dropdown-item" data-value="Mayo Clinic in Florida">Mayo Clinic in Florida</div>
+                                <div class="dropdown-item" data-value="McGill University">McGill University</div>
+                                <div class="dropdown-item" data-value="McLaren Health Care">McLaren Health Care</div>
+                                <div class="dropdown-item" data-value="MD Anderson">MD Anderson</div>
+                                <div class="dropdown-item" data-value="Medical College &amp; Teaching Hospital (India)">Medical College &amp; Teaching Hospital (India)</div>
+                                <div class="dropdown-item" data-value="Medical College of Wisconsin">Medical College of Wisconsin</div>
+                                <div class="dropdown-item" data-value="Medical University of South Carolina">Medical University of South Carolina</div>
+                                <div class="dropdown-item" data-value="Mendelson Orthopedics">Mendelson Orthopedics</div>
+                                <div class="dropdown-item" data-value="Methodist Health System">Methodist Health System</div>
+                                <div class="dropdown-item" data-value="Methodist Sports Medicine Research &amp; Education Foundation">Methodist Sports Medicine Research &amp; Education Foundation</div>
+                                <div class="dropdown-item" data-value="Michigan Orthopaedic Surgeons">Michigan Orthopaedic Surgeons</div>
+                                <div class="dropdown-item" data-value="Michigan State University">Michigan State University</div>
+                                <div class="dropdown-item" data-value="MidJersey Orthopaedics">MidJersey Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Monterey Spine &amp; Joint">Monterey Spine &amp; Joint</div>
+                                <div class="dropdown-item" data-value="Mount Sinai Health System">Mount Sinai Health System</div>
+                                <div class="dropdown-item" data-value="Mount Sinai Medical Center">Mount Sinai Medical Center</div>
+                                <div class="dropdown-item" data-value="Mountain Valley Orthopedics">Mountain Valley Orthopedics</div>
+                                <div class="dropdown-item" data-value="MultiCare Health System">MultiCare Health System</div>
+                                <div class="dropdown-item" data-value="National Safety Council">National Safety Council</div>
+                                <div class="dropdown-item" data-value="National Taiwan University">National Taiwan University</div>
+                                <div class="dropdown-item" data-value="NEOMED">NEOMED</div>
+                                <div class="dropdown-item" data-value="New England Orthopedic Surgeons">New England Orthopedic Surgeons</div>
+                                <div class="dropdown-item" data-value="New York Presbyterian">New York Presbyterian</div>
+                                <div class="dropdown-item" data-value="New York University">New York University</div>
+                                <div class="dropdown-item" data-value="New York University Winthrop Hospital">New York University Winthrop Hospital</div>
+                                <div class="dropdown-item" data-value="Newcastle University">Newcastle University</div>
+                                <div class="dropdown-item" data-value="NorCal Pain Treatment Center">NorCal Pain Treatment Center</div>
+                                <div class="dropdown-item" data-value="North Alabama Bone and Joint Clinic,">North Alabama Bone and Joint Clinic,</div>
+                                <div class="dropdown-item" data-value="North Carolina A&amp;T University">North Carolina A&amp;T University</div>
+                                <div class="dropdown-item" data-value="North Carolina Agricultural and Technical State University">North Carolina Agricultural and Technical State University</div>
+                                <div class="dropdown-item" data-value="North Carolina State College of Veterinary Medicine">North Carolina State College of Veterinary Medicine</div>
+                                <div class="dropdown-item" data-value="North Carolina State University">North Carolina State University</div>
+                                <div class="dropdown-item" data-value="Northwell Health">Northwell Health</div>
+                                <div class="dropdown-item" data-value="Northwest Orthopaedic Specialists">Northwest Orthopaedic Specialists</div>
+                                <div class="dropdown-item" data-value="Northwestern University">Northwestern University</div>
+                                <div class="dropdown-item" data-value="Nth Dimensions">Nth Dimensions</div>
+                                <div class="dropdown-item" data-value="Oakland University William Beaumont School of Medicine">Oakland University William Beaumont School of Medicine</div>
+                                <div class="dropdown-item" data-value="Ochsner Medical Center">Ochsner Medical Center</div>
+                                <div class="dropdown-item" data-value="Ohio University">Ohio University</div>
+                                <div class="dropdown-item" data-value="Oklahoma Sports &amp; Orthopaedic Institute">Oklahoma Sports &amp; Orthopaedic Institute</div>
+                                <div class="dropdown-item" data-value="Oklahoma State University">Oklahoma State University</div>
+                                <div class="dropdown-item" data-value="Olympia Orthopaedic Associates">Olympia Orthopaedic Associates</div>
+                                <div class="dropdown-item" data-value="Optim Orthopedics">Optim Orthopedics</div>
+                                <div class="dropdown-item" data-value="Oregon Health &amp; Science University">Oregon Health &amp; Science University</div>
+                                <div class="dropdown-item" data-value="Orlando Health">Orlando Health</div>
+                                <div class="dropdown-item" data-value="Ortho Illinois">Ortho Illinois</div>
+                                <div class="dropdown-item" data-value="Ortho Plus">Ortho Plus</div>
+                                <div class="dropdown-item" data-value="Ortho Rhode Island">Ortho Rhode Island</div>
+                                <div class="dropdown-item" data-value="OrthoAlaska">OrthoAlaska</div>
+                                <div class="dropdown-item" data-value="OrthoAlliance">OrthoAlliance</div>
+                                <div class="dropdown-item" data-value="OrthoArizona">OrthoArizona</div>
+                                <div class="dropdown-item" data-value="OrthoCarolina">OrthoCarolina</div>
+                                <div class="dropdown-item" data-value="OrthoCincy">OrthoCincy</div>
+                                <div class="dropdown-item" data-value="OrthoEast">OrthoEast</div>
+                                <div class="dropdown-item" data-value="OrthoKinetic Track">OrthoKinetic Track</div>
+                                <div class="dropdown-item" data-value="OrthoNY">OrthoNY</div>
+                                <div class="dropdown-item" data-value="Orthopaedic &amp; Spine Center of the Rockies">Orthopaedic &amp; Spine Center of the Rockies</div>
+                                <div class="dropdown-item" data-value="Orthopaedic and Neurosurgery Specialists">Orthopaedic and Neurosurgery Specialists</div>
+                                <div class="dropdown-item" data-value="Orthopaedic Associates">Orthopaedic Associates</div>
+                                <div class="dropdown-item" data-value="Orthopaedic Associates of Wisconsin">Orthopaedic Associates of Wisconsin</div>
+                                <div class="dropdown-item" data-value="Orthopaedic Foot &amp; Ankle Center">Orthopaedic Foot &amp; Ankle Center</div>
+                                <div class="dropdown-item" data-value="Orthopaedics East &amp; Sports Medicine Center">Orthopaedics East &amp; Sports Medicine Center</div>
+                                <div class="dropdown-item" data-value="Orthopedic Associates">Orthopedic Associates</div>
+                                <div class="dropdown-item" data-value="Orthopedic Associates of Dallas">Orthopedic Associates of Dallas</div>
+                                <div class="dropdown-item" data-value="Orthopedic Associates of Lancaster">Orthopedic Associates of Lancaster</div>
+                                <div class="dropdown-item" data-value="Orthopedic Centers of Colorado - Cornerstone Orthopedics &amp; Sports Medicine">Orthopedic Centers of Colorado - Cornerstone Orthopedics &amp; Sports Medicine</div>
+                                <div class="dropdown-item" data-value="OrthoSC">OrthoSC</div>
+                                <div class="dropdown-item" data-value="OrthoSouth">OrthoSouth</div>
+                                <div class="dropdown-item" data-value="OrthoVirginia">OrthoVirginia</div>
+                                <div class="dropdown-item" data-value="Other">Other</div>
+                                <div class="dropdown-item" data-value="Paley Orthopedic &amp; Spine Institute">Paley Orthopedic &amp; Spine Institute</div>
+                                <div class="dropdown-item" data-value="Panorama Orthopedics &amp; Spine Center">Panorama Orthopedics &amp; Spine Center</div>
+                                <div class="dropdown-item" data-value="Partners HealthCare">Partners HealthCare</div>
+                                <div class="dropdown-item" data-value="Peachtree Orthopedics">Peachtree Orthopedics</div>
+                                <div class="dropdown-item" data-value="Peninsula Orthopaedic Associates">Peninsula Orthopaedic Associates</div>
+                                <div class="dropdown-item" data-value="Penn Highlands Healthcare">Penn Highlands Healthcare</div>
+                                <div class="dropdown-item" data-value="Penn State University">Penn State University</div>
+                                <div class="dropdown-item" data-value="Philadelphia College of Osteopathic Medicine">Philadelphia College of Osteopathic Medicine</div>
+                                <div class="dropdown-item" data-value="Pinnacle Orthopaedics">Pinnacle Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Precision Orthopedics &amp; Sports Medicine">Precision Orthopedics &amp; Sports Medicine</div>
+                                <div class="dropdown-item" data-value="Premier Orthopaedics">Premier Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Princeton Orthopaedic Associates">Princeton Orthopaedic Associates</div>
+                                <div class="dropdown-item" data-value="Profound Leadership, LLC">Profound Leadership, LLC</div>
+                                <div class="dropdown-item" data-value="Proliance Surgeons">Proliance Surgeons</div>
+                                <div class="dropdown-item" data-value="PROMIS Health Organization">PROMIS Health Organization</div>
+                                <div class="dropdown-item" data-value="Purdue University">Purdue University</div>   
+                                <div class="dropdown-item" data-value="Quil Health">Quil Health</div>
+                                <div class="dropdown-item" data-value="Radboud University Medical Center">Radboud University Medical Center</div>    
+                                <div class="dropdown-item" data-value="Raleigh Orthopaedic Clinic">Raleigh Orthopaedic Clinic</div>
+                                <div class="dropdown-item" data-value="Restore Motion">Restore Motion</div>
+                                <div class="dropdown-item" data-value="Resurgens">Resurgens</div>
+                                <div class="dropdown-item" data-value="Riverside Health System">Riverside Health System</div>
+                                <div class="dropdown-item" data-value="Romano Orthopaedic Center">Romano Orthopaedic Center</div>
+                                <div class="dropdown-item" data-value="Rothman Orthopaedic Institute">Rothman Orthopaedic Institute</div>
+                                <div class="dropdown-item" data-value="Rowan University School of Osteopathic Medicine">Rowan University School of Osteopathic Medicine</div>
+                                <div class="dropdown-item" data-value="Royal College of Surgeons - Ireland">Royal College of Surgeons - Ireland</div>
+                                <div class="dropdown-item" data-value="Royal Veterinary College, University of London">Royal Veterinary College, University of London</div>
+                            <div class="dropdown-item" data-value="Rush University">Rush University</div>
+                            <div class="dropdown-item" data-value="Rutgers University">Rutgers University</div>
+                            <div class="dropdown-item" data-value="Saitama Prefectural University - Japan">Saitama Prefectural University - Japan</div>
+                            <div class="dropdown-item" data-value="Samaritan Health Services">Samaritan Health Services</div>
+                            <div class="dropdown-item" data-value="Sanford Health">Sanford Health</div>
+                            <div class="dropdown-item" data-value="Sano Orthopedics">Sano Orthopedics</div>
+                            <div class="dropdown-item" data-value="Santa Barbara Associates">Santa Barbara Associates</div>
+                            <div class="dropdown-item" data-value="Shoreline Orthopaedics">Shoreline Orthopaedics</div>
+                            <div class="dropdown-item" data-value="Shriners Childrens Hospitals">Shriners Childrens Hospitals</div>
+                            <div class="dropdown-item" data-value="Sierra Pacific Orthopedics">Sierra Pacific Orthopedics</div>
+                            <div class="dropdown-item" data-value="Sourav Mandal">Sourav Mandal</div>   
+                            <div class="dropdown-item" data-value="South Hills Orthopaedic Surgery Associates">South Hills Orthopaedic Surgery Associates</div>
+                            <div class="dropdown-item" data-value="Southern Illinois University">Southern Illinois University</div>
+                            <div class="dropdown-item" data-value="Spartan Orthopaedics &amp; Sports Medicine">Spartan Orthopaedics &amp; Sports Medicine</div>
+                            <div class="dropdown-item" data-value="Sports Medicine Institute">Sports Medicine Institute</div>
+                            <div class="dropdown-item" data-value="Sports Medicine North">Sports Medicine North</div>
+                            <div class="dropdown-item" data-value="St. Lukes University Health Network">St. Lukes University Health Network</div>
+                            <div class="dropdown-item" data-value="St. Luke&#039;s Boise Medical Center">St. Luke&#039;s Boise Medical Center</div>
+                            <div class="dropdown-item" data-value="St. Tammany Health System">St. Tammany Health System</div>
+                            <div class="dropdown-item" data-value="Stanford University">Stanford University</div>
+                            <div class="dropdown-item" data-value="Steadman Philippon Research Institute">Steadman Philippon Research Institute</div>
+                            <div class="dropdown-item" data-value="Stony Brook University">Stony Brook University</div>
+                            <div class="dropdown-item" data-value="Summa Health System">Summa Health System</div>
+                            <div class="dropdown-item" data-value="Swift Institute">Swift Institute</div>
+                            <div class="dropdown-item" data-value="Syracuse University">Syracuse University</div>
+                            <div class="dropdown-item" data-value="Tallaght University Hospital">Tallaght University Hospital</div>
+                            <div class="dropdown-item" data-value="Tanner Clinic">Tanner Clinic</div>
+                            <div class="dropdown-item" data-value="Taos Orthopaedic Institute">Taos Orthopaedic Institute</div>
+                            <div class="dropdown-item" data-value="Technion - Israel Institute of Technology">Technion - Israel Institute of Technology</div>
+                            <div class="dropdown-item" data-value="Tehran University of Medical Sciences">Tehran University of Medical Sciences</div>
+                                <div class="dropdown-item" data-value="Temple University">Temple University</div>
+                            <div class="dropdown-item" data-value="Tennessee Orthopaedic Alliance">Tennessee Orthopaedic Alliance</div>
+                            <div class="dropdown-item" data-value="Texas Health Resources">Texas Health Resources</div>
+                            <div class="dropdown-item" data-value="Texas Orthopaedic Associates">Texas Orthopaedic Associates</div>
+                            <div class="dropdown-item" data-value="Texas Orthopedics">Texas Orthopedics</div>
+                            <div class="dropdown-item" data-value="Texas Tech University">Texas Tech University</div>
+                            <div class="dropdown-item" data-value="Texas Tech University-El Paso">Texas Tech University-El Paso</div>
+                            <div class="dropdown-item" data-value="The Hand Center">The Hand Center</div>
+                            <div class="dropdown-item" data-value="The Ohio State University">The Ohio State University</div>
+                            <div class="dropdown-item" data-value="The Orthopaedic Group P.C.">The Orthopaedic Group P.C.</div>
+                            <div class="dropdown-item" data-value="The University of British Columbia">The University of British Columbia</div>
+                            <div class="dropdown-item" data-value="ThinkSurgical">ThinkSurgical</div>
+                            <div class="dropdown-item" data-value="Thomas Jefferson University">Thomas Jefferson University</div>   
+                            <div class="dropdown-item" data-value="Thumbay Hospital">Thumbay Hospital</div>
+                            <div class="dropdown-item" data-value="Toronto Rehabilitation Institute - KITE University Health Network">Toronto Rehabilitation Institute - KITE University Health Network</div>
+                            <div class="dropdown-item" data-value="Town Center Orthopedics">Town Center Orthopedics</div>
+                            <div class="dropdown-item" data-value="Tri-City Orthopaedic Clinic, P.S.C.">Tri-City Orthopaedic Clinic, P.S.C.</div>
+                            <div class="dropdown-item" data-value="Tufts University School of Medicine">Tufts University School of Medicine</div>
+                            <div class="dropdown-item" data-value="Tulane University">Tulane University</div>
+                            <div class="dropdown-item" data-value="Uniformed Services University of Health Sciences">Uniformed Services University of Health Sciences</div>
+                            <div class="dropdown-item" data-value="University Clinic of Orthopedics and Traumatology Innsbruck">University Clinic of Orthopedics and Traumatology Innsbruck</div>
+                            <div class="dropdown-item" data-value="University College Dublin">University College Dublin</div>
+                            <div class="dropdown-item" data-value="University Health">University Health</div>
+                            <div class="dropdown-item" data-value="University Hospitals Case Medical Center">University Hospitals Case Medical Center</div>
+                            <div class="dropdown-item" data-value="University of Alabama Medical Center Program Birmingham">University of Alabama Medical Center Program Birmingham</div>
+                            <div class="dropdown-item" data-value="University of Arizona">University of Arizona</div>
+                            <div class="dropdown-item" data-value="University of Arizona College of Medicine Phoenix Program">University of Arizona College of Medicine Phoenix Program</div>
+                            <div class="dropdown-item" data-value="University of Arkansas">University of Arkansas</div>
+                            <div class="dropdown-item" data-value="University of Basel">University of Basel</div>
+                            <div class="dropdown-item" data-value="University of British Columbia">University of British Columbia</div>
+                            <div class="dropdown-item" data-value="University of Calgary">University of Calgary</div>
+                            <div class="dropdown-item" data-value="University of California - Santa Barbara">University of California - Santa Barbara</div>
+                            <div class="dropdown-item" data-value="University of California Davis">University of California Davis</div>
+                            <div class="dropdown-item" data-value="University of California Irvine">University of California Irvine</div>
+                            <div class="dropdown-item" data-value="University of California Los Angeles">University of California Los Angeles</div>
+                                <div class="dropdown-item" data-value="University of California San Diego">University of California San Diego</div>
+                                <div class="dropdown-item" data-value="University of California San Francisco">University of California San Francisco</div>
+                                <div class="dropdown-item" data-value="University of California San Francisco Fresno">University of California San Francisco Fresno</div>
+                                <div class="dropdown-item" data-value="University of California, Santa Barbara">University of California, Santa Barbara</div>
+                                <div class="dropdown-item" data-value="University of Central Florida">University of Central Florida</div>
+                                <div class="dropdown-item" data-value="University of Central Oklahoma">University of Central Oklahoma</div>
+                                <div class="dropdown-item" data-value="University of Chicago">University of Chicago</div>
+                                <div class="dropdown-item" data-value="University of Cincinnati">University of Cincinnati</div>
+                                <div class="dropdown-item" data-value="University of Cincinnati Children&#039;s Hospital Medical Center">University of Cincinnati Children&#039;s Hospital Medical Center</div>
+                                <div class="dropdown-item" data-value="University of Colorado">University of Colorado</div>
+                                <div class="dropdown-item" data-value="University of Connecticut">University of Connecticut</div>
+                                <div class="dropdown-item" data-value="University of Delaware">University of Delaware</div>
+                                <div class="dropdown-item" data-value="University of Eastern Finland">University of Eastern Finland</div>
+                                <div class="dropdown-item" data-value="University of Florida Gainesville">University of Florida Gainesville</div>
+                                <div class="dropdown-item" data-value="University of Florida Jacksonville">University of Florida Jacksonville</div>
+                                <div class="dropdown-item" data-value="University of Hawaii">University of Hawaii</div>
+                                <div class="dropdown-item" data-value="University of Illinois - Urbana-Champaign">University of Illinois - Urbana-Champaign</div>
+                                <div class="dropdown-item" data-value="University of Illinois at Chicago">University of Illinois at Chicago</div>
+                                <div class="dropdown-item" data-value="University of Iowa">University of Iowa</div>
+                                <div class="dropdown-item" data-value="University of Kansas Health System">University of Kansas Health System</div>
+                                <div class="dropdown-item" data-value="University of Kentucky">University of Kentucky</div>
+                                <div class="dropdown-item" data-value="University of Louisville">University of Louisville</div>
+                                <div class="dropdown-item" data-value="University of Maryland">University of Maryland</div>
+                                <div class="dropdown-item" data-value="University of Maryland and Johns Hopkins">University of Maryland and Johns Hopkins</div>
+                                <div class="dropdown-item" data-value="University of Massachusetts">University of Massachusetts</div>
+                                <div class="dropdown-item" data-value="University of Miami">University of Miami</div>
+                                <div class="dropdown-item" data-value="University of Michigan">University of Michigan</div>
+                                <div class="dropdown-item" data-value="University of Minnesota">University of Minnesota</div>
+                                <div class="dropdown-item" data-value="University of Mississippi">University of Mississippi</div>
+                                <div class="dropdown-item" data-value="University of Missouri">University of Missouri</div>
+                                <div class="dropdown-item" data-value="University of Missouri Kansas City">University of Missouri Kansas City</div>
+                                <div class="dropdown-item" data-value="University of Missouri System">University of Missouri System</div>
+                                <div class="dropdown-item" data-value="University of Nebraska">University of Nebraska</div>
+                                <div class="dropdown-item" data-value="University of Nevada - Las Vegas">University of Nevada - Las Vegas</div>
+                                <div class="dropdown-item" data-value="University of Nevada - Reno">University of Nevada - Reno</div>
+                                <div class="dropdown-item" data-value="University of North Carolina - Chapel Hill">University of North Carolina - Chapel Hill</div>
+                                <div class="dropdown-item" data-value="University of North Dakota">University of North Dakota</div>
+                                <div class="dropdown-item" data-value="University of Notre Dame">University of Notre Dame</div>
+                                <div class="dropdown-item" data-value="University of Ottawa">University of Ottawa</div>
+                                <div class="dropdown-item" data-value="University of Oxford">University of Oxford</div>
+                                <div class="dropdown-item" data-value="University of Pennsylvania">University of Pennsylvania</div>
+                                <div class="dropdown-item" data-value="University of Pittsburgh">University of Pittsburgh</div>
+                                <div class="dropdown-item" data-value="University of Regensburg">University of Regensburg</div>
+                                <div class="dropdown-item" data-value="University of Rochester">University of Rochester</div>
+                                <div class="dropdown-item" data-value="University of Rome Foro Italico">University of Rome Foro Italico</div>
+                                <div class="dropdown-item" data-value="University of South Carolina">University of South Carolina</div>
+                                <div class="dropdown-item" data-value="University of South Florida">University of South Florida</div>
+                                <div class="dropdown-item" data-value="University of Southern California">University of Southern California</div>
+                                <div class="dropdown-item" data-value="University of Tennessee">University of Tennessee</div>
+                                <div class="dropdown-item" data-value="University of Texas Austin">University of Texas Austin</div>
+                                <div class="dropdown-item" data-value="University of Texas Health Science Center at San Antonio (UTHSCSA)">University of Texas Health Science Center at San Antonio (UTHSCSA)</div>
+                                <div class="dropdown-item" data-value="University of Texas McGovern Medical School">University of Texas McGovern Medical School</div>
+                                <div class="dropdown-item" data-value="University of Texas Medical Branch">University of Texas Medical Branch</div>
+                                <div class="dropdown-item" data-value="University of Texas Southwestern Medical Center">University of Texas Southwestern Medical Center</div>
+                                <div class="dropdown-item" data-value="University of Toronto">University of Toronto</div>
+                                <div class="dropdown-item" data-value="University of Ulm">University of Ulm</div>
+                                <div class="dropdown-item" data-value="University of Utah">University of Utah</div>
+                                <div class="dropdown-item" data-value="University of Vermont">University of Vermont</div>
+                                <div class="dropdown-item" data-value="University of Virginia">University of Virginia</div>
+                                <div class="dropdown-item" data-value="University of Washington">University of Washington</div>
+                                <div class="dropdown-item" data-value="University of Wisconsin">University of Wisconsin</div>
+                                <div class="dropdown-item" data-value="University Orthopedics">University Orthopedics</div>
+                                <div class="dropdown-item" data-value="UPMC - Hamot">UPMC - Hamot</div>
+                                <div class="dropdown-item" data-value="Upstate Medical University">Upstate Medical University</div>
+                                <div class="dropdown-item" data-value="UT Health San Antonio">UT Health San Antonio</div>
+                                <div class="dropdown-item" data-value="UT Health Science Center at Houston - McGovern Medical School">UT Health Science Center at Houston - McGovern Medical School</div>
+                                <div class="dropdown-item" data-value="UTHealth Houston">UTHealth Houston</div>
+                                <div class="dropdown-item" data-value="VA Medical Center">VA Medical Center</div>
+                                <div class="dropdown-item" data-value="Vail-Summit Orthopaedics &amp; Neurosurgery">Vail-Summit Orthopaedics &amp; Neurosurgery</div>
+                                <div class="dropdown-item" data-value="Vanderbilt University">Vanderbilt University</div>
+                                <div class="dropdown-item" data-value="VCU Health">VCU Health</div>
+                                <div class="dropdown-item" data-value="Virginia Commonwealth University">Virginia Commonwealth University</div>
+                                <div class="dropdown-item" data-value="Virginia Tech">Virginia Tech</div>
+                                <div class="dropdown-item" data-value="Vori Health">Vori Health</div>
+                                <div class="dropdown-item" data-value="Wake Forest University School of Medicine, Atrium Health Wake Forest Baptist">Wake Forest University School of Medicine, Atrium Health Wake Forest Baptist</div>
+                                <div class="dropdown-item" data-value="Washington University">Washington University</div>
+                                <div class="dropdown-item" data-value="Wayne State University">Wayne State University</div>
+                                <div class="dropdown-item" data-value="Wellspan">Wellspan</div>
+                                <div class="dropdown-item" data-value="Wellstar Health System">Wellstar Health System</div>
+                                <div class="dropdown-item" data-value="Wentworth-Douglass Medical Center">Wentworth-Douglass Medical Center</div>
+                                <div class="dropdown-item" data-value="West Virginia University">West Virginia University</div>
+                                <div class="dropdown-item" data-value="Westchester Medical Center Health Network">Westchester Medical Center Health Network</div>
+                                <div class="dropdown-item" data-value="Western Michigan University">Western Michigan University</div>
+                                <div class="dropdown-item" data-value="Western Orthopaedics">Western Orthopaedics</div>
+                                <div class="dropdown-item" data-value="Western University">Western University</div>
+                                <div class="dropdown-item" data-value="White Fences Surgical">White Fences Surgical</div>
+                                <div class="dropdown-item" data-value="Yale University">Yale University</div>
+                                <div class="dropdown-item" data-value="Zimmer Biomet">Zimmer Biomet</div>
+                                <div class="dropdown-item" data-value="Other">Other</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Search Modal -->
+                        <div class="search-modal" id="search-modal">
+                            <div class="search-modal-content">
+                                <div class="search-modal-header">
+                                    <h3>Search Institution</h3>
+                                    <button class="search-modal-close" id="search-modal-close">&times;</button>
+                                </div>
+                                <div class="search-modal-body">
+                                    <input type="text" class="search-input" id="search-input" placeholder="Type to search institutions...">
+                                    <div class="search-results" id="search-results"></div>
+                                </div>
+                                <div class="search-modal-footer">
+                                    <button class="search-modal-cancel" id="search-modal-cancel">Cancel</button>
+                                    <button class="search-modal-add" id="search-modal-add" disabled>Add Selected</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Other Institution Input (hidden by default) -->
+                        <div class="other-institution-group" id="other-institution-group" style="display: none;">
+                            <label for="other-institution" class="form-label">Please specify your institution</label>
+                            <input type="text" id="other-institution" class="form-input" placeholder="Enter your institution name..." ${(ticketType === 'department-table' && currentPerson > 1) ? 'disabled' : ''} ${(ticketType === 'department-table' && currentPerson > 1 && teamTableOtherInstitution) ? `value="${teamTableOtherInstitution}"` : ''}>
+                            </div>
+                        </div>
+                    <div class="form-group">
+                        <label for="role" class="form-label">Your Primary Functional Role<span class="required">*</span></label>
+                        <select id="role" class="form-select">
+                            <option value="">----</option>
+                            <option value="Athletic Trainer">Athletic Trainer</option>
+                            <option value="Chief Administrative Officer">Chief Administrative Officer</option>
+                            <option value="Clinical Operations Manager">Clinical Operations Manager</option>
+                            <option value="Clinical Ops Team">Clinical Ops Team</option>
+                            <option value="DME Coordinator/Manager">DME Coordinator/Manager</option>
+                            <option value="General Admin Team">General Admin Team</option>
+                            <option value="Hospital Service Line Manager">Hospital Service Line Manager</option>
+                            <option value="HR Manager">HR Manager</option>
+                            <option value="Marketing Manager/Officer">Marketing Manager/Officer</option>
+                            <option value="Orthopaedic Research - Faculty">Orthopaedic Research - Faculty</option>
+                            <option value="Orthopaedic Research - Research Manager/Coordinator">Orthopaedic Research - Research Manager/Coordinator</option>
+                            <option value="Orthopaedic Research - Vice Chair">Orthopaedic Research - Vice Chair</option>
+                            <option value="Orthopaedic Research – Research Director">Orthopaedic Research – Research Director</option>
+                            <option value="Orthopaedic Research – Trainee (Postdoc/Fellow)">Orthopaedic Research – Trainee (Postdoc/Fellow)</option>
+                            <option value="Orthopaedic Research – Trainee (Student)">Orthopaedic Research – Trainee (Student)</option>
+                            <option value="Orthopaedic Surgeon - Chair">Orthopaedic Surgeon - Chair</option>
+                            <option value="Orthopaedic Surgeon - Chief">Orthopaedic Surgeon - Chief</option>
+                            <option value="Orthopaedic Surgeon - Faculty">Orthopaedic Surgeon - Faculty</option>
+                            <option value="Orthopaedic Surgeon - Resident/Fellow">Orthopaedic Surgeon - Resident/Fellow</option>
+                            <option value="Orthopaedic Surgeon - Residency Program Director">Orthopaedic Surgeon - Residency Program Director</option>
+                            <option value="Orthopaedic Surgeon - Vice Chair">Orthopaedic Surgeon - Vice Chair</option>
+                            <option value="Physiatrist/PM&amp;R">Physiatrist/PM&amp;R</option>
+                            <option value="Physician Assistant/Nurse Practitioner">Physician Assistant/Nurse Practitioner</option>
+                            <option value="Procurement/Supply Chain Manager">Procurement/Supply Chain Manager</option>
+                            <option value="Resident/Fellowship Program Coordinator">Resident/Fellowship Program Coordinator</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jobTitle" class="form-label">Job Title<span class="required">*</span></label>
+                        <input type="text" id="jobTitle" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="companyName" class="form-label">Company's Name<span class="required">*</span></label>
+                        <input type="text" id="companyName" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Attend Thursday Networking Cocktail Event?<span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="radio" name="thursdayEvent" value="Yes" required>
+                                <span class="checkbox-text">Yes</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="radio" name="thursdayEvent" value="No" required>
+                                <span class="checkbox-text">No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Attend Friday Networking Cocktail Event?<span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="radio" name="fridayEvent" value="Yes" required>
+                                <span class="checkbox-text">Yes</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="radio" name="fridayEvent" value="No" required>
+                                <span class="checkbox-text">No</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    ${ticketType !== 'corporate-partner' ? `
+                    <div class="form-group">
+                        <label class="form-label">If you hold a primary role in research or clinical operations, please indicate below if you plan to attend one of these Saturday morning concurrent sessions.</label>
+                        <div class="checkbox-group" style="flex-direction: column; align-items: flex-start;">
+                            <label class="checkbox-label" style="margin-bottom: 10px;">
+                                <input type="checkbox" name="researchTrack" value="Yes">
+                                <span class="checkbox-text">I plan to attend the Research Programming Track from 7:30am – 10:30am on Saturday, October 3</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="clinicalTrack" value="Yes">
+                                <span class="checkbox-text">I plan to attend the Clinical Operations Track from 7:30am – 10:30am on Saturday, October 3</span>
+                            </label>
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    <div class="button-container">
+                        <button type="button" class="back-button person-back">Back</button>
+                        <button type="button" class="next-button person-next">${currentPerson < totalPeople ? 'Next Person' : 'Complete Registration'}</button>
+                    </div>
+                </div>
+            `;
+            
+            formContainer.insertAdjacentHTML('beforeend', personFormHTML);
+            
+            // Initialize custom dropdown after HTML is created
+            setTimeout(() => {
+                initializeCustomDropdown();
+                // Apply conditional field visibility based on ticket type
+                updateFormFieldsVisibility(ticketType);
+                
+                // For Team Table, show Other Institution field if needed
+                if (ticketType === 'department-table' && currentPerson > 1 && teamTableAffiliation === 'Other') {
+                    const otherInstitutionGroup = document.getElementById('other-institution-group');
+                    if (otherInstitutionGroup) {
+                        otherInstitutionGroup.style.display = 'block';
+                    }
+                }
+            }, 100);
+            
+            // Add event listener for the next button
+            document.querySelector('.person-next').addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (currentPerson === 1 && totalPeople === 0) {
+                    const ticketTypeValue = document.getElementById('ticketType').value;
+                    const numberOfPeopleValue = document.getElementById('numberOfPeople').value;
+                    
+                    if (!ticketTypeValue || !numberOfPeopleValue) {
+                        alert('Please fill in all required fields.');
+                        return;
+                    }
+                    
+                    ticketType = ticketTypeValue;
+                    totalPeople = parseInt(numberOfPeopleValue);
+                }
+                
+                collectPersonData();
+            });
+
+            // Add event listener for the back button
+            document.querySelector('.person-back').addEventListener('click', function(e) {
+                e.preventDefault();
+                goBack();
+            });
+        }
+
+        function goBack() {
+            if (currentPerson === 1) {
+                // Go back to initial form (ticket type and number of people)
+                showInitialForm();
+            } else {
+                // Go back to previous person
+                currentPerson--;
+                document.querySelector('.person-form').remove();
+                showPersonForm();
+            }
+        }
+
+        function goBackFromBilling() {
+            // Go back to the last person's form
+            document.querySelector('.person-form').remove();
+            showPersonForm();
+        }
+
+        function showInitialForm() {
+            // Remove current person form
+            const personForm = document.querySelector('.person-form');
+            if (personForm) {
+                personForm.remove();
+            }
+            
+            // Show initial form fields again
+            const ticketTypeField = document.getElementById('ticketType').closest('.form-group');
+            const numberOfPeopleField = document.getElementById('numberOfPeople').closest('.form-group');
+            const nextButton = document.querySelector('.next-button');
+            
+            if (ticketTypeField) ticketTypeField.style.display = 'block';
+            if (numberOfPeopleField) numberOfPeopleField.style.display = 'block';
+            if (nextButton) nextButton.style.display = 'block';
+            
+            // Reset current person to 1
+            currentPerson = 1;
+        }
+
+        function collectPersonData() {
+            // Validate all fields
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value;
+            const affiliation = document.getElementById('field_5').value;
+            const otherInstitution = document.getElementById('other-institution') ? document.getElementById('other-institution').value.trim() : '';
+            const role = document.getElementById('role').value;
+            const jobTitle = document.getElementById('jobTitle').value;
+            const companyName = document.getElementById('companyName').value;
+            const thursdayEvent = document.querySelector('input[name="thursdayEvent"]:checked')?.value;
+            const fridayEvent = document.querySelector('input[name="fridayEvent"]:checked')?.value;
+            const researchTrack = document.querySelector('input[name="researchTrack"]:checked') ? true : false;
+            const clinicalTrack = document.querySelector('input[name="clinicalTrack"]:checked') ? true : false;
+            
+            // Only validate basic required fields for all ticket types
+            let isValid = true;
+            let errorMessage = 'Please fill in all required fields.';
+            
+            // Basic required fields for all ticket types (only essential fields)
+            if (!name || !email || !phone || !thursdayEvent || !fridayEvent) {
+                isValid = false;
+            }
+            
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email && !emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                document.getElementById('email').focus();
+                return;
+            }
+            
+            // No additional validation for conditional fields - they are all optional
+            // The form will send empty values for hidden/unused fields
+            
+            if (!isValid) {
+                alert(errorMessage);
+                return;
+            }
+            
+            // Store first person's name for corporation reference
+            if (currentPerson === 1) {
+                firstPersonName = name;
+                
+                // Store first person's affiliation for Team Table
+                if (ticketType === 'department-table') {
+                    if (affiliation) {
+                        teamTableAffiliation = affiliation;
+                    }
+                    if (otherInstitution) {
+                        teamTableOtherInstitution = otherInstitution;
+                    }
+                }
+            }
+            
+            // Create person data object with conditional field values
+            const personData = {
+                personNumber: currentPerson,
+                name: name,
+                email: email,
+                cellPhone: phone,
+                academicAffiliation: affiliation,
+                otherInstitution: otherInstitution,
+                primaryFunctionalRole: role,
+                jobTitle: jobTitle,
+                companyName: companyName,
+                attendThursdayNetworkingEvent: thursdayEvent,
+                attendFridayNetworkingEvent: fridayEvent,
+                researchTrack: researchTrack,
+                clinicalTrack: clinicalTrack,
+                ticketType: ticketType
+            };
+            
+            // Add corporation reference for people after the first
+            if (currentPerson > 1) {
+                personData.corporationReference = firstPersonName;
+            }
+            
+            registrationData.push(personData);
+            
+            // Move to next person or complete registration
+            currentPerson++;
+            
+            if (currentPerson <= totalPeople) {
+                // Remove current form and show next person's form
+                document.querySelector('.person-form').remove();
+                showPersonForm();
+            } else {
+                // Check if billing information is needed (2 or more people AND aoc-member ticket type)
+                if (totalPeople >= 2 && (ticketType === 'aoc-member' || ticketType === 'department-table')) {
+                    showBillingStep();
+                } else {
+                    completeRegistration();
+                }
+            }
+        }
+
+        async function completeRegistration() {
+            // Get the submit button and disable it
+            const submitButton = document.querySelector('.person-next');
+            if (submitButton) {
+                submitButton.disabled = true;
+                submitButton.innerHTML = `
+                    <div class="loading-spinner"></div>
+                    Processing...
+                `;
+            }
+            
+            // Get current date and time
+            const now = new Date();
+            const registrationDate = now.toISOString(); // Format: 2025-01-15T10:30:00.000Z
+            
+            // Create final JSON structure
+            const finalData = {
+                ticketType: ticketType,
+                numberOfPeople: totalPeople,
+                registrationDate: registrationDate,
+                persons: registrationData
+            };
+            
+            // Add billing information if available (for 2+ people)
+            if (window.billingInfo) {
+                finalData.billingInformation = {
+                    name: window.billingInfo.name,
+                    email: window.billingInfo.email
+                };
+            }
+            
+            // Log the registration date
+            console.log('Registration date:', registrationDate);
+            console.log('Final data to send:', finalData);
+            
+            // Send data to webhook
+            const webhookUrl = 'https://aoc-n8n.coconutbreeze.app/webhook/2026AOCSymposium';
+            
+            try {
+                const response = await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(finalData)
+                });
+                
+                if (response.ok) {
+                    const responseData = await response.json();
+                    
+                    // Log the complete response data
+                    console.log('Webhook response received:', responseData);
+                    
+                    // Check if response has the expected structure
+                    if (responseData.status === 'success' && responseData.redirectUrl) {
+                        console.log('Redirecting to URL:', responseData.redirectUrl);
+                        // Update button text to show redirecting
+                        if (submitButton) {
+                            submitButton.innerHTML = `
+                                <div class="loading-spinner"></div>
+                                Redirecting...
+                            `;
+                        }
+                        // Redirect to the provided URL without showing any modal
+                        window.location.href = responseData.redirectUrl;
+                    } else {
+                        console.log('No redirect URL provided in response');
+                        console.log('Response status:', responseData.status);
+                        console.log('Response redirectUrl:', responseData.redirectUrl);
+                        // Re-enable button if no redirect
+                        if (submitButton) {
+                            submitButton.disabled = false;
+                            submitButton.innerHTML = 'Complete Registration';
+                        }
+                    }
+                } else {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+            } catch (error) {
+                console.error('Error sending data to webhook:', error);
+                // Re-enable button on error
+                if (submitButton) {
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = 'Complete Registration';
+                }
+            }
+        }
+
+        // Custom Dropdown Functionality - Will be initialized when form is created
+
+        function initializeCustomDropdown() {
+            const dropdown = document.querySelector('.custom-dropdown');
+            const dropdownInput = document.querySelector('.dropdown-input');
+            const dropdownList = document.querySelector('.dropdown-list');
+            const dropdownItems = document.querySelectorAll('.dropdown-item');
+            const searchIcon = document.querySelector('.search-icon');
+            const searchModal = document.querySelector('.search-modal');
+            const searchInput = document.querySelector('.search-input');
+            const searchResults = document.querySelector('.search-results');
+            const searchModalClose = document.querySelector('.search-modal-close');
+            const searchModalCancel = document.querySelector('.search-modal-cancel');
+            const searchModalAdd = document.querySelector('.search-modal-add');
+            const otherInstitutionGroup = document.querySelector('.other-institution-group');
+            const otherInstitutionInput = document.querySelector('.other-institution');
+
+            // Check if dropdown elements exist
+            if (!dropdown || !dropdownInput || !dropdownList || !dropdownItems.length) {
+                console.log('Dropdown elements not found, skipping initialization');
+                return;
+            }
+
+            let selectedItem = null;
+            let isDropdownOpen = false;
+            let isModalOpen = false;
+
+            // Institution data
+            const institutions = Array.from(dropdownItems).map(item => ({
+                value: item.getAttribute('data-value'),
+                text: item.textContent.trim()
+            }));
+
+            // Dropdown toggle functionality
+            dropdownInput.addEventListener('click', function(e) {
+                e.stopPropagation();
+                toggleDropdown();
+            });
+
+            // Search icon click
+            if (searchIcon) {
+                searchIcon.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    openSearchModal();
+                });
+            }
+
+            // Dropdown item selection
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    selectItem(item);
+                });
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!dropdown.contains(e.target)) {
+                    closeDropdown();
+                }
+            });
+
+            // Search modal functionality (only if modal elements exist)
+            if (searchModalClose) searchModalClose.addEventListener('click', closeSearchModal);
+            if (searchModalCancel) searchModalCancel.addEventListener('click', closeSearchModal);
+            if (searchModalAdd) searchModalAdd.addEventListener('click', addSelectedInstitution);
+
+            // Close modal when clicking outside
+            if (searchModal) {
+                searchModal.addEventListener('click', function(e) {
+                    if (e.target === searchModal) {
+                        closeSearchModal();
+                    }
+                });
+            }
+
+            // Search input functionality
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+                    filterInstitutions(query);
+                });
+
+                // Enter key in search input
+                searchInput.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        const firstResult = searchResults.querySelector('.search-result-item');
+                        if (firstResult) {
+                            selectSearchResult(firstResult);
+                            addSelectedInstitution();
+                        }
+                    } else if (e.key === 'Escape') {
+                        closeSearchModal();
+                    }
+                });
+            }
+
+            // Escape key to close modal
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && isModalOpen) {
+                    closeSearchModal();
+                }
+            });
+
+            // Other institution input validation
+            if (otherInstitutionInput) {
+                otherInstitutionInput.addEventListener('input', function() {
+                    validateOtherInstitution();
+                });
+            }
+
+            function toggleDropdown() {
+                if (isDropdownOpen) {
+                    closeDropdown();
+                } else {
+                    openDropdown();
+                }
+            }
+
+            function openDropdown() {
+                dropdown.classList.add('show', 'open');
+                isDropdownOpen = true;
+            }
+
+            function closeDropdown() {
+                dropdown.classList.remove('show', 'open');
+                isDropdownOpen = false;
+            }
+
+            function selectItem(item) {
+                const value = item.getAttribute('data-value');
+                const text = item.textContent.trim();
+
+                // Remove previous selection
+                dropdownItems.forEach(dropdownItem => {
+                    dropdownItem.classList.remove('selected');
+                });
+
+                // Add selection to clicked item
+                item.classList.add('selected');
+
+                // Update input value
+                dropdownInput.value = text;
+
+                // Handle "Other" option
+                if (value === 'Other') {
+                    showOtherInstitutionField();
+                } else {
+                    hideOtherInstitutionField();
+                }
+
+                closeDropdown();
+            }
+
+            function openSearchModal() {
+                if (!searchModal) return;
+                
+                searchModal.classList.add('show');
+                isModalOpen = true;
+                if (searchInput) searchInput.value = '';
+                if (searchResults) {
+                    searchResults.innerHTML = `
+                        <div style="padding: 20px; text-align: center; color: #666;">
+                            <i class="fas fa-search" style="font-size: 24px; margin-bottom: 8px; display: block;"></i>
+                            <div>Start typing to search institutions...</div>
+                            <div style="font-size: 12px; margin-top: 4px;">If not found, click "Other" to add your institution</div>
+                        </div>
+                    `;
+                }
+                if (searchModalAdd) searchModalAdd.disabled = true;
+                selectedItem = null;
+                
+                // Focus search input
+                setTimeout(() => {
+                    if (searchInput) searchInput.focus();
+                }, 100);
+            }
+
+            function closeSearchModal() {
+                if (!searchModal) return;
+                
+                searchModal.classList.remove('show');
+                isModalOpen = false;
+                if (searchInput) searchInput.value = '';
+                if (searchResults) searchResults.innerHTML = '';
+                if (searchModalAdd) searchModalAdd.disabled = true;
+                selectedItem = null;
+            }
+
+            function filterInstitutions(query) {
+                if (!searchResults) return;
+                
+                searchResults.innerHTML = '';
+
+                if (query.length === 0) {
+                    if (searchModalAdd) searchModalAdd.disabled = true;
+                    return;
+                }
+
+                const filteredInstitutions = institutions.filter(institution => 
+                    institution.text.toLowerCase().includes(query) ||
+                    institution.value.toLowerCase().includes(query)
+                );
+
+                if (filteredInstitutions.length === 0) {
+                    // Show "Other" option when no results found
+                    const otherItem = document.createElement('div');
+                    otherItem.className = 'search-result-item custom-other';
+                    otherItem.innerHTML = `
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-plus-circle" style="color: #C15C2E;"></i>
+                            <div>
+                                <strong>Other</strong>
+                                <div style="font-size: 12px; color: #666; margin-top: 2px;">Click to add custom institution</div>
+                            </div>
+                        </div>
+                    `;
+                    otherItem.setAttribute('data-value', 'Other');
+                    
+                    otherItem.addEventListener('click', function() {
+                        selectSearchResult(this);
+                        // Automatically add the "Other" option
+                        setTimeout(() => {
+                            addSelectedInstitution();
+                        }, 100);
+                    });
+                    
+                    searchResults.appendChild(otherItem);
+                    selectSearchResult(otherItem);
+                    return;
+                }
+
+                filteredInstitutions.forEach(institution => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'search-result-item';
+                    resultItem.textContent = institution.text;
+                    resultItem.setAttribute('data-value', institution.value);
+                    
+                    resultItem.addEventListener('click', function() {
+                        selectSearchResult(this);
+                    });
+
+                    searchResults.appendChild(resultItem);
+                });
+
+                // Select first result by default
+                const firstResult = searchResults.querySelector('.search-result-item');
+                if (firstResult) {
+                    selectSearchResult(firstResult);
+                }
+            }
+
+            function selectSearchResult(resultItem) {
+                // Remove previous selection
+                searchResults.querySelectorAll('.search-result-item').forEach(item => {
+                    item.classList.remove('selected');
+                });
+
+                // Add selection to clicked item
+                resultItem.classList.add('selected');
+                selectedItem = {
+                    value: resultItem.getAttribute('data-value'),
+                    text: resultItem.textContent.trim(),
+                    element: resultItem
+                };
+
+                if (searchModalAdd) searchModalAdd.disabled = false;
+            }
+
+            function addSelectedInstitution() {
+                if (!selectedItem) return;
+
+                // Handle "Other" option
+                if (selectedItem.value === 'Other') {
+                    dropdownInput.value = 'Other';
+                    showOtherInstitutionField();
+                    // Clear the other input field so user can type their own institution
+                    if (otherInstitutionInput) {
+                        otherInstitutionInput.value = '';
+                        otherInstitutionInput.placeholder = 'Enter your institution name...';
+                    }
+                } else {
+                    // For regular institutions
+                    dropdownInput.value = selectedItem.text;
+                    
+                    // Update dropdown selection
+                    dropdownItems.forEach(item => {
+                        item.classList.remove('selected');
+                        if (item.getAttribute('data-value') === selectedItem.value) {
+                            item.classList.add('selected');
+                        }
+                    });
+
+                    hideOtherInstitutionField();
+                }
+
+                closeSearchModal();
+            }
+
+            function showOtherInstitutionField() {
+                if (otherInstitutionGroup) otherInstitutionGroup.style.display = 'block';
+                if (otherInstitutionInput) otherInstitutionInput.required = false;
+            }
+
+            function hideOtherInstitutionField() {
+                if (otherInstitutionGroup) otherInstitutionGroup.style.display = 'none';
+                if (otherInstitutionInput) {
+                    otherInstitutionInput.required = false;
+                    otherInstitutionInput.value = '';
+                }
+            }
+
+            function validateOtherInstitution() {
+                if (!otherInstitutionInput) return;
+                
+                const value = otherInstitutionInput.value.trim();
+                if (value.length > 0) {
+                    otherInstitutionInput.style.borderColor = '#C15C2E';
+                } else {
+                    otherInstitutionInput.style.borderColor = '#e5e5e5';
+                }
+            }
+
+            // Form validation integration
+            const originalCollectPersonData = collectPersonData;
+            collectPersonData = function() {
+                // Only validate institution field if it's not Corporate Partner ticket type
+                if (ticketType !== 'corporate-partner') {
+                    const institutionValue = dropdownInput.value.trim();
+                    const otherValue = otherInstitutionInput ? otherInstitutionInput.value.trim() : '';
+
+                    if (!institutionValue) {
+                        alert('Please select or search for an institution.');
+                        dropdownInput.focus();
+                        return false;
+                    }
+
+                    // Only validate "Other" field if it's currently visible and has content
+                    if (institutionValue === 'Other') {
+                        // Check if the other institution field is visible
+                        if (otherInstitutionGroup && otherInstitutionGroup.style.display !== 'none') {
+                            // Field is optional, no validation required
+                            // User can leave it empty if they want
+                        }
+                    }
+                }
+
+                // Call original function
+                return originalCollectPersonData();
+            };
+        }
+
+        // Billing Step Functions
+        function showBillingStep() {
+            const formContainer = document.querySelector('.form-container');
+            
+            // Remove current person form
+            const personForm = document.querySelector('.person-form');
+            if (personForm) {
+                personForm.remove();
+            }
+            
+            // Create billing form
+            const billingFormHTML = `
+                <div class="person-form">
+                    <h2 class="person-title">Billing Information</h2>
+                    <p class="billing-note">Your invoice will be generated on the next screen.</p>
+                    
+                    <div class="form-group">
+                        <label for="billingName" class="form-label">Name<span class="required">*</span></label>
+                        <input type="text" id="billingName" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="billingEmail" class="form-label">Email<span class="required">*</span></label>
+                        <input type="email" id="billingEmail" class="form-input" required>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button type="button" class="back-button billing-back">Back</button>
+                        <button type="button" class="next-button person-next">Complete Registration</button>
+                    </div>
+                </div>
+            `;
+            
+            formContainer.insertAdjacentHTML('beforeend', billingFormHTML);
+            
+            // Add event listener for the complete registration button
+            document.querySelector('.person-next').addEventListener('click', function(e) {
+                e.preventDefault();
+                submitBillingInfo();
+            });
+
+            // Add event listener for the back button
+            document.querySelector('.billing-back').addEventListener('click', function(e) {
+                e.preventDefault();
+                goBackFromBilling();
+            });
+            
+            // Focus on the first input
+            setTimeout(() => {
+                const billingName = document.getElementById('billingName');
+                if (billingName) billingName.focus();
+            }, 100);
+        }
+
+        function validateBillingInfo() {
+            const billingName = document.getElementById('billingName');
+            const billingEmail = document.getElementById('billingEmail');
+            
+            if (!billingName || !billingEmail) return false;
+            
+            const name = billingName.value.trim();
+            const email = billingEmail.value.trim();
+            
+            if (!name) {
+                alert('Please enter a billing name.');
+                billingName.focus();
+                return false;
+            }
+            
+            if (!email) {
+                alert('Please enter a billing email.');
+                billingEmail.focus();
+                return false;
+            }
+            
+            // Basic email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                billingEmail.focus();
+                return false;
+            }
+            
+            return true;
+        }
+
+        function submitBillingInfo() {
+            if (!validateBillingInfo()) return;
+            
+            // Get billing information
+            const billingName = document.getElementById('billingName').value.trim();
+            const billingEmail = document.getElementById('billingEmail').value.trim();
+            
+            // Store billing information globally
+            window.billingInfo = {
+                name: billingName,
+                email: billingEmail
+            };
+            
+            // Proceed with registration
+            completeRegistration();
+        }
+
+    </script>
+</body>
+</html>

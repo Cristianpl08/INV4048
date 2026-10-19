@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - AOC Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #212B36;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            max-width: 210px;
+            margin-bottom: 10px;
+        }
+
+        .header-text {
+            color: #003057;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .form-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .sidebar {
+            background: #003057;
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            height: fit-content;
+        }
+
+        .form-section h2 {
+            font-size: 28px;
+            font-weight: 500;
+            color: #212B36;
+            margin-bottom: 10px;
+        }
+
+        .form-section h3 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #212B36;
+            margin-bottom: 25px;
+        }
+
+        .note-section {
+            background: #F8FAFC;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #C86734;
+        }
+
+        .note-section p {
+            color: #637381;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .note-section strong {
+            color: #212B36;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #212B36;
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #DFE3E8;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #C86734;
+            box-shadow: 0 0 0 3px rgba(200, 103, 52, 0.1);
+        }
+
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .checkbox-item, .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .checkbox-item input, .radio-item input {
+            width: auto;
+        }
+
+        .checkbox-item label, .radio-item label {
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        .btn {
+            background: #C86734;
+            color: white;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 100px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #B55A2A;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(200, 103, 52, 0.3);
+        }
+
+        .benefits h2 {
+            color: white;
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .benefit-item {
+            margin-bottom: 25px;
+        }
+
+        .benefit-header {
+            background: white;
+            color: #003057;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .benefit-icon {
+            font-size: 18px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .benefit-item p {
+            color: white;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .partners {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .partners h3 {
+            margin-bottom: 30px;
+            color: #212B36;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .partner-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            align-items: center;
+        }
+
+        .partner-logo {
+            max-width: 150px;
+            height: auto;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .partner-logo:hover {
+            filter: grayscale(0%);
+        }
+
+        .required {
+            color: #C86734;
+        }
+
+        .optional {
+            color: #A3A5A9;
+            font-size: 12px;
+        }
+
+        .section-divider {
+            border-top: 1px solid #E7E9EC;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+
+            .form-section, .sidebar {
+                padding: 25px;
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 40px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            animation: slideIn 0.3s ease-out;
+        }
+
+        .modal-icon {
+            font-size: 60px;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .modal h2 {
+            color: #212B36;
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .modal p {
+            color: #637381;
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .modal-btn {
+            background: #C86734;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 100px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .modal-btn:hover {
+            background: #B55A2A;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(200, 103, 52, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .verify-btn {
+            background: #003057;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+        }
+
+        .verify-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .email-status {
+            margin-top: 8px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .email-status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .email-status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .email-status.loading {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://members.myaocconnect.com/wp-content/uploads/AOC-Connect-Logo-Horiz.svg" alt="AOC Connect" class="logo">
+            
+        </div>
+
+        <div class="main-content">
+            <div class="form-section">
+                
+                <h2>Register for your free membership</h2>
+                <h3>You're about to join the premier network of Academic Orthopedists.</h3>
+                
+                <div class="note-section">
+                    <p><strong>PLEASE NOTE:</strong> Residents and fellows are asked to utilize an email address that will not terminate following your training.</p>
+                </div>
+
+                <form action="https://n8ndev.coconutbreeze.app/webhook/1f6eef6d-8ed2-4158-85db-c73fe58160e6" method="post">
+                    <input type="hidden" name="Join Date" id="created_date">
+                    <h3>Basic Info</h3>
+                    
+                    <div class="form-group">
+                        <label for="signup_email">Email <span class="required">*</span></label>
+                        <input type="email" name="email" id="signup_email" required>
+                        <button type="button" id="verify-email-btn" class="verify-btn" style="display: none;">Verify Email</button>
+                        <div id="email-status" class="email-status" style="display: none;"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup_email_confirm">Confirm Email <span class="required">*</span></label>
+                        <input type="email" name="email_confirm" id="signup_email_confirm" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup_password">Password <span class="required">*</span></label>
+                        <input type="password" name="password" id="signup_password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup_password_confirm">Confirm Password <span class="required">*</span></label>
+                        <input type="password" name="password_confirm" id="signup_password_confirm" required>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <h3>Professional Info</h3>
+
+                    <div class="form-group">
+                        <label for="field_1">Name <span class="required">*</span></label>
+                        <input type="text" name="first_name" id="field_1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field_2">Last Name <span class="required">*</span></label>
+                        <input type="text" name="last_name" id="field_2" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field_3">User Name <span class="required">*</span></label>
+                        <input type="text" name="username" id="field_3" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field_9">Gender <span class="optional">(optional)</span></label>
+                        <select name="gender" id="field_9">
+                            <option value="">----</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                            <option value="Prefer Not to Answer">Prefer Not to Answer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field_5">Which University, Private Practice or Health System are you affiliated with? (i.e. Duke University, OrthoCarolina, or HCA)<span class="required">*</span></label>
+                        <select name="institution" id="field_5" required>
+                            <option value="">----</option>
+                            <option value="AdaptHealth">AdaptHealth</option>
+                            <option value="Adena Health">Adena Health</option>
+                            <option value="Advanced Center for Orthopedics and Plastic Surgery">Advanced Center for Orthopedics and Plastic Surgery</option>
+                            <option value="Advanced Orthopedic &amp; Sports Medicine Center">Advanced Orthopedic &amp; Sports Medicine Center</option>
+                            <option value="Albany Medical Center">Albany Medical Center</option>
+                            <option value="Albert Einstein College of Medicine">Albert Einstein College of Medicine</option>
+                            <option value="Allegheny Health Network">Allegheny Health Network</option>
+                            <option value="Allina Health">Allina Health</option>
+                            <option value="American Society of Orthopedic Professionals (ASOP)">American Society of Orthopedic Professionals (ASOP)</option>
+                            <option value="Anderson Clinic">Anderson Clinic</option>
+                            <option value="AOC">AOC</option>
+                            <option value="Arizona Maternity &amp; Women&#039;s Clinic">Arizona Maternity &amp; Women&#039;s Clinic</option>
+                            <option value="Arizona State University">Arizona State University</option>
+                            <option value="Ascension Providence">Ascension Providence</option>
+                            <option value="Atlantis Orthopedics">Atlantis Orthopedics</option>
+                            <option value="Atrium Health">Atrium Health</option>
+                            <option value="Atrium Health Wake Forest Baptist">Atrium Health Wake Forest Baptist</option>
+                            <option value="Augusta University">Augusta University</option>
+                            <option value="Baptist Health">Baptist Health</option>
+                            <option value="Baptist Health System">Baptist Health System</option>
+                            <option value="Barrington Orthopedic Specialists">Barrington Orthopedic Specialists</option>
+                            <option value="Bay Area Orthopaedic Specialists">Bay Area Orthopaedic Specialists</option>
+                            <option value="Baylor College of Medicine">Baylor College of Medicine</option>
+                            <option value="Baylor University">Baylor University</option>
+                            <option value="Beaumont Health">Beaumont Health</option>
+                            <option value="Beth Israel Deaconess Medical Center">Beth Israel Deaconess Medical Center</option>
+                            <option value="Biomechanics Lab, Sport Science Dpt, Democritus University of Thrace">Biomechanics Lab, Sport Science Dpt, Democritus University of Thrace</option>
+                            <option value="Bluegrass Orthopaedics">Bluegrass Orthopaedics</option>
+                            <option value="Boston Children&#039;s Hospital">Boston Children&#039;s Hospital</option>
+                            <option value="Boston University">Boston University</option>
+                            <option value="Breg">Breg</option>
+                            <option value="Bridger Orthopedic &amp; Sports Medicine">Bridger Orthopedic &amp; Sports Medicine</option>
+                            <option value="Brown University">Brown University</option>
+                            <option value="BSI Group">BSI Group</option>
+                            <option value="Buffalo State University">Buffalo State University</option>
+                            <option value="California Pacific Orthopaedics">California Pacific Orthopaedics</option>
+                            <option value="Carilion Clinic">Carilion Clinic</option>
+                            <option value="Cascade Orthopedics &amp; Sports Medicine Center">Cascade Orthopedics &amp; Sports Medicine Center</option>
+                            <option value="Catalyst Medical Group">Catalyst Medical Group</option>
+                            <option value="Cedars-Sinai Department of Orthopaedic Surgery">Cedars-Sinai Department of Orthopaedic Surgery</option>
+                            <option value="Center For Orthopaedics &amp; Spine, LLC">Center For Orthopaedics &amp; Spine, LLC</option>
+                            <option value="Centers for Advanced Orthopaedics">Centers for Advanced Orthopaedics</option>
+                            <option value="Central Maine Healthcare">Central Maine Healthcare</option>
+                            <option value="CHI Health Clinic">CHI Health Clinic</option>
+                            <option value="Children&#039;s Healthcare of Atlanta">Children&#039;s Healthcare of Atlanta</option>
+                            <option value="Children&#039;s Hospital of Philadelphia">Children&#039;s Hospital of Philadelphia</option>
+                            <option value="Children&#039;s Mercy Kansas City">Children&#039;s Mercy Kansas City</option>
+                            <option value="Children&#039;s National Hospital">Children&#039;s National Hospital</option>
+                            <option value="Children's of Alabama Pediatric Orthopedics">Children's of Alabama Pediatric Orthopedics</option>
+                            <option value="Children's Wisconsin">Children's Wisconsin</option>
+                            <option value="Christiana Care Health System">Christiana Care Health System</option>
+                            <option value="City Orthopaedics">City Orthopaedics</option>
+                            <option value="Cleveland Clinic">Cleveland Clinic</option>
+                            <option value="Cleveland Clinic Florida">Cleveland Clinic Florida</option>
+                            <option value="Colorado State">Colorado State</option>
+                            <option value="Colorado State University">Colorado State University</option>
+                            <option value="Colorado University">Colorado University</option>
+                            <option value="Columbia Orthopaedic Group">Columbia Orthopaedic Group</option>
+                            <option value="Columbia University">Columbia University</option>
+                            <option value="Complete Orthopedics">Complete Orthopedics</option>
+                            <option value="Concord Orthopaedics">Concord Orthopaedics</option>
+                            <option value="Concordia University Irvine">Concordia University Irvine</option>
+                            <option value="Cone Health">Cone Health</option>
+                            <option value="Confluence Athletic Therapy">Confluence Athletic Therapy</option>
+                            <option value="Connecticut Orthopedics">Connecticut Orthopedics</option>
+                            <option value="Cooper Medical School of Rowan University">Cooper Medical School of Rowan University</option>
+                            <option value="Cornell University">Cornell University</option>
+                            <option value="Crystal Clinic">Crystal Clinic</option>
+                            <option value="Dartmouth-Hitchcock Medical Center">Dartmouth-Hitchcock Medical Center</option>
+                            <option value="De Los Andes University">De Los Andes University</option>
+                            <option value="Delaware Orthopaedic Specialists">Delaware Orthopaedic Specialists</option>
+                            <option value="Des Moines Orthopaedic Surgeons">Des Moines Orthopaedic Surgeons</option>
+                            <option value="Detroit Medical Center">Detroit Medical Center</option>
+                            <option value="Drexel University">Drexel University</option>
+                            <option value="Dube Orthopedics">Dube Orthopedics</option>
+                            <option value="Duke University">Duke University</option>
+                            <option value="Duly Health Care">Duly Health Care</option>
+                            <option value="East Carolina University">East Carolina University</option>
+                            <option value="East Suffolk and North Essex NHS Foundation Trust">East Suffolk and North Essex NHS Foundation Trust</option>
+                            <option value="EmergeOrtho">EmergeOrtho</option>
+                            <option value="Emory">Emory</option>
+                            <option value="Emory University + Morehouse University">Emory University + Morehouse University</option>
+                            <option value="Empire Med Group, LLC">Empire Med Group, LLC</option>
+                            <option value="Epic">Epic</option>
+                            <option value="Eruptr">Eruptr</option>
+                            <option value="Essentia Health">Essentia Health</option>
+                            <option value="Excelsior Orthopaedics">Excelsior Orthopaedics</option>
+                            <option value="Fast Pace Health">Fast Pace Health</option>
+                            <option value="Flagstaff Bone &amp; Joint">Flagstaff Bone &amp; Joint</option>
+                            <option value="Flinders University">Flinders University</option>
+                            <option value="Flinders University, Biomedical Engineering">Flinders University, Biomedical Engineering</option>
+                            <option value="Florida International University">Florida International University</option>
+                            <option value="Florida Medical Clinic">Florida Medical Clinic</option>
+                            <option value="Florida Orthopaedic Institute">Florida Orthopaedic Institute</option>
+                            <option value="Florida State University">Florida State University</option>
+                            <option value="Fort Belvoir Community Hospital">Fort Belvoir Community Hospital</option>
+                            <option value="Fort Wayne Orthopedics">Fort Wayne Orthopedics</option>
+                            <option value="Forte Sports Medicine and Orthopedics">Forte Sports Medicine and Orthopedics</option>
+                            <option value="Fox Valley Orthopedics">Fox Valley Orthopedics</option>
+                            <option value="Geisinger Health System">Geisinger Health System</option>
+                            <option value="George Washington University">George Washington University</option>
+                            <option value="Georgetown University">Georgetown University</option>
+                            <option value="Georgia Southern University">Georgia Southern University</option>
+                            <option value="Ghent University">Ghent University</option>
+                            <option value="Harvard Combined Orthopaedic Residency Program">Harvard Combined Orthopaedic Residency Program</option>
+                            <option value="Harvard University/Boston Children&#039;s Hospital">Harvard University/Boston Children&#039;s Hospital</option>
+                            <option value="Harvard University/Brigham and Women&#039;s">Harvard University/Brigham and Women&#039;s</option>
+                            <option value="Harvard University/Massachusetts General Hospital">Harvard University/Massachusetts General Hospital</option>
+                            <option value="HCA Florida North Florida Hospital">HCA Florida North Florida Hospital</option>
+                            <option value="Henry Ford Health">Henry Ford Health</option>
+                            <option value="High Desert Medical College">High Desert Medical College</option>
+                            <option value="Hinsdale Orthopaedics">Hinsdale Orthopaedics</option>
+                            <option value="Hoag Orthopedics">Hoag Orthopedics</option>
+                            <option value="Hofstra University">Hofstra University</option>
+                            <option value="Holy Cross Orthopaedic Institute">Holy Cross Orthopaedic Institute</option>
+                            <option value="Hospital for Special Surgery">Hospital for Special Surgery</option>
+                            <option value="Houston Methodist">Houston Methodist</option>
+                            <option value="Howard University">Howard University</option>
+                            <option value="Huff Orthopaedics &amp; Sports Medicine">Huff Orthopaedics &amp; Sports Medicine</option>
+                            <option value="Illinois Bone &amp; Joint Institute">Illinois Bone &amp; Joint Institute</option>
+                            <option value="Illinois State University">Illinois State University</option>
+                            <option value="Indiana Hand to Shoulder Center">Indiana Hand to Shoulder Center</option>
+                            <option value="Indiana University Health">Indiana University Health</option>
+                            <option value="Inland Orthopaedic Surgery and Sports Medicine Clinic">Inland Orthopaedic Surgery and Sports Medicine Clinic</option>
+                            <option value="Inova Fairfax Medical Campus-Virginia Commonwealth University">Inova Fairfax Medical Campus-Virginia Commonwealth University</option>
+                            <option value="Intermountain Healthcare">Intermountain Healthcare</option>
+                            <option value="International Medical Center - Jeddah Saudi Arabia">International Medical Center - Jeddah Saudi Arabia</option>
+                            <option value="J3P Healthcare Solutions">J3P Healthcare Solutions</option>
+                            <option value="Jack Hughston Memorial Hospital">Jack Hughston Memorial Hospital</option>
+                            <option value="John Peter Smith Hospital">John Peter Smith Hospital</option>
+                            <option value="Johns Hopkins">Johns Hopkins</option>
+                            <option value="Joint Implant Surgeons">Joint Implant Surgeons</option>
+                            <option value="JPS Health Network">JPS Health Network</option>
+                            <option value="Kaiser Permanente">Kaiser Permanente</option>
+                            <option value="Kansas Orthopaedic Center">Kansas Orthopaedic Center</option>
+                            <option value="Knoxville Orthopaedic Clinic">Knoxville Orthopaedic Clinic</option>
+                            <option value="KU Leuven">KU Leuven</option>
+                            <option value="Kyiv Institute of Orthopaedics and Traumatology">Kyiv Institute of Orthopaedics and Traumatology</option>
+                            <option value="Lausanne University Hospital">Lausanne University Hospital</option>
+                            <option value="Lehigh University">Lehigh University</option>
+                            <option value="Lehigh Valley Health Network">Lehigh Valley Health Network</option>
+                            <option value="LifeBridge Health">LifeBridge Health</option>
+                            <option value="Lilienthal Hospital">Lilienthal Hospital</option>
+                            <option value="Loma Linda University">Loma Linda University</option>
+                            <option value="Los Angeles Orthopaedic Center">Los Angeles Orthopaedic Center</option>
+                            <option value="Louisiana Orthopedic Specialists">Louisiana Orthopedic Specialists</option>
+                            <option value="Loyola University Medical Center">Loyola University Medical Center</option>
+                            <option value="LSU Health">LSU Health</option>
+                            <option value="LSU Health Shreveport">LSU Health Shreveport</option>
+                            <option value="Lund University">Lund University</option>
+                            <option value="Madigan Army Medical Center">Madigan Army Medical Center</option>
+                            <option value="Maimonides Medical Center">Maimonides Medical Center</option>
+                            <option value="Maine Health Institute for Research">Maine Health Institute for Research</option>
+                            <option value="Management &amp; Science University">Management &amp; Science University</option>
+                            <option value="Mansfield Orthopaedics">Mansfield Orthopaedics</option>
+                            <option value="Marquette University">Marquette University</option>
+                            <option value="Marshall University">Marshall University</option>
+                            <option value="Mass General Brigham">Mass General Brigham</option>
+                            <option value="Maui Health">Maui Health</option>
+                            <option value="Mayo Clinic College of Medicine and Science (Rochester)">Mayo Clinic College of Medicine and Science (Rochester)</option>
+                            <option value="Mayo Clinic in Florida">Mayo Clinic in Florida</option>
+                            <option value="McGill University">McGill University</option>
+                            <option value="McLaren Health Care">McLaren Health Care</option>
+                            <option value="MD Anderson">MD Anderson</option>
+                            <option value="Medical College &amp; Teaching Hospital (India)">Medical College &amp; Teaching Hospital (India)</option>
+                            <option value="Medical College of Wisconsin">Medical College of Wisconsin</option>
+                            <option value="Medical University of South Carolina">Medical University of South Carolina</option>
+                            <option value="Mendelson Orthopedics">Mendelson Orthopedics</option>
+                            <option value="Methodist Health System">Methodist Health System</option>
+                            <option value="Methodist Sports Medicine Research &amp; Education Foundation">Methodist Sports Medicine Research &amp; Education Foundation</option>
+                            <option value="Michigan Orthopaedic Surgeons">Michigan Orthopaedic Surgeons</option>
+                            <option value="Michigan State University">Michigan State University</option>
+                            <option value="MidJersey Orthopaedics">MidJersey Orthopaedics</option>
+                            <option value="Monterey Spine &amp; Joint">Monterey Spine &amp; Joint</option>
+                            <option value="Mount Sinai Health System">Mount Sinai Health System</option>
+                            <option value="Mount Sinai Medical Center">Mount Sinai Medical Center</option>
+                            <option value="Mountain Valley Orthopedics">Mountain Valley Orthopedics</option>
+                            <option value="MultiCare Health System">MultiCare Health System</option>
+                            <option value="National Safety Council">National Safety Council</option>
+                            <option value="National Taiwan University">National Taiwan University</option>
+                            <option value="NEOMED">NEOMED</option>
+                            <option value="New England Orthopedic Surgeons">New England Orthopedic Surgeons</option>
+                            <option value="New York Presbyterian">New York Presbyterian</option>
+                            <option value="New York University">New York University</option>
+                            <option value="New York University Winthrop Hospital">New York University Winthrop Hospital</option>
+                            <option value="Newcastle University">Newcastle University</option>
+                            <option value="NorCal Pain Treatment Center">NorCal Pain Treatment Center</option>
+                            <option value="North Alabama Bone and Joint Clinic,">North Alabama Bone and Joint Clinic,</option>
+                            <option value="North Carolina A&amp;T University">North Carolina A&amp;T University</option>
+                            <option value="North Carolina Agricultural and Technical State University">North Carolina Agricultural and Technical State University</option>
+                            <option value="North Carolina State College of Veterinary Medicine">North Carolina State College of Veterinary Medicine</option>
+                            <option value="North Carolina State University">North Carolina State University</option>
+                            <option value="Northwell Health">Northwell Health</option>
+                            <option value="Northwest Orthopaedic Specialists">Northwest Orthopaedic Specialists</option>
+                            <option value="Northwestern University">Northwestern University</option>
+                            <option value="Nth Dimensions">Nth Dimensions</option>
+                            <option value="Oakland University William Beaumont School of Medicine">Oakland University William Beaumont School of Medicine</option>
+                            <option value="Ochsner Medical Center">Ochsner Medical Center</option>
+                            <option value="Ohio University">Ohio University</option>
+                            <option value="Oklahoma Sports &amp; Orthopaedic Institute">Oklahoma Sports &amp; Orthopaedic Institute</option>
+                            <option value="Oklahoma State University">Oklahoma State University</option>
+                            <option value="Olympia Orthopaedic Associates">Olympia Orthopaedic Associates</option>
+                            <option value="Optim Orthopedics">Optim Orthopedics</option>
+                            <option value="Oregon Health &amp; Science University">Oregon Health &amp; Science University</option>
+                            <option value="Orlando Health">Orlando Health</option>
+                            <option value="Ortho Illinois">Ortho Illinois</option>
+                            <option value="Ortho Plus">Ortho Plus</option>
+                            <option value="Ortho Rhode Island">Ortho Rhode Island</option>
+                            <option value="OrthoAlaska">OrthoAlaska</option>
+                            <option value="OrthoAlliance">OrthoAlliance</option>
+                            <option value="OrthoArizona">OrthoArizona</option>
+                            <option value="OrthoCarolina">OrthoCarolina</option>
+                            <option value="OrthoCincy">OrthoCincy</option>
+                            <option value="OrthoEast">OrthoEast</option>
+                            <option value="OrthoKinetic Track">OrthoKinetic Track</option>
+                            <option value="OrthoNY">OrthoNY</option>
+                            <option value="Orthopaedic &amp; Spine Center of the Rockies">Orthopaedic &amp; Spine Center of the Rockies</option>
+                            <option value="Orthopaedic and Neurosurgery Specialists">Orthopaedic and Neurosurgery Specialists</option>
+                            <option value="Orthopaedic Associates">Orthopaedic Associates</option>
+                            <option value="Orthopaedic Associates of Wisconsin">Orthopaedic Associates of Wisconsin</option>
+                            <option value="Orthopaedic Foot &amp; Ankle Center">Orthopaedic Foot &amp; Ankle Center</option>
+                            <option value="Orthopaedics East &amp; Sports Medicine Center">Orthopaedics East &amp; Sports Medicine Center</option>
+                            <option value="Orthopedic Associates">Orthopedic Associates</option>
+                            <option value="Orthopedic Associates of Dallas">Orthopedic Associates of Dallas</option>
+                            <option value="Orthopedic Associates of Lancaster">Orthopedic Associates of Lancaster</option>
+                            <option value="Orthopedic Centers of Colorado - Cornerstone Orthopedics &amp; Sports Medicine">Orthopedic Centers of Colorado - Cornerstone Orthopedics &amp; Sports Medicine</option>
+                            <option value="OrthoSC">OrthoSC</option>
+                            <option value="OrthoSouth">OrthoSouth</option>
+                            <option value="OrthoVirginia">OrthoVirginia</option>
+                            <option value="Other">Other</option>
+                            <option value="Paley Orthopedic &amp; Spine Institute">Paley Orthopedic &amp; Spine Institute</option>
+                            <option value="Panorama Orthopedics &amp; Spine Center">Panorama Orthopedics &amp; Spine Center</option>
+                            <option value="Partners HealthCare">Partners HealthCare</option>
+                            <option value="Peachtree Orthopedics">Peachtree Orthopedics</option>
+                            <option value="Peninsula Orthopaedic Associates">Peninsula Orthopaedic Associates</option>
+                            <option value="Penn Highlands Healthcare">Penn Highlands Healthcare</option>
+                            <option value="Penn State University">Penn State University</option>
+                            <option value="Philadelphia College of Osteopathic Medicine">Philadelphia College of Osteopathic Medicine</option>
+                            <option value="Pinnacle Orthopaedics">Pinnacle Orthopaedics</option>
+                            <option value="Precision Orthopedics &amp; Sports Medicine">Precision Orthopedics &amp; Sports Medicine</option>
+                            <option value="Premier Orthopaedics">Premier Orthopaedics</option>
+                            <option value="Princeton Orthopaedic Associates">Princeton Orthopaedic Associates</option>
+                            <option value="Profound Leadership, LLC">Profound Leadership, LLC</option>
+                            <option value="Proliance Surgeons">Proliance Surgeons</option>
+                            <option value="PROMIS Health Organization">PROMIS Health Organization</option>
+                            <option value="Purdue University">Purdue University</option>
+                            <option value="Quil Health">Quil Health</option>
+                            <option value="Radboud University Medical Center">Radboud University Medical Center</option>
+                            <option value="Raleigh Orthopaedic Clinic">Raleigh Orthopaedic Clinic</option>
+                            <option value="Restore Motion">Restore Motion</option>
+                            <option value="Resurgens">Resurgens</option>
+                            <option value="Riverside Health System">Riverside Health System</option>
+                            <option value="Romano Orthopaedic Center">Romano Orthopaedic Center</option>
+                            <option value="Rothman Orthopaedic Institute">Rothman Orthopaedic Institute</option>
+                            <option value="Rowan University School of Osteopathic Medicine">Rowan University School of Osteopathic Medicine</option>
+                            <option value="Royal College of Surgeons - Ireland">Royal College of Surgeons - Ireland</option>
+                            <option value="Royal Veterinary College, University of London">Royal Veterinary College, University of London</option>
+                            <option value="Rush University">Rush University</option>
+                            <option value="Rutgers University">Rutgers University</option>
+                            <option value="Saitama Prefectural University - Japan">Saitama Prefectural University - Japan</option>
+                            <option value="Samaritan Health Services">Samaritan Health Services</option>
+                            <option value="Sanford Health">Sanford Health</option>
+                            <option value="Sano Orthopedics">Sano Orthopedics</option>
+                            <option value="Santa Barbara Associates">Santa Barbara Associates</option>
+                            <option value="Shoreline Orthopaedics">Shoreline Orthopaedics</option>
+                            <option value="Shriners Childrens Hospitals">Shriners Childrens Hospitals</option>
+                            <option value="Sierra Pacific Orthopedics">Sierra Pacific Orthopedics</option>
+                            <option value="Sourav Mandal">Sourav Mandal</option>
+                            <option value="South Hills Orthopaedic Surgery Associates">South Hills Orthopaedic Surgery Associates</option>
+                            <option value="Southern Illinois University">Southern Illinois University</option>
+                            <option value="Spartan Orthopaedics &amp; Sports Medicine">Spartan Orthopaedics &amp; Sports Medicine</option>
+                            <option value="Sports Medicine Institute">Sports Medicine Institute</option>
+                            <option value="Sports Medicine North">Sports Medicine North</option>
+                            <option value="St. Lukes University Health Network">St. Lukes University Health Network</option>
+                            <option value="St. Luke&#039;s Boise Medical Center">St. Luke&#039;s Boise Medical Center</option>
+                            <option value="St. Tammany Health System">St. Tammany Health System</option>
+                            <option value="Stanford University">Stanford University</option>
+                            <option value="Steadman Philippon Research Institute">Steadman Philippon Research Institute</option>
+                            <option value="Stony Brook University">Stony Brook University</option>
+                            <option value="Summa Health System">Summa Health System</option>
+                            <option value="Swift Institute">Swift Institute</option>
+                            <option value="Syracuse University">Syracuse University</option>
+                            <option value="Tallaght University Hospital">Tallaght University Hospital</option>
+                            <option value="Tanner Clinic">Tanner Clinic</option>
+                            <option value="Taos Orthopaedic Institute">Taos Orthopaedic Institute</option>
+                            <option value="Technion - Israel Institute of Technology">Technion - Israel Institute of Technology</option>
+                            <option value="Tehran University of Medical Sciences">Tehran University of Medical Sciences</option>
+                            <option value="Temple University">Temple University</option>
+                            <option value="Tennessee Orthopaedic Alliance">Tennessee Orthopaedic Alliance</option>
+                            <option value="Texas Health Resources">Texas Health Resources</option>
+                            <option value="Texas Orthopaedic Associates">Texas Orthopaedic Associates</option>
+                            <option value="Texas Orthopedics">Texas Orthopedics</option>
+                            <option value="Texas Tech University">Texas Tech University</option>
+                            <option value="Texas Tech University-El Paso">Texas Tech University-El Paso</option>
+                            <option value="The Hand Center">The Hand Center</option>
+                            <option value="The Ohio State University">The Ohio State University</option>
+                            <option value="The Orthopaedic Group P.C.">The Orthopaedic Group P.C.</option>
+                            <option value="The University of British Columbia">The University of British Columbia</option>
+                            <option value="ThinkSurgical">ThinkSurgical</option>
+                            <option value="Thomas Jefferson University">Thomas Jefferson University</option>
+                            <option value="Thumbay Hospital">Thumbay Hospital</option>
+                            <option value="Toronto Rehabilitation Institute - KITE University Health Network">Toronto Rehabilitation Institute - KITE University Health Network</option>
+                            <option value="Town Center Orthopedics">Town Center Orthopedics</option>
+                            <option value="Tri-City Orthopaedic Clinic, P.S.C.">Tri-City Orthopaedic Clinic, P.S.C.</option>
+                            <option value="Tufts University School of Medicine">Tufts University School of Medicine</option>
+                            <option value="Tulane University">Tulane University</option>
+                            <option value="Uniformed Services University of Health Sciences">Uniformed Services University of Health Sciences</option>
+                            <option value="University Clinic of Orthopedics and Traumatology Innsbruck">University Clinic of Orthopedics and Traumatology Innsbruck</option>
+                            <option value="University College Dublin">University College Dublin</option>
+                            <option value="University Health">University Health</option>
+                            <option value="University Hospitals Case Medical Center">University Hospitals Case Medical Center</option>
+                            <option value="University of Alabama Medical Center Program Birmingham">University of Alabama Medical Center Program Birmingham</option>
+                            <option value="University of Arizona">University of Arizona</option>
+                            <option value="University of Arizona College of Medicine Phoenix Program">University of Arizona College of Medicine Phoenix Program</option>
+                            <option value="University of Arkansas">University of Arkansas</option>
+                            <option value="University of Basel">University of Basel</option>
+                            <option value="University of British Columbia">University of British Columbia</option>
+                            <option value="University of Calgary">University of Calgary</option>
+                            <option value="University of California - Santa Barbara">University of California - Santa Barbara</option>
+                            <option value="University of California Davis">University of California Davis</option>
+                            <option value="University of California Irvine">University of California Irvine</option>
+                            <option value="University of California Los Angeles">University of California Los Angeles</option>
+                            <option value="University of California San Diego">University of California San Diego</option>
+                            <option value="University of California San Francisco">University of California San Francisco</option>
+                            <option value="University of California San Francisco Fresno">University of California San Francisco Fresno</option>
+                            <option value="University of California, Santa Barbara">University of California, Santa Barbara</option>
+                            <option value="University of Central Florida">University of Central Florida</option>
+                            <option value="University of Central Oklahoma">University of Central Oklahoma</option>
+                            <option value="University of Chicago">University of Chicago</option>
+                            <option value="University of Cincinnati">University of Cincinnati</option>
+                            <option value="University of Cincinnati Children&#039;s Hospital Medical Center">University of Cincinnati Children&#039;s Hospital Medical Center</option>
+                            <option value="University of Colorado">University of Colorado</option>
+                            <option value="University of Connecticut">University of Connecticut</option>
+                            <option value="University of Delaware">University of Delaware</option>
+                            <option value="University of Eastern Finland">University of Eastern Finland</option>
+                            <option value="University of Florida Gainesville">University of Florida Gainesville</option>
+                            <option value="University of Florida Jacksonville">University of Florida Jacksonville</option>
+                            <option value="University of Hawaii">University of Hawaii</option>
+                            <option value="University of Illinois - Urbana-Champaign">University of Illinois - Urbana-Champaign</option>
+                            <option value="University of Illinois at Chicago">University of Illinois at Chicago</option>
+                            <option value="University of Iowa">University of Iowa</option>
+                            <option value="University of Kansas Health System">University of Kansas Health System</option>
+                            <option value="University of Kentucky">University of Kentucky</option>
+                            <option value="University of Louisville">University of Louisville</option>
+                            <option value="University of Maryland">University of Maryland</option>
+                            <option value="University of Maryland and Johns Hopkins">University of Maryland and Johns Hopkins</option>
+                            <option value="University of Massachusetts">University of Massachusetts</option>
+                            <option value="University of Miami">University of Miami</option>
+                            <option value="University of Michigan">University of Michigan</option>
+                            <option value="University of Minnesota">University of Minnesota</option>
+                            <option value="University of Mississippi">University of Mississippi</option>
+                            <option value="University of Missouri">University of Missouri</option>
+                            <option value="University of Missouri Kansas City">University of Missouri Kansas City</option>
+                            <option value="University of Missouri System">University of Missouri System</option>
+                            <option value="University of Nebraska">University of Nebraska</option>
+                            <option value="University of Nevada - Las Vegas">University of Nevada - Las Vegas</option>
+                            <option value="University of Nevada - Reno">University of Nevada - Reno</option>
+                            <option value="University of North Carolina - Chapel Hill">University of North Carolina - Chapel Hill</option>
+                            <option value="University of North Dakota">University of North Dakota</option>
+                            <option value="University of Notre Dame">University of Notre Dame</option>
+                            <option value="University of Ottawa">University of Ottawa</option>
+                            <option value="University of Oxford">University of Oxford</option>
+                            <option value="University of Pennsylvania">University of Pennsylvania</option>
+                            <option value="University of Pittsburgh">University of Pittsburgh</option>
+                            <option value="University of Regensburg">University of Regensburg</option>
+                            <option value="University of Rochester">University of Rochester</option>
+                            <option value="University of Rome Foro Italico">University of Rome Foro Italico</option>
+                            <option value="University of South Carolina">University of South Carolina</option>
+                            <option value="University of South Florida">University of South Florida</option>
+                            <option value="University of Southern California">University of Southern California</option>
+                            <option value="University of Tennessee">University of Tennessee</option>
+                            <option value="University of Texas Austin">University of Texas Austin</option>
+                            <option value="University of Texas Health Science Center at San Antonio (UTHSCSA)">University of Texas Health Science Center at San Antonio (UTHSCSA)</option>
+                            <option value="University of Texas McGovern Medical School">University of Texas McGovern Medical School</option>
+                            <option value="University of Texas Medical Branch">University of Texas Medical Branch</option>
+                            <option value="University of Texas Southwestern Medical Center">University of Texas Southwestern Medical Center</option>
+                            <option value="University of Toronto">University of Toronto</option>
+                            <option value="University of Ulm">University of Ulm</option>
+                            <option value="University of Utah">University of Utah</option>
+                            <option value="University of Vermont">University of Vermont</option>
+                            <option value="University of Virginia">University of Virginia</option>
+                            <option value="University of Washington">University of Washington</option>
+                            <option value="University of Wisconsin">University of Wisconsin</option>
+                            <option value="University Orthopedics">University Orthopedics</option>
+                            <option value="UPMC - Hamot">UPMC - Hamot</option>
+                            <option value="Upstate Medical University">Upstate Medical University</option>
+                            <option value="UT Health San Antonio">UT Health San Antonio</option>
+                            <option value="UT Health Science Center at Houston - McGovern Medical School">UT Health Science Center at Houston - McGovern Medical School</option>
+                            <option value="UTHealth Houston">UTHealth Houston</option>
+                            <option value="VA Medical Center">VA Medical Center</option>
+                            <option value="Vail-Summit Orthopaedics &amp; Neurosurgery">Vail-Summit Orthopaedics &amp; Neurosurgery</option>
+                            <option value="Vanderbilt University">Vanderbilt University</option>
+                            <option value="VCU Health">VCU Health</option>
+                            <option value="Virginia Commonwealth University">Virginia Commonwealth University</option>
+                            <option value="Virginia Tech">Virginia Tech</option>
+                            <option value="Vori Health">Vori Health</option>
+                            <option value="Wake Forest University School of Medicine, Atrium Health Wake Forest Baptist">Wake Forest University School of Medicine, Atrium Health Wake Forest Baptist</option>
+                            <option value="Washington University">Washington University</option>
+                            <option value="Wayne State University">Wayne State University</option>
+                            <option value="Wellspan">Wellspan</option>
+                            <option value="Wellstar Health System">Wellstar Health System</option>
+                            <option value="Wentworth-Douglass Medical Center">Wentworth-Douglass Medical Center</option>
+                            <option value="West Virginia University">West Virginia University</option>
+                            <option value="Westchester Medical Center Health Network">Westchester Medical Center Health Network</option>
+                            <option value="Western Michigan University">Western Michigan University</option>
+                            <option value="Western Orthopaedics">Western Orthopaedics</option>
+                            <option value="Western University">Western University</option>
+                            <option value="White Fences Surgical">White Fences Surgical</option>
+                            <option value="Yale University">Yale University</option>
+                            <option value="Zimmer Biomet">Zimmer Biomet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field_51">Which position type best describes your primary job title? <span class="required">*</span></label>
+                        <select name="primary_position" id="field_51" required>
+                            <option value="">----</option>
+                            <option value="Orthopaedic Surgeon - Residency Program Director">Orthopaedic Surgeon - Residency Program Director</option>
+                            <option value="Athletic Trainer">Athletic Trainer</option>
+                            <option value="DME Coordinator/Manager">DME Coordinator/Manager</option>
+                            <option value="Chief Administrative Officer">Chief Administrative Officer</option>
+                            <option value="Clinical Operations Manager">Clinical Operations Manager</option>
+                            <option value="Clinical Ops Team">Clinical Ops Team</option>
+                            <option value="General Admin Team">General Admin Team</option>
+                            <option value="Hospital Service Line Manager">Hospital Service Line Manager</option>
+                            <option value="HR Manager">HR Manager</option>
+                            <option value="Marketing Manager/Officer">Marketing Manager/Officer</option>
+                            <option value="Orthopaedic Research – Research Director">Orthopaedic Research – Research Director</option>
+                            <option value="Orthopaedic Research - Research Manager/Coordinator">Orthopaedic Research - Research Manager/Coordinator</option>
+                            <option value="Orthopaedic Research – Trainee (Postdoc/Fellow)">Orthopaedic Research – Trainee (Postdoc/Fellow)</option>
+                            <option value="Orthopaedic Research – Trainee (Student)">Orthopaedic Research – Trainee (Student)</option>
+                            <option value="Orthopaedic Research - Vice Chair">Orthopaedic Research - Vice Chair</option>
+                            <option value="Orthopaedic Research - Faculty">Orthopaedic Research - Faculty</option>
+                            <option value="Orthopaedic Surgeon - Chair">Orthopaedic Surgeon - Chair</option>
+                            <option value="Orthopaedic Surgeon - Chief">Orthopaedic Surgeon - Chief</option>
+                            <option value="Orthopaedic Surgeon - Faculty">Orthopaedic Surgeon - Faculty</option>
+                            <option value="Orthopaedic Surgeon - Resident/Fellow">Orthopaedic Surgeon - Resident/Fellow</option>
+                            <option value="Orthopaedic Surgeon - Vice Chair">Orthopaedic Surgeon - Vice Chair</option>
+                            <option value="Physiatrist/PM&amp;R">Physiatrist/PM&amp;R</option>
+                            <option value="Physician Assistant/Nurse Practitioner">Physician Assistant/Nurse Practitioner</option>
+                            <option value="Procurement/Supply Chain Manager">Procurement/Supply Chain Manager</option>
+                            <option value="Resident/Fellowship Program Coordinator">Resident/Fellowship Program Coordinator</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field_14065">If you have a secondary role, please identify that as well (ie "Orthopaedic Research- Vice Chair" or "Orthopaedic Surgeon- Residency Program Director"). <span class="optional">(optional)</span></label>
+                        <select name="secondary_position" id="field_14065">
+                            <option value="">----</option>
+                            <option value="N/A" selected>N/A</option>
+                            <option value="AOC Approved Corporate Partners">AOC Approved Corporate Partners</option>
+                            <option value="Athletic Trainer">Athletic Trainer</option>
+                            <option value="Chief Administrative Officer and CAO Emeritus">Chief Administrative Officer and CAO Emeritus</option>
+                            <option value="Clinical Operations Manager">Clinical Operations Manager</option>
+                            <option value="Clinical Ops Team">Clinical Ops Team</option>
+                            <option value="DME Coordinator/Manager">DME Coordinator/Manager</option>
+                            <option value="General Admin Team">General Admin Team</option>
+                            <option value="Hospital Service Line Manager">Hospital Service Line Manager</option>
+                            <option value="HR Manager">HR Manager</option>
+                            <option value="Internal Admin">Internal Admin</option>
+                            <option value="Marketing Manager/Officer">Marketing Manager/Officer</option>
+                            <option value="Orthopaedic Research – Faculty">Orthopaedic Research – Faculty</option>
+                            <option value="Orthopaedic Research – Research Director">Orthopaedic Research – Research Director</option>
+                            <option value="Orthopaedic Research – Research Manager/Coordinator">Orthopaedic Research – Research Manager/Coordinator</option>
+                            <option value="Orthopaedic Research – Trainee (Postdoc/Fellow)">Orthopaedic Research – Trainee (Postdoc/Fellow)</option>
+                            <option value="Orthopaedic Research – Trainee (Student)">Orthopaedic Research – Trainee (Student)</option>
+                            <option value="Orthopaedic Research – Vice Chair">Orthopaedic Research – Vice Chair</option>
+                            <option value="Orthopaedic Surgeon – Chair">Orthopaedic Surgeon – Chair</option>
+                            <option value="Orthopaedic Surgeon – Chief">Orthopaedic Surgeon – Chief</option>
+                            <option value="Orthopaedic Surgeon – Faculty">Orthopaedic Surgeon – Faculty</option>
+                            <option value="Orthopaedic Surgeon – Residency Program Director">Orthopaedic Surgeon – Residency Program Director</option>
+                            <option value="Orthopaedic Surgeon – Resident/Fellow">Orthopaedic Surgeon – Resident/Fellow</option>
+                            <option value="Orthopaedic Surgeon – Vice Chair">Orthopaedic Surgeon – Vice Chair</option>
+                            <option value="Physiatrist/PM&amp;R">Physiatrist/PM&amp;R</option>
+                            <option value="Physician Assistant/Nurse Practitioner">Physician Assistant/Nurse Practitioner</option>
+                            <option value="Procurement/Supply Chain Manager">Procurement/Supply Chain Manager</option>
+                            <option value="Resident/Fellowship Program Coordinator">Resident/Fellowship Program Coordinator</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field_8860">Where do you currently live? (City / State / Country) <span class="required">*</span></label>
+                        <input type="text" name="location" id="field_8860" placeholder="Enter your location" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field_12">Type of practice <span class="required">*</span></label>
+                        <select name="practice_type" id="field_12" required>
+                            <option value="">----</option>
+                            <option value="Academic">Academic</option>
+                            <option value="Hybrid (Academic/Private)">Hybrid (Academic/Private)</option>
+                            <option value="Private">Private</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field_11">Name of practice <span class="optional">(optional)</span></label>
+                        <input type="text" name="practice_name" id="field_11" placeholder="Enter practice name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="field_10">Which EMR does your practice use? <span class="required">*</span></label>
+                        <select name="emr_system" id="field_10" required>
+                            <option value="">----</option>
+                            <option value="Epic">Epic</option>
+                            <option value="Cerner">Cerner</option>
+                            <option value="N/A">N/A</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are you interested in being considered for paid opportunities? <span class="required">*</span></label>
+                        <div class="note-section" style="margin-bottom: 15px;">
+                            <p style="margin: 0; font-size: 14px; color: #637381;">
+                                The AOC has been asked to organize 'matchmaking' between industry and our elite academic orthopedic community for research, projects, panels, and more. Target pay rates: $500/hour for assistant professors of ortho surgery, $750/hour for associate professors of ortho surgery, and $1,000/hour for professors of ortho surgery. Rates for other position types will vary by years of experience.
+                            </p>
+                        </div>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" name="paid_opportunities" id="paid_yes" value="Yes">
+                                <label for="paid_yes">Yes</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" name="paid_opportunities" id="paid_no" value="No" checked>
+                                <label for="paid_no">No</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>I agree to the Platform's General Terms of Service and Privacy Policy. <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" name="terms_accepted" id="legal_agreement" value="1" required>
+                                <label for="legal_agreement">I agree to the terms and conditions</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn" id="submit-btn" disabled>Create Account</button>
+                </form>
+            </div>
+
+            <div class="sidebar">
+                <div class="benefits">
+                    <h2>Benefits of Membership</h2>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <i class="fas fa-network-wired benefit-icon"></i>
+                            Network
+                        </div>
+                        <p>Make valuable connections with other chairs, administrators, and residents/fellows.</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <i class="fas fa-graduation-cap benefit-icon"></i>
+                            Continuing Education
+                        </div>
+                        <p>Tap into a deep trove of proven best practices for leadership, business, and career development.</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <i class="fas fa-users benefit-icon"></i>
+                            Access
+                        </div>
+                        <p>Engage at the highest level with academic orthopaedic thought leaders in our acclaimed meetings, webinars, and forums.</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <i class="fas fa-chart-line benefit-icon"></i>
+                            Grow
+                        </div>
+                        <p>Personally, professionally, organizationally — AOC Connect exists to foster constant improvement in the academic orthopaedic space.</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-header">
+                            <i class="fas fa-dollar-sign benefit-icon"></i>
+                            Earn Money
+                        </div>
+                        <p>Orthopaedic Surgeons can opt-in to participate in paid research projects, expert panels/focus groups, and more. Pay rates range from $500/hr –$1,000/hr.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners">
+            <h3>AOC Connect is proud to partner with these innovative companies</h3>
+            <div class="partner-grid">
+                <a href="https://www.breg.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://members.myaocconnect.com/wp-content/uploads/aoc-breg-1.jpg" alt="Breg" class="partner-logo">
+                </a>
+                <a href="https://www.pacira.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://members.myaocconnect.com/wp-content/uploads/aoc-sponsors-pacira-larger-3.jpg" alt="Pacira" class="partner-logo">
+                </a>
+                <a href="https://www.unlockhealthnow.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://members.myaocconnect.com/wp-content/uploads/AOC-unlock.jpg" alt="Unlock Health" class="partner-logo">
+                </a>
+                <a href="https://thenext.jnjmedtech.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://members.myaocconnect.com/wp-content/uploads/aoc-johnson-and-johnson.jpg" alt="Johnson & Johnson" class="partner-logo">
+                </a>
+                <a href="https://socialclimb.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://members.myaocconnect.com/wp-content/uploads/aoc-socialclimb-1.jpg" alt="SocialClimb" class="partner-logo">
+                </a>
+                <a href="https://thinksurgical.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://members.myaocconnect.com/wp-content/uploads/aoc-Think-Surgical-e1681742874587.jpg" alt="Think Surgical" class="partner-logo">
+                </a>
+                <a href="https://www.medacta.us.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://members.myaocconnect.com/wp-content/uploads/medacta-aoc-300x89.png" alt="Medacta International" class="partner-logo">
+                </a>
+                <a href="https://www.precisionostech.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://members.myaocconnect.com/wp-content/uploads/precision-os-logo-2048x325-1-300x48.png" alt="precision os" class="partner-logo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Registration Successful!</h2>
+            <p>Your account has been created successfully. You will receive a confirmation email shortly.</p>
+            <button class="modal-btn" onclick="closeModal()">Continue</button>
+        </div>
+    </div>
+
+    <script>
+        function checkRequiredFields() {
+            const requiredFields = [
+                'signup_email',
+                'signup_email_confirm',
+                'signup_password',
+                'signup_password_confirm',
+                'field_1',
+                'field_2',
+                'field_3',
+                'field_5',
+                'field_51',
+                'field_8860',
+                'field_12',
+                'field_10'
+            ];
+
+            for (let fieldId of requiredFields) {
+                const field = document.getElementById(fieldId);
+                if (!field || !field.value.trim()) {
+                    return false;
+                }
+            }
+
+            const paidOpportunities = document.querySelector('input[name="paid_opportunities"]:checked');
+            if (!paidOpportunities) {
+                return false;
+            }
+
+            return true;
+        }
+
+        function checkTermsAccepted() {
+            const termsCheckbox = document.getElementById('legal_agreement');
+            return termsCheckbox && termsCheckbox.checked;
+        }
+
+        function updateSubmitButton() {
+            const submitBtn = document.getElementById('submit-btn');
+            const requiredFieldsComplete = checkRequiredFields();
+            const termsAccepted = checkTermsAccepted();
+
+            if (requiredFieldsComplete && termsAccepted) {
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = '1';
+                submitBtn.style.cursor = 'pointer';
+            } else {
+                submitBtn.disabled = true;
+                submitBtn.style.opacity = '0.6';
+                submitBtn.style.cursor = 'not-allowed';
+            }
+        }
+
+        function checkEmailExists(email) {
+            if (!email || email.trim() === '') {
+                return;
+            }
+
+            const statusDiv = document.getElementById('email-status');
+            const verifyBtn = document.getElementById('verify-email-btn');
+            
+            // Mostrar estado de carga
+            statusDiv.style.display = 'block';
+            statusDiv.className = 'email-status loading';
+            statusDiv.textContent = 'Verifying email...';
+            verifyBtn.disabled = true;
+            verifyBtn.textContent = 'Verifying...';
+
+            const formData = new FormData();
+            formData.append('email', email);
+
+            fetch('https://n8ndev.coconutbreeze.app/webhook/fe029b8e-ea17-4e01-ad4a-bc0570297c50', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                // Si la respuesta está vacía, significa que el email está disponible
+                if (response.status === 204 || response.status === 200) {
+                    const contentType = response.headers.get('content-type');
+                    if (!contentType || contentType.includes('application/json')) {
+                        return response.text().then(text => {
+                            if (!text || text.trim() === '') {
+                                // Respuesta vacía - email disponible
+                                return null;
+                            }
+                            try {
+                                return JSON.parse(text);
+                            } catch {
+                                return null;
+                            }
+                        });
+                    }
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Email check response:', data);
+                
+                // Si data es null o vacío, el email está disponible
+                if (!data || Object.keys(data).length === 0) {
+                    statusDiv.className = 'email-status success';
+                    statusDiv.textContent = 'Email is available for registration.';
+                } else if (data && data['Email Address'] && data['Email Address'].toLowerCase() === email.toLowerCase()) {
+                    statusDiv.className = 'email-status error';
+                    statusDiv.textContent = 'This email is already registered. Please use a different email address.';
+                    document.getElementById('signup_email').value = '';
+                    document.getElementById('signup_email').focus();
+                } else {
+                    statusDiv.className = 'email-status success';
+                    statusDiv.textContent = 'Email is available for registration.';
+                }
+                
+                verifyBtn.disabled = false;
+                verifyBtn.textContent = 'Verify Email';
+            })
+            .catch(error => {
+                console.error('Error checking email:', error);
+                statusDiv.className = 'email-status error';
+                statusDiv.textContent = 'Error verifying email. Please try again.';
+                verifyBtn.disabled = false;
+                verifyBtn.textContent = 'Verify Email';
+            });
+        }
+
+        function showSuccessModal() {
+            const modal = document.getElementById('successModal');
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('successModal');
+            modal.style.display = 'none';
+        }
+
+        function clearForm() {
+            const form = document.querySelector('form');
+            form.reset();
+            
+            const submitBtn = document.getElementById('submit-btn');
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.6';
+            submitBtn.style.cursor = 'not-allowed';
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            fetch('https://n8ndev.coconutbreeze.app/webhook/1f6eef6d-8ed2-4158-85db-c73fe58160e6', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    showSuccessModal();
+                    
+                    clearForm();
+                } else {
+                    alert('Error al enviar el formulario. Por favor, intenta nuevamente.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error al enviar el formulario. Por favor, intenta nuevamente.');
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Establecer la fecha actual en formato MM/DD/YYYY para compatibilidad con Join Date
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+            const currentDate = `${month}/${day}/${year}`;
+            
+            document.getElementById('created_date').value = currentDate;
+            
+            const requiredFields = [
+                'signup_email',
+                'signup_email_confirm',
+                'signup_password',
+                'signup_password_confirm',
+                'field_1',
+                'field_2',
+                'field_3',
+                'field_5',
+                'field_51',
+                'field_8860',
+                'field_12',
+                'field_10'
+            ];
+
+            requiredFields.forEach(fieldId => {
+                const field = document.getElementById(fieldId);
+                if (field) {
+                    field.addEventListener('input', updateSubmitButton);
+                    field.addEventListener('change', updateSubmitButton);
+                }
+            });
+
+            // Add email existence check for the email field
+            const emailField = document.getElementById('signup_email');
+            const verifyBtn = document.getElementById('verify-email-btn');
+            const statusDiv = document.getElementById('email-status');
+            
+            if (emailField) {
+                emailField.addEventListener('input', function() {
+                    const email = this.value.trim();
+                    if (email && email.includes('@')) {
+                        verifyBtn.style.display = 'inline-block';
+                        statusDiv.style.display = 'none';
+                    } else {
+                        verifyBtn.style.display = 'none';
+                        statusDiv.style.display = 'none';
+                    }
+                });
+                
+                verifyBtn.addEventListener('click', function() {
+                    const email = emailField.value.trim();
+                    if (email) {
+                        checkEmailExists(email);
+                    }
+                });
+            }
+
+            const paidRadioButtons = document.querySelectorAll('input[name="paid_opportunities"]');
+            paidRadioButtons.forEach(radio => {
+                radio.addEventListener('change', updateSubmitButton);
+            });
+
+            const termsCheckbox = document.getElementById('legal_agreement');
+            if (termsCheckbox) {
+                termsCheckbox.addEventListener('change', updateSubmitButton);
+            }
+
+            const form = document.querySelector('form');
+            form.addEventListener('submit', handleFormSubmit);
+
+            updateSubmitButton();
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,38 @@
+# Dependencies for Testprueba.py - Audio/Video Processing and Speaker Diarization
+
+# Core dependencies
+requests>=2.31.0
+
+# Video processing
+moviepy>=1.0.3
+opencv-python>=4.8.0
+
+# Audio processing
+pydub>=0.25.1
+
+# Scene detection
+scenedetect>=0.6.2
+
+# Google Drive download (optional but recommended)
+gdown>=4.7.1
+
+# Public tunnel creation for API access
+pyngrok>=7.0.0
+
+# PyTorch and related dependencies (specific versions for compatibility)
+# IMPORTANT: NumPy must be <2.0 for compatibility with compiled modules
+torch>=2.0.0,<2.2.0
+torchaudio>=2.0.0,<2.2.0
+pytorch-lightning>=2.0.0,<3.0.0
+
+# Speaker diarization
+pyannoteai-sdk==0.4.0
+pyannote.audio>=3.0.0,<4.0.0
+
+# Additional audio codecs (for pydub)
+# Note: These may need to be installed separately on some systems
+# ffmpeg-python>=0.2.0
+
+# Optional: For better audio processing
+numpy>=1.24.0,<2.0.0
+scipy>=1.11.0

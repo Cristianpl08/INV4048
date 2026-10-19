@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            background: white; 
+        }
+        #container {
+            width: 100%;
+            height: 0; 
+        }
+        .preview-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .preview-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .preview-content {
+            margin-top: 15px;
+        }
+        .preview-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .preview-description {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .preview-url {
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    Take a look at our new website: <a href="https://myaocconnect.com/" target="_blank">https://myaocconnect.com/</a>
+    <div id="container"></div>
+
+    <script>
+        const url = "https://myaocconnect.com/";
+        const container = document.getElementById("container");
+
+        // Función para obtener meta tags de Open Graph
+        async function getOpenGraphData() {
+            try {
+                const response = await fetch(url, {mode: 'no-cors'});
+                // Nota: Debido a CORS, esto puede no funcionar directamente
+                // En un entorno real, necesitarías un proxy o usar un servicio
+                return null;
+            } catch (error) {
+                console.log('No se puede acceder directamente a los meta tags debido a CORS');
+                return null;
+            }
+        }
+
+        // Función para crear vista previa usando datos conocidos
+        function createPreviewCard() {
+            const card = document.createElement("div");
+            card.className = "preview-card";
+            
+            // Crear imagen de vista previa usando servicio de captura
+            const img = document.createElement("img");
+            img.className = "preview-image";
+            img.src = `https://api.screenshotmachine.com?key=demo&url=${encodeURIComponent(url)}&dimension=600x400&format=png`;
+            img.alt = "Vista previa de " + url;
+            
+            // Crear contenido de la tarjeta
+            const content = document.createElement("div");
+            content.className = "preview-content";
+            
+            const title = document.createElement("div");
+            title.className = "preview-title";
+            title.textContent = "myaocconnect.com";
+            
+            const description = document.createElement("div");
+            description.className = "preview-description";
+            description.textContent = "Visita nuestro sitio web para más información";
+            
+            const link = document.createElement("a");
+            link.className = "preview-url";
+            link.href = url;
+            link.target = "_blank";
+            link.textContent = url;
+            
+            content.appendChild(title);
+            content.appendChild(description);
+            content.appendChild(link);
+            
+            card.appendChild(img);
+            card.appendChild(content);
+            
+            container.style.height = "auto";
+            container.appendChild(card);
+        }
+
+        // Verificar si la página está disponible
+        fetch(url, {method: "HEAD", mode: "no-cors"})
+            .then(() => {
+                createPreviewCard();
+            })
+            .catch(() => {
+                container.style.display = "none";
+            });
+    </script>
+</body>
+</html>
+
