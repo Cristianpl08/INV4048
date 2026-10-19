@@ -1,0 +1,93 @@
+[
+  {
+    "frame_number": 81,
+    "filename": "keyframe_81.jpg",
+    "description": "La imagen muestra una escena de un partido de baloncesto. En el centro de la imagen, un jugador vestido con un uniforme blanco está en movimiento, aparentemente participando en una jugada. A su lado, otro jugador vistiendo un uniforme oscuro parece acercarse. El fondo está lleno de espectadores, difusos, que parecen estar siguiendo con atención el desarrollo del juego. La imagen contiene una esquina con un logotipo que sugiere que es una transmisión deportiva.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n\n- **Personajes:** Jugadores de baloncesto en acción.\n- **Acciones:** Movimiento de los jugadores durante el partido.\n- **Escenarios:** Cancha de baloncesto con espectadores atentos.",
+    "tokens_used": 2425
+  },
+  {
+    "frame_number": 84,
+    "filename": "keyframe_84.jpg",
+    "description": "La imagen muestra una escena de un partido de baloncesto. En el primer plano, se puede notar a dos jugadores, uno de ellos parece moverse de forma dinámica. El entorno sugiere ser un estadio, con gradas llenas de espectadores al fondo que parecen seguir con atención el juego. La imagen es algo borrosa, lo que le da un aspecto de acción rápida.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- [Personajes]: Identificación de jugadores y su movimiento.\n- [Escenarios, clima y atmósfera]: Contexto del estadio y la audiencia.",
+    "tokens_used": 2396
+  },
+  {
+    "frame_number": 114,
+    "filename": "keyframe_114.jpg",
+    "description": "La imagen muestra una escena en un partido de baloncesto. En primer plano, un jugador con camiseta blanca y número 35 camina por la cancha. A su alrededor, otros jugadores se mueven cerca de la canasta. En el fondo, se observa el banquillo del equipo contrario. Los jugadores del equipo visitante, vestidos con uniformes rojos, están sentados de manera relajada. Detrás de ellos, una multitud de espectadores llena las gradas, observando atentamente el juego. La imagen está tomada dentro de un estadio de baloncesto, caracterizado por la estructura metálica del soporte de la canasta y el parqué de la cancha.",
+    "attention_mechanisms": "Mecanismos de atención: \n- Personajes: Jugadores de baloncesto, equipo del banquillo, espectadores.\n- Acciones: Movimiento del jugador en la cancha.\n- Escenarios, clima y atmósfera: Estadio de baloncesto, ambiente deportivo.",
+    "tokens_used": 2475
+  },
+  {
+    "frame_number": 117,
+    "filename": "keyframe_117.jpg",
+    "description": "En la imagen se observa una escena de un partido de baloncesto en lo que parece ser una cancha profesional, probablemente de la NBA. Al frente, un jugador con el número 35 en su camiseta blanca se dirige hacia la derecha, mientras otro jugador con un uniforme más oscuro está parcialmente visible. En el fondo, el banco de suplentes muestra a varios jugadores sentados, vistiendo uniformes rojos, observando el partido atentamente. La multitud en las gradas está parcialmente desenfocada, sugiriendo que el evento tiene una gran concurrencia y está en pleno desarrollo. Una canasta de baloncesto se encuentra a la derecha, completando el escenario deportivo.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Jugadores en la cancha y en el banco de suplentes.\n- Escenarios: Cancha de baloncesto, con énfasis en el entorno deportivo.",
+    "tokens_used": 2462
+  },
+  {
+    "frame_number": 354,
+    "filename": "keyframe_354.jpg",
+    "description": "La imagen muestra una captura borrosa de un partido de baloncesto. En el centro, se observa a un jugador con uniforme oscuro elevándose en el aire con el balón en la mano derecha, mientras otro jugador con uniforme claro intenta bloquearlo. El fondo revela una cancha de baloncesto llena de espectadores desenfocados. La acción sugiere un momento intenso del juego, posiblemente un lanzamiento al aro.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: Jugadores de baloncesto en acción.\n2. Acción: Saltos y bloqueo del lanzamiento.\n3. Escenarios, clima y atmósfera: Cancha de baloncesto durante un juego.",
+    "tokens_used": 2415
+  },
+  {
+    "frame_number": 357,
+    "filename": "keyframe_357.jpg",
+    "description": "La imagen presenta una superposición de fotografías durante un partido de baloncesto, creando un efecto de movimiento continuo de jugadores en acción. Varios jugadores están en diferentes posiciones de salto y dribleo. La cancha de baloncesto está llena de espectadores, aunque los detalles específicos son difusos debido a la superposición. El ambiente parece enérgico y lleno de acción, típicos de un emocionante momento en el juego.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n- Personajes: Jugadores de baloncesto en acción.\n- Acciones: Saltos y dribleos en la cancha.\n- Escenarios, clima y atmósfera: Cancha de baloncesto, ambiente energético con público presente.",
+    "tokens_used": 2424
+  },
+  {
+    "frame_number": 360,
+    "filename": "keyframe_360.jpg",
+    "description": "La imagen muestra una escena de baloncesto con una doble exposición, en la que se pueden observar dos acciones superpuestas. En primer plano, varios jugadores están en una cancha, vistiendo uniformes rojos y blancos. Uno de los jugadores, con el número \"30\", parece defender, mientras otro jugador en uniforme blanco realiza un movimiento hacia la canasta. La multitud en el fondo sugiere que están en un estadio lleno, creando una atmósfera de emoción y anticipación. La imagen es borrosa, lo que indica movimiento y dinamismo en el juego.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n- Personajes: Jugadores de baloncesto en acción.\n- Acciones: Defensas y movimientos hacia la canasta.\n- Escenarios, clima y atmósfera: Estadio lleno de espectadores, atmósfera dinámica.",
+    "tokens_used": 2451
+  },
+  {
+    "frame_number": 363,
+    "filename": "keyframe_363.jpg",
+    "description": "La imagen muestra una escena dinámica de un partido de baloncesto. Varios jugadores se encuentran en la cancha, destacando aquellos que llevan uniformes rojos con detalles en blanco y negro, y uno de ellos tiene el número 91 en su camiseta. Estos jugadores parecen estar defendiendo contra miembros del equipo contrario, que visten de blanco. El estadio está lleno de espectadores, y las luces brillantes resplandecen desde el techo, difuminando el fondo y añadiendo una sensación de intensidad al ambiente. La perspectiva de la imagen es baja, cercana al suelo de la cancha, enfatizando la acción y el movimiento de los jugadores.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Jugadores con uniformes distintivos, número 91.\n- Escenarios, clima y atmósfera: Estadio lleno, luces brillantes, ambiente intenso.",
+    "tokens_used": 2455
+  },
+  {
+    "frame_number": 366,
+    "filename": "keyframe_366.jpg",
+    "description": "Un grupo de jugadores de baloncesto se encuentra en una cancha durante un partido. Dos jugadores con uniformes rojos, con números visibles, están centrados en la imagen; uno de ellos con el número 91. Un jugador del equipo contrario, vestido de blanco, está cerca de ellos, intentando maniobrar con el balón. El entorno es un estadio abarrotado, con público en las gradas. La imagen evoca una sensación de acción y competencia.\n\n**",
+    "attention_mechanisms": "Mecanismos de atención:**\n\n1. **Personajes:** Jugadores de baloncesto, uniformes rojos, jugador número 91.\n2. **Acciones:** Manoeuvra con el balón durante el partido.\n3. **Escenarios, clima y atmósfera:** Estadio lleno, energía competitiva.",
+    "tokens_used": 2442
+  },
+  {
+    "frame_number": 375,
+    "filename": "keyframe_375.jpg",
+    "description": "Un grupo de jugadores de baloncesto está en una cancha durante un partido. Llevan uniformes rojos con números visibles en la espalda, rodeando a un jugador contrario que lleva un uniforme blanco y está driblando el balón. La multitud observa desde las gradas en un estadio cubierto, creando un ambiente de expectación y energía. La acción parece concentrada cerca de la canasta, sugiriendo un momento ofensivo del juego. \n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n\n- **Personajes:** Jugadores en acción, destacando los uniformes y números.\n- **Acciones:** Driblar el balón en un ataque.\n- **Escenarios, clima y atmósfera:** Interior de un estadio, con espectadores.",
+    "tokens_used": 2432
+  },
+  {
+    "frame_number": 378,
+    "filename": "keyframe_378.jpg",
+    "description": "La imagen muestra una escena de un partido de baloncesto en una arena llena de espectadores. Cuatro jugadores en uniforme rojo, todos con números visibles en sus camisetas, están cerca de la canasta defendiendo. El jugador número 34 está a la izquierda, otro al centro y el número 91 más a la derecha. Un jugador del equipo contrario, vestido de blanco, está avanzando hacia la canasta con el balón, intentando superar la defensa. La multitud está difuminada en el fondo, creando un ambiente de expectación en el interior de la cancha. Las acciones reflejan dinamismo y la presión de la jugada.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Jugadores en uniforme rojo y uno en blanco\n- Acciones: Movimiento hacia la canasta\n- Escenarios, clima y atmósfera: Interior de una arena deportiva llena de espectadores.",
+    "tokens_used": 2459
+  },
+  {
+    "frame_number": 381,
+    "filename": "keyframe_381.jpg",
+    "description": "En la imagen, se observa a varios jugadores de baloncesto en una cancha durante un partido. Los jugadores visten uniformes rojos con números en blanco. Uno de los jugadores, ubicado más cerca de la cámara, lleva el número 34. Están en el proceso de defender la canasta, mientras un jugador del equipo contrario, vestido de blanco, parece avanzar hacia ellos con el balón. La cancha está rodeada por gradas llenas de espectadores, creando un ambiente animado de competencia. \n\n- **Personajes**: Jugadores de baloncesto con uniformes rojos y un jugador contrario de blanco.\n- **Acciones**: Jugadores en movimiento, defendiendo.\n- **Escenario**: Cancha de baloncesto, público en las gradas.",
+    "attention_mechanisms": "",
+    "tokens_used": 2439
+  },
+  {
+    "frame_number": 387,
+    "filename": "keyframe_387.jpg",
+    "description": "En una cancha de baloncesto, se observa a varios jugadores en medio de un partido. Dos jugadores del equipo con uniformes rojos, uno con el número 34, se encuentran cerca de la canasta. Al lado izquierdo, un jugador del equipo contrario, vestido de blanco, parece intentar avanzar hacia el aro. La multitud en las gradas está difuminada, sugiriendo un estadio lleno. La escena tiene un ambiente de acción y enfoque en el juego.\n\n- **Personajes:** Jugadores de baloncesto con uniformes distintos, se destacan los números y colores.\n- **Acciones:** Movimiento hacia la canasta, indica un momento de tensión y competencia.\n- **Escenario y atmósfera:** Cancha de baloncesto con público numeroso, creando una atmósfera de emoción deportiva.",
+    "attention_mechanisms": "",
+    "tokens_used": 2446
+  }
+]

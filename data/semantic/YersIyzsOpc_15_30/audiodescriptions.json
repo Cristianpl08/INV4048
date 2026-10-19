@@ -1,0 +1,79 @@
+[
+  {
+    "frame_number": 56,
+    "filename": "keyframe_56.jpg",
+    "description": "La imagen muestra una habitación con paredes de color amarillo pálido. A la izquierda, hay una cama desordenada con sábanas y cobijas en desorden. En la pared, hay dos puertas de madera cerradas. Entre ellas, un cuadro pequeño cuelga en la pared. A la derecha, una persona de cabello corto se mueve rápidamente hacia la derecha, lo que indica que está caminando. La luz del techo ilumina suavemente la escena, sugiriendo un ambiente tranquilo.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Persona moviéndose, generando dinamismo.\n- Escenarios, clima y atmósfera: Descripción de la habitación y sus elementos.\n- Acciones: Movimiento de la persona hacia la derecha.",
+    "tokens_used": 2434
+  },
+  {
+    "frame_number": 120,
+    "filename": "keyframe_120.jpg",
+    "description": "En una habitación con paredes de color crema, un joven se está poniendo una chaqueta o suéter. Está de pie junto a una cama de madera, y parece estar dando un movimiento rápido al vestir la prenda, lo que hace que quede parcialmente desenfocada. A la derecha, hay dos puertas de madera y un calendario en la pared. La luz del techo ilumina la escena suavemente.\n\n- **Personajes**: Joven poniéndose una chaqueta.\n- **Acciones**: Movimientos al vestirse.\n- **Escenarios**: Habitación con muebles de madera.\n- **Postura y lenguaje corporal**: Movimiento energético al ponerse la ropa.",
+    "attention_mechanisms": "",
+    "tokens_used": 2416
+  },
+  {
+    "frame_number": 124,
+    "filename": "keyframe_124.jpg",
+    "description": "En una habitación con paredes de color claro, una persona está de pie junto a una cama cubierta con una colcha beige. La persona, usando ropa deportiva oscura, se quita un suéter a rayas, levantando los brazos mientras el suéter va por encima de su cabeza. A la izquierda, hay un control remoto sobre la cama. La habitación tiene dos puertas de madera, un pequeño faro decorativo en el suelo y un calendario en la pared. La iluminación es cálida y uniforme.\n\n- **Personajes**: Persona quitándose un suéter.\n- **Acciones**: Movimiento de retirar el suéter.\n- **Escenarios, clima y atmósfera**: Habitación ordenada, iluminación cálida.\n- **Objetos relevantes**: Cama, colcha, control remoto, puertas, calendario, faro decorativo.",
+    "attention_mechanisms": "",
+    "tokens_used": 2454
+  },
+  {
+    "frame_number": 200,
+    "filename": "keyframe_200.jpg",
+    "description": "La imagen muestra una habitación con paredes de color amarillo cálido. Hay dos puertas de madera, una a la izquierda y otra a la derecha, que están cerradas. En la pared, entre las puertas, cuelga un cuadro. Cerca de la puerta de la derecha, se observa un calendario con un personaje animado. Encima de una mesa o estantería, hay un modelo de faro. A la izquierda, hay una cama de madera con una cabecera. Sobre la cama, se encuentra una persona que parece estar inclinada sobre un montón de cobijas o almohadas.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Escenarios, clima y atmósfera: Habitación con detalles de color y mobiliario.\n- Acciones: Persona inclinada sobre la cama.",
+    "tokens_used": 2437
+  },
+  {
+    "frame_number": 244,
+    "filename": "keyframe_244.jpg",
+    "description": "[Quién] Un joven en una habitación, inclinándose sobre una cama. Lleva ropa oscura. \n\n[Qué] En la cama hay varias mantas y cojines desordenados. \n\n[Dónde] La habitación tiene paredes pintadas de color claro y puertas de madera. Se observa un póster en la pared y un mueble con un faro decorativo.\n\n[Cuándo] Es de día, ya que la iluminación es clara, aunque artificial.\n\n[Acción] El joven parece estar acomodando o revisando algo sobre la cama.\n\nMecanismos de Atención Utilizados:\n- Personajes: Descripción del joven y su vestimenta.\n- Acciones: Inclinación del joven sobre la cama.\n- Escenarios y atmósfera: Descripción de la habitación y los elementos presentes.",
+    "attention_mechanisms": "",
+    "tokens_used": 2443
+  },
+  {
+    "frame_number": 268,
+    "filename": "keyframe_268.jpg",
+    "description": "Un joven está en una habitación, aparentemente en medio de un salto o movimiento energético. Lleva puesta ropa oscura y su rostro muestra una expresión de emoción intensa. La habitación tiene paredes color crema y puertas de madera. A la izquierda hay una cama desordenada con mantas revueltas. En la pared derecha hay un calendario con un diseño animado. Al fondo, se ven dos puertas de madera cerradas y una figura decorativa en forma de faro sobre un estante. La escena sugiere una acción dinámica y espontánea.\n\n- Personajes: Un joven en movimiento\n- Expresiones Faciales: Emoción intensa\n- Acciones: Salto o movimiento energético\n- Escenarios: Habitación con paredes color crema, camas y puertas de madera",
+    "attention_mechanisms": "",
+    "tokens_used": 2436
+  },
+  {
+    "frame_number": 328,
+    "filename": "keyframe_328.jpg",
+    "description": "En una habitación iluminada con luz cálida, hay una persona de pie junto a una cama desordenada. La persona, vestida de oscuro, parece estar en movimiento, con un brazo levantado y el otro cruzado frente a su cuerpo. Su expresión facial muestra emoción intensa. La habitación tiene paredes claras y puertas de madera, con un cartel de dibujos animados en la pared. El ambiente es cotidiano y personal.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: Persona en movimiento con vestimenta oscura.\n2. Expresiones Faciales: Emoción intensa en el rostro.\n3. Escenarios, clima y atmósfera: Habitación iluminada, ambiente cotidiano.\n4. Acciones: Movimiento de la persona con brazos involucrados.",
+    "tokens_used": 2434
+  },
+  {
+    "frame_number": 408,
+    "filename": "keyframe_408.jpg",
+    "description": "La imagen muestra a una persona, posiblemente joven, en medio de un salto o movimiento rápido dentro de una habitación. Está ligeramente borroso debido al movimiento. Viste ropa oscura y pantalones con una línea clara a los lados. La habitación tiene paredes de color beige y hay dos puertas de madera al fondo. Sobre una cama desordenada con mantas a cuadros, se aprecia un calendario en la pared y algunas decoraciones, como una lámpara con forma de faro en una esquina. La iluminación parece provenir de una luz de techo.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Joven en movimiento\n- Acciones: Salto o movimiento rápido\n- Escenarios: Habitación con cama y decoraciones\n- Objetos: Ropa, puertas, calendario, lámpara estilo faro",
+    "tokens_used": 2444
+  },
+  {
+    "frame_number": 412,
+    "filename": "keyframe_412.jpg",
+    "description": "La imagen muestra una habitación de color crema iluminada por una lámpara de techo. Hay dos puertas de madera en la parte trasera de la habitación. En la pared, cuelgan un cartel y un calendario. Un mueble de borde derecho sostiene una figura decorativa blanca parecida a un faro. En el centro, un joven con ropa oscura parece moverse rápidamente o con energía sobre una cama desordenada, creando un desenfoque en su figura. La cama está cubierta con varias mantas y ropa.\n\n- **Personajes**: Un joven en movimiento.\n- **Escenario, clima y atmósfera**: Habitación cálida y acogedora.\n- **Acción**: Movimiento rápido o energético.",
+    "attention_mechanisms": "",
+    "tokens_used": 2428
+  },
+  {
+    "frame_number": 420,
+    "filename": "keyframe_420.jpg",
+    "description": "La imagen muestra una habitación con paredes de color crema. Hay dos puertas de madera colocadas en ángulo entre sí. Sobre la cama, una persona parece estar cayendo o moviéndose rápidamente hacia la derecha, lo que provoca un efecto borroso. La cama tiene un cabecero de madera y está ligeramente desordenada con una manta. En la pared, se observa un póster y un calendario con un dibujo. En el rincón derecho, hay un mueble vertical que parece contener algunos objetos y decoración. La iluminación es cálida, sugiriendo luz artificial.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Descripción de la persona en movimiento en la cama.\n- Escenarios: Descripción del entorno de la habitación y los objetos presentes.\n- Acciones: Movimiento borroso de la persona sobre la cama.",
+    "tokens_used": 2448
+  },
+  {
+    "frame_number": 424,
+    "filename": "keyframe_424.jpg",
+    "description": "[Escenario] En un dormitorio bien iluminado, con paredes de color amarillo claro, hay dos puertas de madera. Una cama se ubica a la izquierda con un cabecero de madera. La habitación tiene una atmósfera acogedora y ordenada. En una de las paredes, hay un póster y un calendario. \n\n[Acción] Una persona vestida de negro parece estar abriendo las sábanas sobre la cama con movimiento rápido, sugiriendo prisa o energía. La acción está algo difuminada, lo que indica velocidad.\n\n[Objetos] En el fondo, se ve una lámpara decorativa en el suelo y una pequeña estantería o mueble a la derecha.\n\nMecanismos de Atención:\n- Escenarios, clima y atmósfera: Descripción del dormitorio y sus elementos.\n- Acciones: Movimiento enérgico de la persona en la cama.",
+    "attention_mechanisms": "",
+    "tokens_used": 2464
+  }
+]

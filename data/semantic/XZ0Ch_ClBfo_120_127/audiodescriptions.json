@@ -1,0 +1,72 @@
+[
+  {
+    "frame_number": 32,
+    "filename": "keyframe_32.jpg",
+    "description": "En la imagen, cuatro hombres disfrutan de un momento en el mar. Dos de ellos están al frente, aparentemente riendo y salpicando agua. Uno lleva un pantalón corto amarillo y el otro un pareo azul. Otro hombre, de espaldas, viste una camiseta blanca y un pantalón rojo. Al fondo, un cuarto hombre está parcialmente visible, sumergido hasta la cintura. La atmósfera es alegre y relajada, con el brillo del sol reflejándose en el agua.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n1. Personajes: Grupo de hombres interactuando en el agua.\n2. Acciones: Jugar y salpicar agua.\n3. Escenarios, clima y atmósfera: Ambiente playero, soleado y relajado.",
+    "tokens_used": 2437
+  },
+  {
+    "frame_number": 34,
+    "filename": "keyframe_34.jpg",
+    "description": "Un grupo de cuatro personas disfruta en la playa, jugando en la orilla del mar. Dos hombres en el centro corren y salpican agua. Uno lleva pantalones cortos rojos y una camiseta blanca, mientras que el otro viste un bañador azul. A la izquierda, otro hombre se acerca, también salpicando agua, vistiendo un bañador amarillo. Al fondo, una cuarta persona está parcialmente sumergida en el agua, observando la escena. La luz del sol parece fuerte, creando una atmósfera luminosa y alegre.\n\n- Personajes: Cuatro personas en el mar, describiendo sus acciones y vestimenta.\n- Acciones: Corren y salpican el agua, indicando una escena de diversión.\n- Escenarios, clima y atmósfera: Entorno playero con sol brillante, sugiriendo un día cálido y alegre.",
+    "attention_mechanisms": "",
+    "tokens_used": 2458
+  },
+  {
+    "frame_number": 36,
+    "filename": "keyframe_36.jpg",
+    "description": "En un entorno soleado y playero, tres hombres interactúan en el agua del mar. Dos de ellos tienen el torso descubierto, el primero usa un pantalón corto blanco y amarillo, mientras que el segundo lleva uno azul. El tercero está vestido con una camiseta blanca y un pantalón rojo. Se salpican agua entre risas y movimientos enérgicos. Al fondo, una cuarta persona observa la escena desde una distancia, medio sumergida en el agua. La atmósfera es alegre y dinámica.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n\n1. **Personajes**: Tres hombres interactúan, dos con el torso descubierto y uno con camiseta.\n2. **Acciones**: Se salpican agua de manera dinámica.\n3. **Escenarios, clima y atmósfera**: Entorno playero bajo el sol, evocando felicidad.\n4. **Interacciones**: Juego y diversión entre los personajes.",
+    "tokens_used": 2470
+  },
+  {
+    "frame_number": 42,
+    "filename": "keyframe_42.jpg",
+    "description": "Un grupo de personas disfruta de un día en la playa. Al centro hay una figura azul translucida que ocupa gran parte de la imagen, creando un efecto llamativo. A la izquierda, un hombre en bañador amarillo está agachado y parece salpicar agua mientras mira hacia el centro. A la derecha, otro hombre en bañador azul, con una cadena dorada y cabello oscuro, parece responder, extendiendo los brazos. En el fondo, hay otra persona parcialmente visible en el agua. La atmósfera es vibrante y veraniega, con acciones dinámicas que sugieren juego y disfrute en el agua.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Descripción de individuos y sus acciones\n- Acciones: Movimiento de salpicar agua\n- Escenarios y atmósfera: Contexto de playa y ambiente dinámico\n- Efectos especiales: Figura azul translucida central",
+    "tokens_used": 2465
+  },
+  {
+    "frame_number": 44,
+    "filename": "keyframe_44.jpg",
+    "description": "[Quién] En un entorno de playa, tres hombres jóvenes se encuentran parcialmente sumergidos en el agua. \n\n[Qué] Dos de ellos, a la izquierda y a la derecha, están vestidos con pantalones cortos de colores llamativos. Uno lleva un pantalón naranja y el otro azul. Entre ellos, parece haber una especie de barrera circular azulada, indicando un posible efecto especial.\n\n[Dónde] La escena se desarrolla en el mar, bajo un cielo claro y luminoso, sugiriendo un ambiente veraniego.\n\n[Cuándo] No es evidente el momento exacto del día debido a la luz intensa.\n\n[Acción] Los dos hombres parecen interactuar con el círculo azul, posiblemente lanzándose agua o participando en un juego. \n\n[Efectos Especiales] La presencia del círculo azul resalta, añadiendo un elemento de fantasía o ciencia ficción a la escena.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados: Personajes, Acciones, Escenarios, Efectos Especiales.",
+    "tokens_used": 2485
+  },
+  {
+    "frame_number": 46,
+    "filename": "keyframe_46.jpg",
+    "description": "La imagen muestra a varias personas disfrutando en el mar. A la izquierda, un hombre con pantalones cortos se salpica agua, mientras su figura está resaltada en tonos azules. A la derecha, dos personas, una vestida de amarillo, interactúan cerca del agua, resaltadas en tonos amarillos. El efecto de color separa visualmente las dos partes de la imagen, creando un contraste vibrante. Detrás, se aprecia una persona nadando en el agua.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: Hombres en acción cerca del agua.\n2. Escenarios, clima y atmósfera: Ambiente playero y colorido. \n3. Efectos Especiales: Uso de filtros de color azul y amarillo.",
+    "tokens_used": 2437
+  },
+  {
+    "frame_number": 114,
+    "filename": "keyframe_114.jpg",
+    "description": "En la imagen, cuatro personas están en el agua, posiblemente en una playa, con las olas del mar a su alrededor. El agua es blanca y espumosa. En el centro, hay un círculo que resalta una parte de la escena con un tinte rosa brillante. Dentro del círculo, una persona parece estar saliendo del agua, mientras las otras tres se encuentran cerca, probablemente interactuando entre ellas o con la persona que sale del agua. La escena sugiere un momento de diversión o actividad en el mar.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Acciones: La persona saliendo del agua es relevante para el contexto de interacción en la imagen.\n- Escenarios: El entorno marítimo y las olas son esenciales para entender el contexto de la escena.\n- Efectos especiales: El círculo rosa es un detalle visual distintivo que centra la atención en una parte específica de la imagen.",
+    "tokens_used": 2464
+  },
+  {
+    "frame_number": 116,
+    "filename": "keyframe_116.jpg",
+    "description": "La imagen muestra a tres personas en lo que parece ser el mar, con olas alrededor. Dos de ellas están de pie y una más al centro parece estar agachada o saliendo del agua. El entorno está teñido de colores brillantes: una parte rosada rodea un círculo central de color azul. Los sujetos están en actitudes animadas, posiblemente disfrutando del momento. No hay otras señas de elementos adicionales o contexto más allá de la playa y el agua.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Tres personas en el agua, una de ellas agachada.\n- Escenarios, clima y atmósfera: Mar y colores intensos, ambiente de diversión.\n- Acciones: Movimientos activos en el agua.",
+    "tokens_used": 2432
+  },
+  {
+    "frame_number": 118,
+    "filename": "keyframe_118.jpg",
+    "description": "La imagen muestra a tres personas en el agua. Dos de ellas están posicionadas a los lados y una en el centro. Todas parecen estar disfrutando de un momento en el mar, con agua hasta la cintura. El fondo y las personas están filtrados con un efecto de color vibrante: la mayor parte de la imagen tiene un tono rosa intenso, mientras que un círculo central presenta un filtro azul, destacando el contraste. La escena evoca una sensación de diversión y energía.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Acciones: Las personas moviéndose en el agua transmiten dinamismo.\n- Escenarios, clima y atmósfera: El uso de colores vibrantes sugiere un ambiente enérgico y alegre.",
+    "tokens_used": 2429
+  },
+  {
+    "frame_number": 134,
+    "filename": "keyframe_134.jpg",
+    "description": "En la imagen, un hombre se encuentra de pie en el mar, con el agua llegando a sus rodillas. Viste una camiseta clara y pantalones cortos oscuros. Su postura parece activa, posiblemente luchando contra la fuerza de las olas. A la izquierda, hay un elemento circular translúcido que muestra una escena diferente de olas, con un tono azul contrastante, creando un efecto visual llamativo. El fondo tiene un tono dorado que sugiere un atardecer o amanecer.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n\n1. **Personajes**: Hombre de pie en el mar.\n2. **Acciones**: Postura activa, interactuando con las olas.\n3. **Escenarios, clima y atmósfera**: Mar dorado y efecto visual azul.\n4. **Efectos especiales**: Elemento circular translúcido.",
+    "tokens_used": 2464
+  }
+]

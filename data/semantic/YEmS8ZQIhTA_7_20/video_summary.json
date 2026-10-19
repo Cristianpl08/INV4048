@@ -1,0 +1,13 @@
+{
+  "main_summary": "Un jugador en camiseta blanca avanza rápidamente con el balón, intentando superar la defensa de varios jugadores en uniforme rojo. Una multitud llena el estadio, creando expectación.\n\nMecanismo de atención: El enfoque recae sobre el jugador blanco con el balón, destacando su intento de superar la defensa, lo que intensifica la acción y la anticipación en la escena.\n\n- Emoción complementaria utilizada: Vigilancia\n- Número total de caracteres de la descripción principal: 177\n- Caracteres por segundo: 13.60\n- Rango de caracteres permitido: 122 a 194 caracteres",
+  "attention_mechanisms": "",
+  "statistics_summary": "",
+  "emotion": "Vigilancia",
+  "char_count": 182,
+  "chars_per_second": 13.986013986013987,
+  "char_range": [
+    122,
+    194
+  ],
+  "tokens_used": 2107
+}

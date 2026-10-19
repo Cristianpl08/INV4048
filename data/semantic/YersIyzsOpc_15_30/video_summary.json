@@ -1,0 +1,13 @@
+{
+  "main_summary": "Una habitación de paredes crema con atmósfera cálida muestra a un joven de ropa oscura, moviéndose rápido sobre una cama desordenada. Su energía es palpable, y al fondo, elementos decorativos añaden un toque personal.",
+  "attention_mechanisms": "Mecanismos de AtenciónUtilizados:\n- **Personajes**: El joven en movimiento. Su energía y vestimenta contrastan con el entorno tranquilo, captando la atención y sugiriendo una historia dinámica.\n- **Acciones**: El movimiento energético del joven. Este dinamismo crea un enfoque visual, resaltando su urgencia.\n- **Escenarios y atmósfera**: La habitación acogedora con detalles como las puertas de madera y decoraciones personales. Esto enmarca al joven dentro de un entorno cotidiano y familiar, resaltando su contraste con el movimiento.",
+  "statistics_summary": "Resumen:- Emoción complementaria utilizada: Aceptación\n- Número total de caracteres de la descripción principal: 189\n- Caracteres por segundo: 12.57\n- Rango de caracteres permitido: 141 a 224 caracteres.",
+  "emotion": "Aceptación",
+  "char_count": 217,
+  "chars_per_second": 14.43458980044346,
+  "char_range": [
+    141,
+    224
+  ],
+  "tokens_used": 2184
+}

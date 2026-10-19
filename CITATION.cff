@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Automatic Prosodic Audio Description Modeling"
+authors:
+  - family-names: Quintero
+    given-names: Christian
+    affiliation: Universidad Militar Nueva Granada
+  - family-names: Rozo-Torres
+    given-names: Alexander
+    affiliation: Universidad Militar Nueva Granada
+  - family-names: Plazas
+    given-names: Cristian
+    affiliation: Universidad Militar Nueva Granada
+license: MIT
+repository-code: "https://github.com/Cristianpl08/INV4048/tree/paper"

@@ -1,0 +1,13 @@
+{
+  "main_summary": "Un tigre avanza, ágil y decidido, entre la vegetación densa",
+  "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- **Personajes**: El tigre es el foco principal; su movimiento decidido es relevante y transmite admiración, debido a su elegancia y poder en el entorno selvático.\n- **Acciones**: Se destaca el avance del tigre con agilidad, capturando su dinamismo y habilidad para moverse entre la vegetación.\n- **Escenarios y atmósfera**: El entorno natural y selvático enriquece la apreciación del tigre en su hábitat, resaltando su majestuosidad y fuerza en un ambiente vibrante.\n\nInformación adicional:\n- Emoción complementaria utilizada: Admiración\n- Número total de caracteres de la descripción principal: 58\n- Caracteres por segundo: 58 / 5.739066666666667 ≈ 10.11\n- Rango de caracteres permitido para esa emoción: 52 a 82 caracteres",
+  "statistics_summary": "",
+  "emotion": "Admiración",
+  "char_count": 60,
+  "chars_per_second": 10.454661617452315,
+  "char_range": [
+    52,
+    82
+  ],
+  "tokens_used": 2369
+}

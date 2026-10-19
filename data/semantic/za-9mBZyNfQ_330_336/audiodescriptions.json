@@ -1,0 +1,79 @@
+[
+  {
+    "frame_number": 27,
+    "filename": "keyframe_27.jpg",
+    "description": "En la imagen, se ve a dos personas dentro de lo que parece ser una sala moderna y bien iluminada. Ambos están en una posición que sugiere que están bailando o realizando un movimiento energético. Al fondo se observa una bicicleta y unas escaleras de madera que conducen a un nivel superior. El ambiente es cálido, con luces suaves y un diseño contemporáneo que incluye muebles de madera y vidrio.\n\n- **Personajes**: Dos individuos en acción con vestimenta casual, involucrados en una actividad dinámica.\n- **Acciones**: El movimiento corporal sugiere baile o una actividad musical.\n- **Escenario y ambiente**: Sala moderna con escaleras de madera, bicicleta y una atmósfera cálida y contemporánea.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados: Personajes, Acciones, Escenario y ambiente.",
+    "tokens_used": 2282
+  },
+  {
+    "frame_number": 29,
+    "filename": "keyframe_29.jpg",
+    "description": "Un hombre está en el centro de una sala de estar bien iluminada, realizando un movimiento de baile con entusiasmo. Detrás de él, otro hombre sonríe y parece acompañarlo. La sala tiene un ambiente cálido, con escaleras de caracol a un lado, y una bicicleta visible en el fondo. El suelo es de madera, y se observa un sofá claro a la derecha. Es de noche, ya que se ven luces encendidas a través de las ventanas.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n\n1. Personajes: Dos hombres, uno bailando mientras el otro sonríe.\n2. Acciones: Movimiento de baile con entusiasmo.\n3. Escenarios, clima y atmósfera: Sala de estar, iluminación cálida, es de noche.\n4. Interacciones: Complicidad entre los dos hombres en la escena.",
+    "tokens_used": 2286
+  },
+  {
+    "frame_number": 45,
+    "filename": "keyframe_45.jpg",
+    "description": "La imagen muestra a dos hombres en una sala moderna, decorada con tonos cálidos y una escalera de caracol en el fondo. El hombre en primer plano, de cabello oscuro, lleva una camisa oscura y parece estar realizando un movimiento de baile con una expresión concentrada. Detrás de él, otro hombre, con una camisa de estampado claro, también está girando, participando en lo que parece una coreografía. La escena sugiere un ambiente relajado y casual, probablemente dentro de un apartamento o loft con iluminación tenue.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Escenarios, clima y atmósfera: Sala moderna, cálida, con escalera de caracol.\n2. Personajes: Dos hombres, uno en primer plano y otro detrás, ambos bailando.\n3. Acciones: Movimientos de baile de ambos hombres.",
+    "tokens_used": 2286
+  },
+  {
+    "frame_number": 48,
+    "filename": "keyframe_48.jpg",
+    "description": "La imagen muestra a dos hombres en una sala de estar moderna, con una escalera de caracol detrás de ellos. El primer hombre, de cabello corto, lleva una camiseta oscura y parece estar inclinado hacia adelante con una expresión animada. El segundo hombre, de espaldas, viste una camiseta de estampado y se encuentra cerca del otro, sugiriendo que están realizando un movimiento coordinado o un baile. La sala tiene muebles contemporáneos y una iluminación cálida, creando un ambiente acogedor.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Descripción de los hombres y sus acciones.\n- Escenarios, clima y atmósfera: Detalles de la sala de estar.",
+    "tokens_used": 2252
+  },
+  {
+    "frame_number": 50,
+    "filename": "keyframe_50.jpg",
+    "description": "Lo siento, no puedo identificar a las personas en esta imagen. \n\nEn la imagen, se observan dos hombres en una sala de estar amplia y modernamente amueblada. Uno de ellos, con una chaqueta oscura, se encuentra en primer plano en un movimiento borroso, lo que indica que posiblemente esté bailando o moviéndose rápidamente. El otro hombre, con una camisa estampada, está detrás de él, girando ligeramente hacia la derecha, cerca de una escalera de caracol. El entorno parece de noche, con luces cálidas que iluminan el interior y ventanas amplias por las que se ven luces de la ciudad.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Dos hombres con diferentes atuendos, movimiento rápido.\n- Escenarios, clima y atmósfera: Sala de estar moderna, iluminación nocturna.\n- Acciones: Movimiento o baile del hombre en primer plano.",
+    "tokens_used": 2295
+  },
+  {
+    "frame_number": 51,
+    "filename": "keyframe_51.jpg",
+    "description": "Dos personas están en una sala de estar elegante y moderna. Una de ellas, un hombre de cabello oscuro, da la espalda mientras se mueve enérgicamente. El otro, un hombre con camisa oscura, aparece borroso por el movimiento, sugiriendo que está bailando con entusiasmo. Al fondo, una escalera de madera conduce a otro nivel, y una gran lámpara de diseño ilumina suavemente el espacio. La atmósfera es animada, posiblemente durante una reunión social.\n\n- Personajes: Dos hombres con diferente vestimenta, uno girado de espaldas.\n- Acciones: Movimientos enérgicos y posiblemente de baile.\n- Escenarios, clima y atmósfera: Sala moderna con escalera y lámpara de diseño.\n- Postura y Lenguaje Corporal: Indica energía y entusiasmo.",
+    "attention_mechanisms": "",
+    "tokens_used": 2279
+  },
+  {
+    "frame_number": 53,
+    "filename": "keyframe_53.jpg",
+    "description": "Dos hombres están en medio de lo que parece una danza animada, girando mientras se enfrentan de espaldas uno al otro. El ambiente interior es acogedor, con un suelo de madera y muebles modernos, incluyendo un gran sofá beige. Al fondo, se observa una escalera de metal y madera que lleva a un nivel superior. La iluminación es cálida, creando una atmósfera hogareña. Las ventanas dejan ver luces brillantes, indicando que es de noche en la ciudad.\n\n- Personajes: Dos hombres participando en una danza, enfrentados de espaldas.\n- Escenarios, clima y atmósfera: Sala de estar moderna y acogedora, con iluminación cálida.\n- Acciones: Movimientos de danza enérgicos.",
+    "attention_mechanisms": "",
+    "tokens_used": 2263
+  },
+  {
+    "frame_number": 54,
+    "filename": "keyframe_54.jpg",
+    "description": "En una sala de estar moderna, dos hombres realizan un paso de baile sincronizado. Ambos están de pie en el centro, con sus cuerpos ligeramente inclinados hacia el frente, moviendo sus brazos a los costados. A la izquierda, uno viste una camisa oscura, y el otro, a la derecha, lleva una camisa estampada. Detrás de ellos hay una escalera de madera y metal que conduce a un segundo nivel, y las luces exteriores sugieren que es de noche. El ambiente es cálido y acogedor, con varios muebles de madera.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Dos hombres realizando un movimiento sincronizado.\n- Acciones: Movimiento de baile en el centro de la sala.\n- Escenarios, clima y atmósfera: Sala moderna y cálida con luz exterior nocturna.",
+    "tokens_used": 2278
+  },
+  {
+    "frame_number": 78,
+    "filename": "keyframe_78.jpg",
+    "description": "Lo siento, no puedo identificar a las personas en la imagen. Sin embargo, puedo describir la escena para ti.\n\nDos hombres están en una sala de estar, moviéndose energéticamente como si estuvieran bailando. Uno de ellos lleva una camisa marrón con estampado y el otro una camiseta oscura. Están de espaldas uno al otro, con expresiones de diversión en sus rostros. Al fondo, se pueden ver las escaleras de madera que suben a un nivel superior, y hay una bicicleta estacionada cerca de las escaleras. También se observan ventanas grandes mostrando luces de la ciudad en la noche.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Dos hombres, uno con camisa marrón y otro con camiseta oscura, realizando movimientos de baile.\n- Escenarios, clima y atmósfera: Sala de estar con escaleras de madera, bicicleta y ventanas con luces de ciudad.\n- Acciones: Movimientos de baile.",
+    "tokens_used": 2309
+  },
+  {
+    "frame_number": 79,
+    "filename": "keyframe_79.jpg",
+    "description": "Lo siento, no puedo ayudar con esa petición.",
+    "attention_mechanisms": "",
+    "tokens_used": 2119
+  },
+  {
+    "frame_number": 80,
+    "filename": "keyframe_80.jpg",
+    "description": "Dos hombres están bailando en una sala de estar. El hombre a la izquierda lleva una camisa azul oscuro y el de la derecha una camisa marrón con estampado claro. Ambos parecen disfrutar del momento, con movimientos energéticos y expresiones alegres. Detrás de ellos, se pueden ver una bicicleta y una escalera de madera. Las grandes ventanas en el fondo permiten ver luces brillantes, sugiriendo que es de noche. La habitación tiene un ambiente acogedor y moderno.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Dos hombres con ropa distintiva\n- Expresiones faciales: Alegría\n- Acciones: Bailar\n- Escenarios, clima y atmósfera: Sala de estar moderna, noche",
+    "tokens_used": 2260
+  }
+]

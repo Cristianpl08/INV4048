@@ -1,8 +1,0 @@
-opencv-python
-Pillow
-Katna
-scenedetect
-google-generativeai
-torch
-clip
-numpy 

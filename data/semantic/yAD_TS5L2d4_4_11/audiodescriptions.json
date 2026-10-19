@@ -1,0 +1,72 @@
+[
+  {
+    "frame_number": 86,
+    "filename": "keyframe_86.jpg",
+    "description": "La imagen muestra a un mono, posiblemente un mono capuchino, moviéndose rápidamente sobre una superficie alfombrada beige. Tiene un pelaje marrón claro en el cuerpo y más oscuro en la cabeza y los brazos. Su cola larga y oscura está extendida hacia atrás, y parece estar en medio de un movimiento ágil, con una de sus patas delanteras tocando el suelo. La escena sugiere que el mono está en un entorno doméstico o cerrado.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados: \n- Personajes (mono capuchino, características físicas)\n- Acciones (movimiento rápido sobre la alfombra)\n- Escenarios (superficie alfombrada)",
+    "tokens_used": 2249
+  },
+  {
+    "frame_number": 90,
+    "filename": "keyframe_90.jpg",
+    "description": "La imagen muestra a un mono pequeño, con pelaje marrón claro y una cara más oscura, en una posición inclinada sobre una superficie beige. Su cola es larga y oscura, extendiéndose hacia atrás. Parece estar moviéndose o ajustándose en el suelo, con una pata delantera cerca de su cara. El entorno es sencillo, enfocado principalmente en el mono.\n\n- Personajes: Mono pequeño de pelaje marrón y cara oscura.\n- Acción: El mono se mueve o ajusta su postura en el suelo.\n- Escenarios: Superficie beige, entorno simple.",
+    "attention_mechanisms": "Mecanismos de atención: Personajes, Acción, Escenarios.",
+    "tokens_used": 2246
+  },
+  {
+    "frame_number": 91,
+    "filename": "keyframe_91.jpg",
+    "description": "La imagen muestra a un pequeño mono de pelaje marrón claro con su cabeza y extremidades más oscuras. El mono está agachado y parece examinar algo en el suelo. Está sobre una superficie clara. Su larga cola es visible en la parte trasera. El entorno es simple y no se observan otros objetos o entidades prominentes.\n\n- **Personajes**: Mono pequeño\n- **Acciones**: Examina algo en el suelo\n- **Escenarios y atmósfera**: Superficie clara, entorno simple",
+    "attention_mechanisms": "",
+    "tokens_used": 2218
+  },
+  {
+    "frame_number": 93,
+    "filename": "keyframe_93.jpg",
+    "description": "Un pequeño mono de pelaje marrón claro y oscuro en el rostro está agachado sobre una superficie alfombrada. Tiene una larga cola extendida hacia atrás. A su lado, se distingue parcialmente un objeto azul. La escena transmite una sensación de curiosidad, como si el mono estuviera inspeccionando algo en el suelo.\n\n- Personajes: Mono pequeño, curiosidad\n- Acciones: Inspecciona el suelo\n- Escenarios: Superficie alfombrada, objeto azul presente",
+    "attention_mechanisms": "",
+    "tokens_used": 2211
+  },
+  {
+    "frame_number": 94,
+    "filename": "keyframe_94.jpg",
+    "description": "Un pequeño mono capuchino con pelaje marrón oscuro y beige está agachado sobre una superficie beige, posiblemente alfombrada. El mono se encuentra inclinado hacia adelante, enfocándose en sus patas delanteras que tocan el suelo. Sus orejas redondeadas son visibles. A la izquierda, parte de un objeto azul, posiblemente una pelota, está presente, aunque no se distingue claramente en el contexto de la interacción del mono.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Mono capuchino con pelaje distintivo.\n- Acciones: El mono está inclinado y parece interactuar con sus patas delanteras.\n- Escenarios, clima y atmósfera: Superficie beige y objeto azul visible.",
+    "tokens_used": 2257
+  },
+  {
+    "frame_number": 95,
+    "filename": "keyframe_95.jpg",
+    "description": "Lo siento, no puedo ayudar con eso.",
+    "attention_mechanisms": "",
+    "tokens_used": 2118
+  },
+  {
+    "frame_number": 99,
+    "filename": "keyframe_99.jpg",
+    "description": "Un mono pequeño, con pelaje marrón claro y cabeza más oscura, está en el suelo de una habitación alfombrada. Parece inclinarse hacia adelante mientras examina algo cerca del suelo. A la izquierda, se puede ver una pelota azul. El ambiente es iluminado, sugiriendo un entorno interior.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n1. Personajes: Mono pequeño con pelaje bicolor.\n2. Acciones: Se inclina hacia adelante.\n3. Escenario: Habitación alfombrada con pelota azul.",
+    "tokens_used": 2219
+  },
+  {
+    "frame_number": 100,
+    "filename": "keyframe_100.jpg",
+    "description": "Un mono pequeño está en una habitación alfombrada. Tiene pelaje marrón claro, con la cara y las extremidades más oscuras. Parece estar moviéndose o jugando, inclinado hacia adelante, cerca de un objeto azul en el suelo. La escena sugiere curiosidad y actividad en un ambiente tranquilo.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Mono, caracterizado por su tamaño pequeño y pelaje distintivo.\n- Acciones: Movimiento o juego del mono.\n- Escenarios: Habitación alfombrada, ambiente tranquilo.",
+    "tokens_used": 2222
+  },
+  {
+    "frame_number": 101,
+    "filename": "keyframe_101.jpg",
+    "description": "Un pequeño mono con pelaje marrón está inclinado hacia adelante sobre una superficie alfombrada. Su cola es larga y oscura, extendiéndose detrás de él. Se está enfocando en un juguete color turquesa a su izquierda. El ambiente parece ser interior, con iluminación suave. La escena sugiere curiosidad y un momento de juego del mono.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: Mono pequeño con pelaje marrón, destacando la curiosidad.\n2. Acciones: El mono está inclinado hacia el juguete, indicando interacción.\n3. Escenarios, clima y atmósfera: Ambiente interior, alfombrado, sensación de juego.",
+    "tokens_used": 2251
+  },
+  {
+    "frame_number": 105,
+    "filename": "keyframe_105.jpg",
+    "description": "Se observa un mono pequeño, posiblemente un capuchino, en una superficie alfombrada. El mono está inclinado hacia adelante, con la pata delantera extendida, como si estuviera alcanzando o explorando algo. Su pelaje es de un color marrón claro en el cuerpo, contrastando con el negro de su cabeza y extremidades. Hay un objeto azul en la esquina inferior izquierda de la imagen, que parece captar la atención del mono.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Descripción del mono y sus características.\n- Acciones: El mono extendiendo la pata.\n- Escenarios: Superficie alfombrada y objeto azul.",
+    "tokens_used": 2246
+  }
+]

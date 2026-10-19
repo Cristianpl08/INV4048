@@ -1,0 +1,93 @@
+[
+  {
+    "frame_number": 210,
+    "filename": "keyframe_210.jpg",
+    "description": "En una encimera de cocina, un individuo prepara ingredientes para licuarlos. A la derecha, un vaso de licuadora contiene tomates. Sobre una tabla de cortar hay una cebolla cortada a la mitad, un limón partido y un diente de ajo. A la izquierda, un manojo de hojas verdes probablemente de cilantro y algunos tomates. La persona, vestida con una prenda azul, sostiene un trozo de alimento. El fondo muestra una superficie de granito y algunos utensilios de cocina adicionales.\n\n**Mecanismos de Atención Utilizados:**\n\n- **Personajes:** Individuo preparando ingredientes.\n- **Acciones:** Colocar ingredientes en la licuadora.\n- **Escenarios:** Cocina con encimera de granito.\n- **Objetos:** Licuadora, tabla de cortar, verduras.",
+    "attention_mechanisms": "",
+    "tokens_used": 2276
+  },
+  {
+    "frame_number": 212,
+    "filename": "keyframe_212.jpg",
+    "description": "La imagen muestra una encimera de cocina sobre la que hay una tabla de madera con ingredientes frescos: dos limones cortados, dos cebollas y un manojo de cilantro. A la izquierda, hay tomates y un diente de ajo. En el centro, se observa una licuadora. Una persona con ropa azul y un delantal rojo está frente a la licuadora, posiblemente añadiendo o preparando los ingredientes. El entorno sugiere actividad culinaria.\n\n- Personajes: Persona con ropa azul y delantal rojo preparando ingredientes.\n- Objetos y Entorno: Tabla con limones, cebollas, cilantro, tomates, ajo, y licuadora.\n- Acción: Preparación de ingredientes para una receta.\n- Escenario, Clima y Atmósfera: Encimera de cocina con ambiente de actividad culinaria.",
+    "attention_mechanisms": "",
+    "tokens_used": 2285
+  },
+  {
+    "frame_number": 214,
+    "filename": "keyframe_214.jpg",
+    "description": "Un individuo con una sudadera azul y un delantal rojo está preparando ingredientes en una cocina. En una encimera de color marrón, hay una licuadora cerca de un picador de madera. Sobre el picador, se ven dos cebollas, un diente de ajo y un limón partido por la mitad. A la izquierda, hay un manojo de cilantro y algunos champiñones. También hay dos tomates rojos. La persona está a punto de añadir algo a la licuadora. La composición sugiere la preparación de una receta o salsa.\n\n- **Personajes**: Individuo con sudadera azul y delantal rojo, preparando ingredientes\n- **Acciones**: La persona añade ingredientes a una licuadora\n- **Escenario**: Cocina con encimera marrón, picador de madera, y utensilios\n- **Objetos**: Licuadora, cebollas, ajo, limón, cilantro, champiñones, tomates",
+    "attention_mechanisms": "",
+    "tokens_used": 2310
+  },
+  {
+    "frame_number": 216,
+    "filename": "keyframe_216.jpg",
+    "description": "[Quién] Un individuo con un suéter azul está usando una licuadora. [Qué] La superficie de la cocina tiene varios ingredientes: cebollas partidas por la mitad, limones cortados, un diente de ajo y un montón de cilantro sobre una tabla de cortar de madera. También se pueden ver dos tomates y una tapa de licuadora al fondo. [Dónde] La escena se desarrolla en una cocina, evidentemente preparada para preparar una receta. [Acción] La persona parece estar colocando o ajustando algo en la licuadora.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Individuo con suéter azul usando la licuadora.\n- Acciones: Uso de la licuadora.\n- Escenarios, clima y atmósfera: Cocina con ingredientes preparados.\n- Objetos: Ingredientes y utensilios de cocina.",
+    "tokens_used": 2284
+  },
+  {
+    "frame_number": 218,
+    "filename": "keyframe_218.jpg",
+    "description": "En una cocina, la encimera muestra una tabla de cortar con ingredientes listos para ser utilizados. Hay cebollas cortadas a la mitad, limones partidos y un diente de ajo. A la izquierda, un manojo de cilantro fresco se extiende por la tabla. Junto a estos, se observan dos tomates rojos. Un frasco de licuadora sin tapa está listo para mezclar los ingredientes. Un brazo con una manga azul y un delantal rojo se mueve hacia la licuadora, como si fuera a añadir algo.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n1. [Quién] Presencia de un brazo con ropa de colores distintivos.\n2. [Qué] Ingredientes alimenticios: cebollas, limones, ajo, cilantro y tomates.\n3. [Dónde] Encimera de una cocina con utensilios culinarios.\n4. [Acción] Movimiento del brazo hacia la licuadora.",
+    "tokens_used": 2302
+  },
+  {
+    "frame_number": 220,
+    "filename": "keyframe_220.jpg",
+    "description": "En una cocina, una persona con un suéter azul y delantal rojo utiliza una licuadora colocada sobre la encimera de granito. Sobre una tabla de madera, hay un limón partido, cebollas, un diente de ajo, y un manojo de cilantro a un lado. Dos tomates se encuentran cercanos a la tabla. La escena sugiere la preparación de ingredientes para una receta.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: la persona que prepara los ingredientes.\n- Objetos: licuadora, tabla de cortar, ingredientes (limón, cebolla, ajo, cilantro, tomates).\n- Escenario y ambiente: cocina, encimera de granito.",
+    "tokens_used": 2252
+  },
+  {
+    "frame_number": 222,
+    "filename": "keyframe_222.jpg",
+    "description": "Una persona con una camisa azul y delantal rojo está en una cocina, moviendo la mano sobre una tabla de cortar. Sobre la tabla, hay limones partidos por la mitad y un diente de ajo. A un lado, se observa un manojo de cilantro fresco. En el fondo, hay dos tomates y un recipiente transparente con una tapa blanca. La encimera es de granito y general toda la escena tiene una iluminación clara.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados: \n- Personajes: mano de la persona con camisa azul y delantal rojo.\n- Acciones: movimiento de la mano sobre la tabla de cortar.\n- Objetos: limones, ajo, cilantro, tomates y recipiente.\n- Escenario: cocina con encimera de granito.",
+    "tokens_used": 2263
+  },
+  {
+    "frame_number": 224,
+    "filename": "keyframe_224.jpg",
+    "description": "En una cocina, sobre una encimera de granito oscuro, hay una tabla de cortar de rayas claras donde se ven dos limones partidos y una cebolla cortada por la mitad. A la izquierda, hay un manojo de cilantro fresco y un diente de ajo. En el centro, una licuadora contiene tomates rojos y hierbas. Al fondo, dos tomates enteros están sobre la encimera, junto a una tapa de licuadora. A la derecha, un cuchillo grande está colocado junto a una persona con una camisa azul y un delantal rojo, que extiende su mano hacia la tabla.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Escenarios, clima y atmósfera: Descripción de la cocina y los elementos sobre la encimera.\n- Acciones: Movimiento de la mano hacia la tabla de cortar.\n- Objetos: Descripción de los ingredientes y utensilios presentes.",
+    "tokens_used": 2297
+  },
+  {
+    "frame_number": 226,
+    "filename": "keyframe_226.jpg",
+    "description": "La imagen muestra una cocina vista desde arriba. En la encimera, hay una tabla de cortar con rodajas de cebolla, limones partidos por la mitad, y un ajo. Al lado, un manojo de cilantro y dos tomates. Un vaso de licuadora contiene tomates y más cilantro. Hay una tapa blanca y un cuchillo cerca. Se ve el brazo de una persona con un suéter rojo y azul, moviéndose hacia los ingredientes.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n- Objetos: Tabla de cortar, cebolla, limones, ajo, cilantro, tomates, licuadora, tapa y cuchillo.\n- Acciones: Movimiento del brazo hacia los ingredientes.\n- Contexto del entorno: Encimera de cocina.",
+    "tokens_used": 2264
+  },
+  {
+    "frame_number": 228,
+    "filename": "keyframe_228.jpg",
+    "description": "[Quién] No hay personas visibles en la imagen. \n\n[Qué] Sobre una encimera de cocina, se observa una licuadora con tomates y cilantro. A su lado, una tabla de cortar contiene limones partidos por la mitad, cebollas grandes cortadas parcialmente, y un diente de ajo. También hay un cuchillo de cocina. Al costado, se distingue más cilantro y dos tomates enteros.\n\n[Dónde] La escena se desarrolla en una cocina, con una superficie de granito como fondo. \n\n[Acción] Los ingredientes están listos para ser procesados, sugiriendo la preparación de una salsa o guiso.\n\n[Mecanismos de Atención Utilizados]\n- Objetos: Licuadora, tabla de cortar, cuchillo, ingredientes (tomates, cilantro, limones, cebollas, ajo).\n- Escenario: Encimera de cocina de granito.",
+    "attention_mechanisms": "",
+    "tokens_used": 2293
+  },
+  {
+    "frame_number": 230,
+    "filename": "keyframe_230.jpg",
+    "description": "La imagen muestra una cocina desde arriba. En el centro, hay una licuadora con tomates y cilantro dentro. Al lado, sobre una tabla de cortar de madera, se ven rodajas de cebolla, mitades de limón y un diente de ajo. Dos tomates más están a la izquierda de la licuadora. Una persona con una camiseta azul y un delantal rojo está a la derecha, parcialmente visible. Un cuchillo se encuentra sobre la tabla.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Escenarios, clima y atmósfera: Cocina con utensilios y ingredientes\n- Interacciones: Persona preparando los ingredientes",
+    "tokens_used": 2235
+  },
+  {
+    "frame_number": 232,
+    "filename": "keyframe_232.jpg",
+    "description": "La imagen muestra una cocina vista desde arriba. En el centro, hay una tabla de cortar con una cebolla partida en mitades, dos limones cortados y un diente de ajo. A la izquierda, se observa un manojo de cilantro fresco y champiñones enteros. En la esquina superior derecha, una licuadora contiene varios tomates rojos y más cilantro. A la derecha, una persona con un suéter azul y delantal rojo sostiene un cuchillo cerca de la tabla de cortar. La encimera es de granito oscuro y se aprecia un rallador y más tomates en la parte superior de la escena.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: Presencia de un cocinero con suéter azul y delantal rojo.\n2. Acciones: El cocinero está sosteniendo un cuchillo.\n3. Objetos: Tabla de cortar con ingredientes como cebolla, limones, ajo, cilantro, champiñones, tomates y licuadora.",
+    "tokens_used": 2313
+  },
+  {
+    "frame_number": 240,
+    "filename": "keyframe_240.jpg",
+    "description": "La imagen muestra una cocina con una encimera de granito donde se están preparando ingredientes. A la izquierda, hay un manojo de cilantro fresco. En el centro, sobre una tabla de cortar, se ven dos mitades de cebolla blanca y varias rodajas de limón. Junto a la tabla, hay una licuadora que contiene tomates rojos enteros y algunas hojas verdes, posiblemente cilantro. A la derecha, una persona con camisa azul y delantal rojo parece estar en movimiento, mostrando que está manipulando o agregando ingredientes a la licuadora.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n\n- **Acciones:** Movimiento de la persona al manipular los ingredientes, indicando actividad de preparación culinaria.\n- **Escenarios, clima y atmósfera:** Cocina como entorno de preparación de alimentos, sugiriendo un ambiente doméstico y culinario.\n- **Objetos y elementos específicos:** Ingredientes frescos y utensilios de cocina, relevantes para comprender el contexto culinario de la escena.",
+    "tokens_used": 2314
+  }
+]

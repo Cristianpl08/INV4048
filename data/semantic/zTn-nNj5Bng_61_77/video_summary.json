@@ -1,0 +1,13 @@
+{
+  "main_summary": "Un jinete con casco negro y chaqueta número \"62\" monta un caballo marrón por un campo de hierba seca, rodeado de árboles y cielo despejado. El caballo avanza con elegancia, transmitiendo tranquilidad y aceptación en plena luz del día.\n\n**",
+  "attention_mechanisms": "Mecanismos de atención:**\n1. **Quién/Qué**: El jinete con el número \"62\" es el foco, destacando su indumentaria y control del caballo, esenciales para la actividad ecuestre.\n2. **Dónde**: El entorno natural y soleado establece el contexto como un campo abierto, relevante para competiciones ecuestres.\n3. **Acción**: El movimiento armonioso del caballo acentúa su destreza y la del jinete, encapsulando el evento en curso.\n\n- Emoción complementaria utilizada: Aceptación\n- Número total de caracteres de la descripción principal: 178\n- Caracteres por segundo: 11\n- Rango de caracteres permitido para esa emoción: 151-239 caracteres",
+  "statistics_summary": "",
+  "emotion": "Aceptación",
+  "char_count": 234,
+  "chars_per_second": 14.58852867830424,
+  "char_range": [
+    151,
+    239
+  ],
+  "tokens_used": 1667
+}

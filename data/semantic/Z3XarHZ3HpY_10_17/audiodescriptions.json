@@ -1,0 +1,107 @@
+[
+  {
+    "frame_number": 0,
+    "filename": "keyframe_0.jpg",
+    "description": "En la imagen, un tigre avanza entre la vegetación alta. Su cuerpo está parcialmente oculto por el pasto mientras se mueve con agilidad. El entorno es natural, con tonos verdes y amarillos predominantes, sugiriendo un paisaje selvático o de bosque en plena luz del día.\n\n- **Personajes**: Tigre moviéndose entre la vegetación\n- **Escenario, clima y atmósfera**: Paisaje natural, vegetación alta, colores verdes y amarillos, luz diurna\n- **Acción**: Tigre avanzando ágilmente",
+    "attention_mechanisms": "",
+    "tokens_used": 2230
+  },
+  {
+    "frame_number": 1,
+    "filename": "keyframe_1.jpg",
+    "description": "Un tigre avanza con determinación entre la hierba alta. Su pelaje, de rayas negras y naranjas, se mezcla con el entorno natural. El tigre parece estar en movimiento, con sus patas delanteras extendidas hacia adelante, dando énfasis al poder y gracia en su desplazamiento. La escena está ambientada en un paisaje natural con abundante vegetación, sugiriendo un entorno selvático. La atmósfera es de tensión y atención, capturando el momento de acción del felino.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: El tigre, su apariencia y acción determinante.\n- Escenarios, clima y atmósfera: Entorno selvático con vegetación.\n- Acciones: Movimiento decidido del tigre.",
+    "tokens_used": 2268
+  },
+  {
+    "frame_number": 2,
+    "filename": "keyframe_2.jpg",
+    "description": "Un tigre se mueve rápidamente entre la vegetación alta. Sus rayas distintivas son visibles mientras avanza con agilidad entre las hierbas densas. El paisaje es natural, con un fondo de follaje verde que sugiere un entorno selvático o de bosque. La luz del día ilumina la escena, destacando el pelaje del tigre y la vegetación circundante. La presencia del tigre transmite una sensación de fuerza y dinamismo.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n1. Personajes: Tigre en movimiento.\n2. Escenarios, clima y atmósfera: Vegetación alta, entorno selvático y luz diurna.\n3. Acciones: Movimiento ágil del tigre.",
+    "tokens_used": 2256
+  },
+  {
+    "frame_number": 3,
+    "filename": "keyframe_3.jpg",
+    "description": "Un tigre corre rápidamente a través de una densa vegetación. Su pelaje anaranjado y rayas negras se destacan contra el verde y amarillo del entorno. La escena transmite movimiento y energía, con el tigre avanzando a toda velocidad, lo que sugiere una acción intensa. A su alrededor, la hierba alta se mueve, indicando su paso veloz. La luz parece natural, sugiriendo un momento durante el día.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Tigre en movimiento\n- Acciones: El tigre corriendo\n- Escenarios: Vegetación densa y luz natural",
+    "tokens_used": 2238
+  },
+  {
+    "frame_number": 4,
+    "filename": "keyframe_4.jpg",
+    "description": "La imagen muestra a un tigre moviéndose rápidamente a través de un paisaje cubierto de hierba alta. El tigre, con sus características rayas anaranjadas y negras, parece determinado y atento, como si estuviera concentrado en su objetivo. El entorno es una mezcla de tonos verdes y amarillentos, sugiriendo un ambiente de jungla o sabana durante el día. La postura del tigre, con el cuerpo inclinado hacia adelante, indica un estado de acción y velocidad.\n\n- **Personajes**: Tigre en movimiento, destacando sus rayas y postura enfocada.\n- **Escenarios, clima y atmósfera**: Paisaje natural con hierba alta, sugiriendo un ambiente selvático durante el día.\n- **Acciones**: Movimiento rápido y dirección decidida del tigre.",
+    "attention_mechanisms": "",
+    "tokens_used": 2281
+  },
+  {
+    "frame_number": 5,
+    "filename": "keyframe_5.jpg",
+    "description": "La imagen muestra a un tigre en medio de un entorno natural, posiblemente una selva. El tigre está en posición de marcha, con una expresión atenta en su rostro. Su pelaje es anaranjado con rayas negras, característico de su especie. Alrededor, se observa vegetación verde y densa, sugiriendo que es un área frondosa y natural. La iluminación es uniforme, lo cual sugiere que es de día.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Tigre, con detalles de su pelaje y expresión.\n- Escenarios, clima y atmósfera: Entorno selvático y vegetación.\n- Acción: Posición de marcha y actitud atenta del tigre.",
+    "tokens_used": 2261
+  },
+  {
+    "frame_number": 6,
+    "filename": "keyframe_6.jpg",
+    "description": "En la imagen, un tigre se encuentra entre la hierba alta de una pradera. Su pelaje naranja con rayas negras se mezcla ligeramente con el entorno. El tigre, con una expresión alerta, parece estar atento a su entorno mientras camina lentamente hacia la derecha. La luz natural del día ilumina la escena, destacando el verdor del paisaje. La atmósfera es tranquila, con el tigre como figura central en su hábitat natural.\n\n- Personajes: Tigre con pelaje naranja y negro (relevante por ser el único elemento vivo y central en la escena).\n- Expresiones Faciales: Expresión alerta del tigre.\n- Escenarios, clima y atmósfera: Pradera verde iluminada por la luz del día.\n- Acciones: Tigre caminando lentamente.",
+    "attention_mechanisms": "",
+    "tokens_used": 2278
+  },
+  {
+    "frame_number": 7,
+    "filename": "keyframe_7.jpg",
+    "description": "En la imagen se observa a un tigre en movimiento, que parece correr o avanzar rápidamente. El animal muestra su característico pelaje rayado de tonos naranjas y negros. Detrás de él, la vegetación es abundante, con altos pastizales y un fondo verde, sugiriendo un entorno de jungla o bosque. La luz natural ilumina la escena, posiblemente indicando que es de día. La postura del tigre revela energía y enfoque en su acción, como si estuviera persiguiendo algo o desplazándose con determinación.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Tigre destacado por su pelaje rayado.\n- Acciones: Movimiento rápido, implicando energía y enfoque.\n- Escenarios, clima y atmósfera: Vegetación exuberante y luz diurna que contextualizan el entorno natural.",
+    "tokens_used": 2282
+  },
+  {
+    "frame_number": 8,
+    "filename": "keyframe_8.jpg",
+    "description": "Un tigre corre a través de una densa vegetación. Su pelaje anaranjado con rayas negras se mimetiza parcialmente con los altos pastizales a su alrededor. El entorno es una mezcla de tonos verdes y dorados, sugiriendo un hábitat natural y silvestre. La pose del tigre, con garras ligeramente extendidas, sugiere velocidad y agilidad mientras mantiene una expresión fija y enfocada hacia adelante. La luz del día ilumina la escena, realzando los detalles del pelaje del tigre y el entorno.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Tigre corriendo en su hábitat natural.\n- Escenarios, clima y atmósfera: Vegetación densa y luz diurna.\n- Acciones: Movimiento de carrera del tigre.",
+    "tokens_used": 2279
+  },
+  {
+    "frame_number": 11,
+    "filename": "keyframe_11.jpg",
+    "description": "Un tigre se encuentra corriendo a toda velocidad a través de un terreno cubierto de hierba alta. Su cuerpo musculoso muestra dinamismo y poder, con las patas delanteras extendidas hacia adelante. El tigre está en un entorno natural, rodeado de vegetación verde y densa, lo que sugiere que está en una selva o bosque espeso. La imagen transmite una sensación de movimiento rápido y determinación del animal.\n\n- Personajes: Tigre, poderoso y dinámico.\n- Acciones: Corriendo a gran velocidad.\n- Escenarios, clima y atmósfera: Entorno natural con vegetación densa.",
+    "attention_mechanisms": "",
+    "tokens_used": 2241
+  },
+  {
+    "frame_number": 14,
+    "filename": "keyframe_14.jpg",
+    "description": "Un tigre se mueve con agilidad entre la vegetación densa. Su pelaje anaranjado con rayas negras destaca contra el verde del entorno. Está a medio salto, como si estuviera cazando o explorando el terreno. La luz del día ilumina la escena, mostrando detalles de su expresión concentrada y músculos en tensión. Al fondo, la vegetación es espesa, sugiriendo un entorno selvático.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Tigre en acción, mostrando fuerza y agilidad.\n- Escenarios, clima y atmósfera: Entorno selvático, luz del día y vegetación espesa.\n- Acciones: Tigre saltando, sugiriendo movimiento dinámico.",
+    "tokens_used": 2259
+  },
+  {
+    "frame_number": 15,
+    "filename": "keyframe_15.jpg",
+    "description": "Un tigre se muestra en acción, avanzando rápidamente entre la vegetación. Su pelaje anaranjado con rayas negras destaca contra el fondo verde del entorno. Se encuentra en un área natural, posiblemente una jungla, con hierba alta y arbustos alrededor. La imagen captura al tigre en pleno movimiento, con sus patas delanteras levantadas, lo que sugiere velocidad y agilidad.\n\n- **Personajes**: Tigre en movimiento\n- **Acciones**: Avanza rápidamente, indicando rapidez y agilidad\n- **Escenarios, clima y atmósfera**: Entorno natural, posiblemente una jungla con vegetación densa",
+    "attention_mechanisms": "",
+    "tokens_used": 2244
+  },
+  {
+    "frame_number": 28,
+    "filename": "keyframe_28.jpg",
+    "description": "Un majestuoso tigre se desplaza rápidamente a través de un entorno selvático. El tigre, con su característico pelaje anaranjado y rayas negras, se ve en movimiento con las patas delanteras extendidas mientras avanza por una vegetación densa y verde. La atmósfera sugiere un ambiente natural y vibrante, destacando la vitalidad y fuerza de este gran felino.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n\n1. **Personajes:** El tigre es el protagonista, cuyas características físicas y acciones son centrales para la escena.\n2. **Acción:** El movimiento del tigre sugiere dinamismo y potencia.\n3. **Escenarios, clima y atmósfera:** La vegetación densa indica un entorno selvático, proporcionando contexto y ambientación.",
+    "tokens_used": 2277
+  },
+  {
+    "frame_number": 39,
+    "filename": "keyframe_39.jpg",
+    "description": "La imagen muestra a un tigre caminando lentamente a través de un área con vegetación. Su pelaje es anaranjado con rayas negras distintivas. El tigre tiene la cabeza baja y su mirada parece enfocada hacia adelante, mostrando concentración e interés. El fondo es de un verde difuso, sugiriendo que se encuentra en un entorno natural, posiblemente una selva o un bosque. La iluminación indica que es de día, con luz natural iluminando al animal.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: Tigre real, destacando su pelaje característico.\n2. Acciones: El tigre camina lentamente, insinuando sigilo.\n3. Escenarios, clima y atmósfera: Entorno natural con vegetación, iluminado por luz diurna.\n4. Postura y Lenguaje Corporal: Su cabeza baja muestra concentración e interés.",
+    "tokens_used": 2291
+  },
+  {
+    "frame_number": 155,
+    "filename": "keyframe_155.jpg",
+    "description": "Un tigre avanza lentamente por un camino de tierra en medio de la vegetación. Su pelaje a rayas destaca contra el fondo verde y borroso de los arbustos. La atmósfera es serena, evocando la calma de un entorno natural. El tigre, con mirada fija y postura elegante, transmite confianza y poder.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados: \n1. Personajes: Tigre.\n2. Escenarios, clima y atmósfera: Entorno natural, vegetación.\n3. Postura y Lenguaje Corporal: Movimiento elegante, mirada fija.",
+    "tokens_used": 2229
+  }
+]

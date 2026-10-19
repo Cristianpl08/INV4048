@@ -1,26 +1,25 @@
-# Secrets and local configuration
 .env
-.env.*
-!.env.example
+*.env
 credentials.json
-*.pem
-*.key
-
-# Dependencies and build outputs
-node_modules/
-env/
-.venv/
-venv/
 __pycache__/
-dist/
-uploads/
-
-# Media and generated artifacts
-*.mp4
-*.mov
-*.avi
-*.mkv
+.engines/
+outputs/
+results/
 *.wav
 *.mp3
-*.zip
-.DS_Store
+*.mp4
+*.mov
+.ipynb_checkpoints/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]serSettings/
+Crashes/
+_TRASH_*/
+.vs/
+.vscode/
+node_modules/

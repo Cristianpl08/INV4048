@@ -1,0 +1,13 @@
+{
+  "main_summary": "Un niño pequeño, con camiseta de rayas y gorra azul, sostiene un palo de golf. En un amplio campo verde, se prepara con calma para golpear una pelota blanca. El ambiente tranquilo y soleado envuelve la escena como un suave susurro, resaltando una serenidad indiscutible.\n\n**",
+  "attention_mechanisms": "Mecanismos de atención:**\n\n- *Personaje principal*: El niño pequeño con vestimenta llamativa y gorra azul destaca por su concentración y preparación, siendo el enfoque central de la escena. \n- *Acción específica*: Su postura inclinada y sosteniendo el palo sugiere inminente movimiento, enfatizando la anticipación del golpe.\n- *Escenario detallado*: El campo de golf verde y amplio, con el cielo despejado, complementa y enmarca la acción tranquilamente, alineándose con la emoción de serenidad.\n\n**",
+  "statistics_summary": "Resumen:**\n- Emoción complementaria utilizada: Serenidad\n- Número total de caracteres de la descripción principal: 176\n- Caracteres por segundo: 13.5\n- Rango de caracteres permitido para esa emoción: 124 a 196 caracteres.",
+  "emotion": "Serenidad",
+  "char_count": 270,
+  "chars_per_second": 20.70552147239264,
+  "char_range": [
+    124,
+    196
+  ],
+  "tokens_used": 1763
+}
