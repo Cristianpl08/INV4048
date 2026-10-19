@@ -1,18 +1,8 @@
 .env
 *.env
-credentials.json
-__pycache__/
-.engines/
-outputs/
-results/
-*.wav
-*.mp3
-*.mp4
-*.mov
 .ipynb_checkpoints/
 [Ll]ibrary/
 [Tt]emp/
-[Oo]bj/
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
@@ -22,4 +12,5 @@ Crashes/
 _TRASH_*/
 .vs/
 .vscode/
+[Oo]bj/
 node_modules/
