@@ -46,7 +46,7 @@ flowchart LR
 
 For each clip, the semantic stage selects keyframes and describes them (`audiodescriptions.json`), assigns an emotion variant with its prosodic instructions (`prosody_analysis.json`) and writes the AD script (`video_summary.json`). All files are in [`data/semantic/`](data/semantic).
 
-🎧 **Synthesized audio.** Three clips include XTTS v2 and Spanish-F5 examples below (`docs/audio/`). All 60 outputs (10 clips × 3 narrators × 2 models) are in the [shared Google Drive folder](https://drive.google.com/drive/folders/1a8cQmuSHKyddB1qfd3NxhW-5KOPuY1XN?usp=sharing).
+🎧 **Synthesized audio.** Three clips include XTTS v2 and Spanish-F5 examples below (`docs/audio/`). All 60 outputs (10 clips × 3 narrators × 2 models)
 
 <details open>
 <summary><b>XZ0Ch_ClBfo_120_127</b> · Joy / Ecstasy (high intensity)</summary>
@@ -57,8 +57,9 @@ For each clip, the semantic stage selects keyframes and describes them (`audiode
 
 Audio: [XTTS v2 (Woman01)](docs/audio/XZ0Ch_ClBfo_120_127_xtts_Woman01.mp3) · [Spanish-F5 (Woman01)](docs/audio/XZ0Ch_ClBfo_120_127_spanish_f5_Woman01.mp3)
 
-<!-- Paste here the GitHub video attachment URL for XZ0Ch_ClBfo_120_127_xtts_Woman01.mp4 -->
-<!-- Paste here the GitHub video attachment URL for XZ0Ch_ClBfo_120_127_spanish_f5_Woman01.mp4 -->
+https://github.com/Cristianpl08/INV4048/blob/paper/videos_readme/XZ0Ch_ClBfo_120_127_xtts_Woman01.mp4
+https://github.com/Cristianpl08/INV4048/blob/paper/videos_readme/XZ0Ch_ClBfo_120_127_spanish_f5_Woman01.mp4
+
 
 </details>
 
@@ -71,8 +72,8 @@ Audio: [XTTS v2 (Woman01)](docs/audio/XZ0Ch_ClBfo_120_127_xtts_Woman01.mp3) · [
 
 Audio: [XTTS v2 (Man01)](docs/audio/YEmS8ZQIhTA_7_20_xtts_Man01.mp3) · [Spanish-F5 (Man01)](docs/audio/YEmS8ZQIhTA_7_20_spanish_f5_Man01.mp3)
 
-<!-- Paste here the GitHub video attachment URL for YEmS8ZQIhTA_7_20_xtts_Man01.mp4 -->
-<!-- Paste here the GitHub video attachment URL for YEmS8ZQIhTA_7_20_spanish_f5_Man01.mp4 -->
+https://github.com/Cristianpl08/INV4048/blob/paper/videos_readme/YEmS8ZQIhTA_7_20_xtts_Man01.mp4
+https://github.com/Cristianpl08/INV4048/blob/paper/videos_readme/YEmS8ZQIhTA_7_20_spanish_f5_Man01.mp4
 
 </details>
 
@@ -148,8 +149,8 @@ Audio: [XTTS v2 (Man01)](docs/audio/YEmS8ZQIhTA_7_20_xtts_Man01.mp3) · [Spanish
 
 Audio: [XTTS v2 (Man02)](docs/audio/zpgW7m7_LZw_2_15_xtts_Man02.mp3) · [Spanish-F5 (Man02)](docs/audio/zpgW7m7_LZw_2_15_spanish_f5_Man02.mp3)
 
-<!-- Paste here the GitHub video attachment URL for zpgW7m7_LZw_2_15_xtts_Man02.mp4 -->
-<!-- Paste here the GitHub video attachment URL for zpgW7m7_LZw_2_15_spanish_f5_Man02.mp4 -->
+https://github.com/Cristianpl08/INV4048/blob/paper/videos_readme/zpgW7m7_LZw_2_15_xtts_Man02.mp4
+https://github.com/Cristianpl08/INV4048/blob/paper/videos_readme/zpgW7m7_LZw_2_15_spanish_f5_Man02.mp4
 
 </details>
 
