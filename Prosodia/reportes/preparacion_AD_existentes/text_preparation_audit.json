@@ -1,0 +1,82 @@
+[
+  {
+    "video_id": "XZ0Ch_ClBfo_120_127",
+    "original": "Cuatro amigos ríen y salpican agua enérgicamente bajo el sol resplandeciente, disfrutando del mar.\n\n**",
+    "narration": "Cuatro amigos ríen y salpican agua enérgicamente bajo el sol resplandeciente, disfrutando del mar.",
+    "changed": true,
+    "emotion": "Éxtasis",
+    "duration_s": 7.01
+  },
+  {
+    "video_id": "yAD_TS5L2d4_4_11",
+    "original": "Mono capuchino curioso inspecciona una pelota azul sobre alfombra beige.",
+    "narration": "Mono capuchino curioso inspecciona una pelota azul sobre alfombra beige.",
+    "changed": false,
+    "emotion": "Interés",
+    "duration_s": 7.07
+  },
+  {
+    "video_id": "YEmS8ZQIhTA_7_20",
+    "original": "Un jugador en camiseta blanca avanza rápidamente con el balón, intentando superar la defensa de varios jugadores en uniforme rojo. Una multitud llena el estadio, creando expectación.\n\nMecanismo de atención: El enfoque recae sobre el jugador blanco con el balón, destacando su intento de superar la defensa, lo que intensifica la acción y la anticipación en la escena.\n\n- Emoción complementaria utilizada: Vigilancia\n- Número total de caracteres de la descripción principal: 177\n- Caracteres por segundo: 13.60\n- Rango de caracteres permitido: 122 a 194 caracteres",
+    "narration": "Un jugador en camiseta blanca avanza rápidamente con el balón, intentando superar la defensa de varios jugadores en uniforme rojo. Una multitud llena el estadio, creando expectación.",
+    "changed": true,
+    "emotion": "Vigilancia",
+    "duration_s": 13.01
+  },
+  {
+    "video_id": "YersIyzsOpc_15_30",
+    "original": "Una habitación de paredes crema con atmósfera cálida muestra a un joven de ropa oscura, moviéndose rápido sobre una cama desordenada. Su energía es palpable, y al fondo, elementos decorativos añaden un toque personal.",
+    "narration": "Una habitación de paredes crema con atmósfera cálida muestra a un joven de ropa oscura, moviéndose rápido sobre una cama desordenada. Su energía es palpable, y al fondo, elementos decorativos añaden un toque personal.",
+    "changed": false,
+    "emotion": "Aceptación",
+    "duration_s": 15.03
+  },
+  {
+    "video_id": "z0Si1XxMibg_0_30",
+    "original": "Un bebé con camiseta azul y pañales gatea sobre una alfombra clara en una sala de estar. Cerca, un perro bóxer de pelaje marrón yace tranquilo, su cabeza cercana al bebé indica una relación afectuosa y protectora. El perro observa suavemente al niño, reflejando confianza y un vínculo seguro entre ambos. La sala, acogedora y bien iluminada por luz natural, refuerza un ambiente de calma familiar.\n\n- Emoción complementaria utilizada: Aceptación\n- Número total de caracteres de la descripción principal: 344\n- Caracteres por segundo: 11.44\n- Rango de caracteres permitido: 283 a 448 caracteres",
+    "narration": "Un bebé con camiseta azul y pañales gatea sobre una alfombra clara en una sala de estar. Cerca, un perro bóxer de pelaje marrón yace tranquilo, su cabeza cercana al bebé indica una relación afectuosa y protectora. El perro observa suavemente al niño, reflejando confianza y un vínculo seguro entre ambos. La sala, acogedora y bien iluminada por luz natural, refuerza un ambiente de calma familiar.",
+    "changed": true,
+    "emotion": "Aceptación",
+    "duration_s": 30.07
+  },
+  {
+    "video_id": "Z3XarHZ3HpY_10_17",
+    "original": "Un tigre avanza, ágil y decidido, entre la vegetación densa",
+    "narration": "Un tigre avanza, ágil y decidido, entre la vegetación densa",
+    "changed": false,
+    "emotion": "Admiración",
+    "duration_s": 5.97
+  },
+  {
+    "video_id": "za-9mBZyNfQ_330_336",
+    "original": "Dos hombres bailan con energía en una sala iluminada.\n\n- **Mecanismo de Atención - Personajes**: El enfoque se centra en dos hombres realizando un baile. Su presencia y movimiento son cruciales, ya que transmiten una emoción de éxtasis y dirigen la atención hacia la alegría de la escena.\n  \n- **Mecanismo de Atención - Escenario y Ambiente**: La iluminación de la sala y los elementos como la escalera y la bicicleta son relevantes, ya que contribuyen a un entorno moderno y acogedor, reflejando el dinamismo del momento.\n\n- **Mecanismo de Atención - Acciones**: Los movimientos enérgicos de los personajes son clave para transmitir la emoción de la escena y la atmósfera de una actividad gozosa.\n\nResumen:  \n* Emoción complementaria: Éxtasis  \n* Carácteres de la descripción principal: 48  \n* Caracteres por segundo: 10.71  \n* Rango de caracteres permitido para esa emoción: 45 a 72",
+    "narration": "Dos hombres bailan con energía en una sala iluminada.",
+    "changed": true,
+    "emotion": "Éxtasis",
+    "duration_s": 4.52
+  },
+  {
+    "video_id": "ZdlG8fjGJlo_78_87",
+    "original": "Manos en movimiento añaden ingredientes frescos a una licuadora. Tomates, cilantro, cebolla y limón se preparan. Cocina animada.\n\n**",
+    "narration": "Manos en movimiento añaden ingredientes frescos a una licuadora. Tomates, cilantro, cebolla y limón se preparan. Cocina animada.",
+    "changed": true,
+    "emotion": "Aceptación",
+    "duration_s": 9.03
+  },
+  {
+    "video_id": "zpgW7m7_LZw_2_15",
+    "original": "Un niño pequeño, con camiseta de rayas y gorra azul, sostiene un palo de golf. En un amplio campo verde, se prepara con calma para golpear una pelota blanca. El ambiente tranquilo y soleado envuelve la escena como un suave susurro, resaltando una serenidad indiscutible.\n\n**",
+    "narration": "Un niño pequeño, con camiseta de rayas y gorra azul, sostiene un palo de golf. En un amplio campo verde, se prepara con calma para golpear una pelota blanca. El ambiente tranquilo y soleado envuelve la escena como un suave susurro, resaltando una serenidad indiscutible.",
+    "changed": true,
+    "emotion": "Serenidad",
+    "duration_s": 13.04
+  },
+  {
+    "video_id": "zTn-nNj5Bng_61_77",
+    "original": "Un jinete con casco negro y chaqueta número \"62\" monta un caballo marrón por un campo de hierba seca, rodeado de árboles y cielo despejado. El caballo avanza con elegancia, transmitiendo tranquilidad y aceptación en plena luz del día.\n\n**",
+    "narration": "Un jinete con casco negro y chaqueta número \"62\" monta un caballo marrón por un campo de hierba seca, rodeado de árboles y cielo despejado. El caballo avanza con elegancia, transmitiendo tranquilidad y aceptación en plena luz del día.",
+    "changed": true,
+    "emotion": "Aceptación",
+    "duration_s": 16.04
+  }
+]

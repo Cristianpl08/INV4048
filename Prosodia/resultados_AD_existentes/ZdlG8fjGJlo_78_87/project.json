@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "video_id": "ZdlG8fjGJlo_78_87",
+  "video": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/videos prueba mp4/ZdlG8fjGJlo_78_87.mp4",
+  "duration": 9.033333,
+  "source": "existing_ad_reviewed_copy",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 0.0,
+      "end": 9.033333,
+      "text": "Manos en movimiento añaden ingredientes frescos a una licuadora. Tomates, cilantro, cebolla y limón se preparan. Cocina animada.",
+      "emotion": "Aceptación",
+      "prosody": {
+        "main_emotion": "Confianza 100%",
+        "complementary_emotion": "Aceptación",
+        "intensity": "Bajo",
+        "tone": "Medio, cálido, poca variabilidad",
+        "duration": "Moderada",
+        "rhythm": "Regular, fluido, sin cambios bruscos",
+        "tokens_used": 3717
+      }
+    }
+  ]
+}

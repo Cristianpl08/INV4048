@@ -1,0 +1,9 @@
+{
+  "status": "available",
+  "models": [
+    "spanish_f5",
+    "xtts"
+  ],
+  "n_pairs": 30,
+  "unmatched": 0
+}

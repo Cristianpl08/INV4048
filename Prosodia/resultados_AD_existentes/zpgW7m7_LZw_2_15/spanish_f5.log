@@ -1,0 +1,48 @@
+/content/emotive-engines/spanish_f5/lib/python3.11/site-packages/transformers/models/whisper/generation_whisper.py:496: FutureWarning: The input name `inputs` is deprecated. Please make sure to use `input_features` instead.
+  warnings.warn(
+You have passed task=transcribe, but also have set `forced_decoder_ids` to [[1, None], [2, 50360]] which creates a conflict. `forced_decoder_ids` will be ignored in favor of task=transcribe.
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.43.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Download Vocos from huggingface charactr/vocos-mel-24khz
+
+vocab :  /root/.cache/huggingface/hub/models--jpgallegoar--F5-Spanish/snapshots/4765c14ffd01075479c2fde8615831acc0adca9a/vocab.txt
+token :  custom
+model :  /root/.cache/huggingface/hub/models--jpgallegoar--F5-Spanish/snapshots/4765c14ffd01075479c2fde8615831acc0adca9a/model_1200000.safetensors 
+
+Converting audio...
+Audio is over 12s, clipping short. (2)
+No reference text provided, transcribing reference audio...
+
+ref_text   Hoy me levanté temprano. El sol ya estaba alto en el cielo. Decidí salir a caminar por el barrio. Las calles estaban tranquilas. Se veían algunos coches pasar de vez en. 
+gen_text 0 Un niño pequeño, con camiseta de rayas y gorra azul, sostiene un palo de golf. En un amplio campo verde, se prepara con calma para golpear una pelota blanca.
+gen_text 1 El ambiente tranquilo y soleado envuelve la escena como un suave susurro, resaltando una serenidad indiscutible.
+
+
+Generating audio in 2 batches...
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:06<00:06,  6.26s/it]100%|██████████| 2/2 [00:11<00:00,  5.43s/it]100%|██████████| 2/2 [00:11<00:00,  5.56s/it]
+/content/emotive-engines/spanish_f5/lib/python3.11/site-packages/transformers/models/whisper/generation_whisper.py:496: FutureWarning: The input name `inputs` is deprecated. Please make sure to use `input_features` instead.
+  warnings.warn(
+Converting audio...
+Audio is over 12s, clipping short. (2)
+No reference text provided, transcribing reference audio...
+
+ref_text   Hoy me levanté temprano. El sol ya estaba alto en el cielo. Decidí salir a caminar por el barrio. Las calles estaban tranquilas. Se veían algunos coches pasar de vez en cuando. 
+gen_text 0 Un niño pequeño, con camiseta de rayas y gorra azul, sostiene un palo de golf. En un amplio campo verde, se prepara con calma para golpear una pelota blanca.
+gen_text 1 El ambiente tranquilo y soleado envuelve la escena como un suave susurro, resaltando una serenidad indiscutible.
+
+
+Generating audio in 2 batches...
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:06<00:06,  6.41s/it]100%|██████████| 2/2 [00:11<00:00,  5.58s/it]100%|██████████| 2/2 [00:11<00:00,  5.70s/it]
+/content/emotive-engines/spanish_f5/lib/python3.11/site-packages/transformers/models/whisper/generation_whisper.py:496: FutureWarning: The input name `inputs` is deprecated. Please make sure to use `input_features` instead.
+  warnings.warn(
+Converting audio...
+Audio is over 12s, clipping short. (2)
+No reference text provided, transcribing reference audio...
+
+ref_text   Hoy me levanté temprano. El sol ya estaba alto en el cielo. Decidí salir a caminar por el barrio. Las calles estaban tranquilas. Se veían algunos coches pasar de vez en cuando. Algunas personas. 
+gen_text 0 Un niño pequeño, con camiseta de rayas y gorra azul, sostiene un palo de golf. En un amplio campo verde, se prepara con calma para golpear una pelota blanca.
+gen_text 1 El ambiente tranquilo y soleado envuelve la escena como un suave susurro, resaltando una serenidad indiscutible.
+
+
+Generating audio in 2 batches...
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:05<00:05,  5.59s/it]100%|██████████| 2/2 [00:10<00:00,  5.10s/it]100%|██████████| 2/2 [00:10<00:00,  5.18s/it]

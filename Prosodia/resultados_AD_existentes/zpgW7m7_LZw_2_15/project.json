@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "video_id": "zpgW7m7_LZw_2_15",
+  "video": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/videos prueba mp4/zpgW7m7_LZw_2_15.mp4",
+  "duration": 13.04,
+  "source": "existing_ad_reviewed_copy",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 0.0,
+      "end": 13.04,
+      "text": "Un niño pequeño, con camiseta de rayas y gorra azul, sostiene un palo de golf. En un amplio campo verde, se prepara con calma para golpear una pelota blanca. El ambiente tranquilo y soleado envuelve la escena como un suave susurro, resaltando una serenidad indiscutible.",
+      "emotion": "Serenidad",
+      "prosody": {
+        "main_emotion": "Alegría 30%",
+        "complementary_emotion": "Serenidad",
+        "intensity": "Bajo",
+        "tone": "Bajo, estable, sin grandes variaciones",
+        "duration": "Larga, pausas relajadas",
+        "rhythm": "Lento, regular, pausado",
+        "tokens_used": 3037
+      }
+    }
+  ]
+}

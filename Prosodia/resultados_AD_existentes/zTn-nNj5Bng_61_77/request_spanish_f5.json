@@ -1,0 +1,48 @@
+{
+  "engine": "spanish_f5",
+  "seed": 42,
+  "jobs": [
+    {
+      "text": "Un jinete con casco negro y chaqueta número \"62\" monta un caballo marrón por un campo de hierba seca, rodeado de árboles y cielo despejado. El caballo avanza con elegancia, transmitiendo tranquilidad y aceptación en plena luz del día.",
+      "reference": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/Locutores/Andrea/03 aceptacion.wav",
+      "reference_text": "",
+      "reference_sha256": "8d167320a596f539fba4bef5c5ca5d53cf9db41c312982c27230961c77541a79",
+      "output": "/content/drive/MyDrive/EmotiveAD/V01 Original/resultados_AD_existentes/zTn-nNj5Bng_61_77/spanish_f5/Andrea/raw/s001.wav",
+      "emotion": "Aceptación",
+      "segment_id": "s001",
+      "narrator": "Andrea",
+      "video_id": "zTn-nNj5Bng_61_77",
+      "engine": "spanish_f5",
+      "seed": 42,
+      "pipeline_version": "0.1.0"
+    },
+    {
+      "text": "Un jinete con casco negro y chaqueta número \"62\" monta un caballo marrón por un campo de hierba seca, rodeado de árboles y cielo despejado. El caballo avanza con elegancia, transmitiendo tranquilidad y aceptación en plena luz del día.",
+      "reference": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/Locutores/Sergio/03 aceptacion.wav",
+      "reference_text": "",
+      "reference_sha256": "e1c4695fe94fcd580373bd64b7a748a3199b433e4ab90dec8a34a949c05b9625",
+      "output": "/content/drive/MyDrive/EmotiveAD/V01 Original/resultados_AD_existentes/zTn-nNj5Bng_61_77/spanish_f5/Sergio/raw/s001.wav",
+      "emotion": "Aceptación",
+      "segment_id": "s001",
+      "narrator": "Sergio",
+      "video_id": "zTn-nNj5Bng_61_77",
+      "engine": "spanish_f5",
+      "seed": 42,
+      "pipeline_version": "0.1.0"
+    },
+    {
+      "text": "Un jinete con casco negro y chaqueta número \"62\" monta un caballo marrón por un campo de hierba seca, rodeado de árboles y cielo despejado. El caballo avanza con elegancia, transmitiendo tranquilidad y aceptación en plena luz del día.",
+      "reference": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/Locutores/Sebastian/03 aceptacion.wav",
+      "reference_text": "",
+      "reference_sha256": "7d8e1a0ce80ab4992a3c3fa62c76e36cc578044d985e7c1f035b17be777ae621",
+      "output": "/content/drive/MyDrive/EmotiveAD/V01 Original/resultados_AD_existentes/zTn-nNj5Bng_61_77/spanish_f5/Sebastian/raw/s001.wav",
+      "emotion": "Aceptación",
+      "segment_id": "s001",
+      "narrator": "Sebastian",
+      "video_id": "zTn-nNj5Bng_61_77",
+      "engine": "spanish_f5",
+      "seed": 42,
+      "pipeline_version": "0.1.0"
+    }
+  ]
+}

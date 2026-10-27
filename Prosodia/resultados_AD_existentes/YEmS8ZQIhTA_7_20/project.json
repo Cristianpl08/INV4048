@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "video_id": "YEmS8ZQIhTA_7_20",
+  "video": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/videos prueba mp4/YEmS8ZQIhTA_7_20.mp4",
+  "duration": 13.013,
+  "source": "existing_ad_reviewed_copy",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 0.0,
+      "end": 13.013,
+      "text": "Un jugador en camiseta blanca avanza rápidamente con el balón, intentando superar la defensa de varios jugadores en uniforme rojo. Una multitud llena el estadio, creando expectación.",
+      "emotion": "Vigilancia",
+      "prosody": {
+        "main_emotion": "Anticipación 100%",
+        "complementary_emotion": "Vigilancia",
+        "intensity": "Alto",
+        "tone": "Alto, a veces tenso",
+        "duration": "Moderada, con pausas para observar",
+        "rhythm": "Ágil, algo acelerado, atento a cambios",
+        "tokens_used": 3546
+      }
+    }
+  ]
+}

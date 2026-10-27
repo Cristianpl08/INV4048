@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "video_id": "zTn-nNj5Bng_61_77",
+  "video": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/videos prueba mp4/zTn-nNj5Bng_61_77.mp4",
+  "duration": 16.04,
+  "source": "existing_ad_reviewed_copy",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 0.0,
+      "end": 16.04,
+      "text": "Un jinete con casco negro y chaqueta número \"62\" monta un caballo marrón por un campo de hierba seca, rodeado de árboles y cielo despejado. El caballo avanza con elegancia, transmitiendo tranquilidad y aceptación en plena luz del día.",
+      "emotion": "Aceptación",
+      "prosody": {
+        "main_emotion": "Confianza 100%",
+        "complementary_emotion": "Aceptación",
+        "intensity": "Bajo",
+        "tone": "Medio, cálido, poca variabilidad",
+        "duration": "Moderada",
+        "rhythm": "Regular, fluido, sin cambios bruscos",
+        "tokens_used": 2928
+      }
+    }
+  ]
+}

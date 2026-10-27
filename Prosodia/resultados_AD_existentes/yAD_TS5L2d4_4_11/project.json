@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "video_id": "yAD_TS5L2d4_4_11",
+  "video": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/videos prueba mp4/yAD_TS5L2d4_4_11.mp4",
+  "duration": 7.066667,
+  "source": "existing_ad_reviewed_copy",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 0.0,
+      "end": 7.066667,
+      "text": "Mono capuchino curioso inspecciona una pelota azul sobre alfombra beige.",
+      "emotion": "Interés",
+      "prosody": {
+        "main_emotion": "Anticipación 100%",
+        "complementary_emotion": "Interés",
+        "intensity": "Bajo",
+        "tone": "Alto, ligeramente ascendente",
+        "duration": "Variable",
+        "rhythm": "Fluido, ágil, mostrando atención sostenida",
+        "tokens_used": 2590
+      }
+    }
+  ]
+}

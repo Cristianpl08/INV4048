@@ -1,0 +1,13 @@
+{
+  "main_summary": "Dos hombres bailan con energía en una sala iluminada.\n\n- **Mecanismo de Atención - Personajes**: El enfoque se centra en dos hombres realizando un baile. Su presencia y movimiento son cruciales, ya que transmiten una emoción de éxtasis y dirigen la atención hacia la alegría de la escena.\n  \n- **Mecanismo de Atención - Escenario y Ambiente**: La iluminación de la sala y los elementos como la escalera y la bicicleta son relevantes, ya que contribuyen a un entorno moderno y acogedor, reflejando el dinamismo del momento.\n\n- **Mecanismo de Atención - Acciones**: Los movimientos enérgicos de los personajes son clave para transmitir la emoción de la escena y la atmósfera de una actividad gozosa.\n\nResumen:  \n* Emoción complementaria: Éxtasis  \n* Carácteres de la descripción principal: 48  \n* Caracteres por segundo: 10.71  \n* Rango de caracteres permitido para esa emoción: 45 a 72",
+  "attention_mechanisms": "",
+  "statistics_summary": "",
+  "emotion": "Éxtasis",
+  "char_count": 53,
+  "chars_per_second": 11.830357142857142,
+  "char_range": [
+    45,
+    72
+  ],
+  "tokens_used": 1963
+}

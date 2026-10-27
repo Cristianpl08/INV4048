@@ -1,0 +1,92 @@
+[
+  {
+    "frame_index": 0,
+    "frame_number": 0,
+    "timestamp": 0.0,
+    "filename": "keyframe_0.jpg"
+  },
+  {
+    "frame_index": 1,
+    "frame_number": 1,
+    "timestamp": 0.033173795761079,
+    "filename": "keyframe_1.jpg"
+  },
+  {
+    "frame_index": 2,
+    "frame_number": 2,
+    "timestamp": 0.066347591522158,
+    "filename": "keyframe_2.jpg"
+  },
+  {
+    "frame_index": 3,
+    "frame_number": 3,
+    "timestamp": 0.099521387283237,
+    "filename": "keyframe_3.jpg"
+  },
+  {
+    "frame_index": 4,
+    "frame_number": 4,
+    "timestamp": 0.132695183044316,
+    "filename": "keyframe_4.jpg"
+  },
+  {
+    "frame_index": 5,
+    "frame_number": 5,
+    "timestamp": 0.165868978805395,
+    "filename": "keyframe_5.jpg"
+  },
+  {
+    "frame_index": 6,
+    "frame_number": 6,
+    "timestamp": 0.199042774566474,
+    "filename": "keyframe_6.jpg"
+  },
+  {
+    "frame_index": 7,
+    "frame_number": 7,
+    "timestamp": 0.232216570327553,
+    "filename": "keyframe_7.jpg"
+  },
+  {
+    "frame_index": 8,
+    "frame_number": 8,
+    "timestamp": 0.265390366088632,
+    "filename": "keyframe_8.jpg"
+  },
+  {
+    "frame_index": 9,
+    "frame_number": 11,
+    "timestamp": 0.364911753371869,
+    "filename": "keyframe_11.jpg"
+  },
+  {
+    "frame_index": 10,
+    "frame_number": 14,
+    "timestamp": 0.464433140655106,
+    "filename": "keyframe_14.jpg"
+  },
+  {
+    "frame_index": 11,
+    "frame_number": 15,
+    "timestamp": 0.497606936416185,
+    "filename": "keyframe_15.jpg"
+  },
+  {
+    "frame_index": 12,
+    "frame_number": 28,
+    "timestamp": 0.928866281310212,
+    "filename": "keyframe_28.jpg"
+  },
+  {
+    "frame_index": 13,
+    "frame_number": 39,
+    "timestamp": 1.293778034682081,
+    "filename": "keyframe_39.jpg"
+  },
+  {
+    "frame_index": 14,
+    "frame_number": 155,
+    "timestamp": 5.141938342967245,
+    "filename": "keyframe_155.jpg"
+  }
+]

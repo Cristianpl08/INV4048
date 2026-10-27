@@ -1,0 +1,48 @@
+{
+  "engine": "xtts",
+  "seed": 42,
+  "jobs": [
+    {
+      "text": "Un tigre avanza, ágil y decidido, entre la vegetación densa",
+      "reference": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/Locutores/Andrea/04 admiracion.wav",
+      "reference_text": "",
+      "reference_sha256": "aac979c8b57666b0b9e239933beabfc87b431fc484b286aea3c1e1c0cec6bbfe",
+      "output": "/content/drive/MyDrive/EmotiveAD/V01 Original/resultados_AD_existentes/Z3XarHZ3HpY_10_17/xtts/Andrea/raw/s001.wav",
+      "emotion": "Admiración",
+      "segment_id": "s001",
+      "narrator": "Andrea",
+      "video_id": "Z3XarHZ3HpY_10_17",
+      "engine": "xtts",
+      "seed": 42,
+      "pipeline_version": "0.1.0"
+    },
+    {
+      "text": "Un tigre avanza, ágil y decidido, entre la vegetación densa",
+      "reference": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/Locutores/Sergio/04 admiracion .wav",
+      "reference_text": "",
+      "reference_sha256": "ff4fa027f0529212eb49342b1c00ca94a64a54fd37ecba8167979099c8c0be0f",
+      "output": "/content/drive/MyDrive/EmotiveAD/V01 Original/resultados_AD_existentes/Z3XarHZ3HpY_10_17/xtts/Sergio/raw/s001.wav",
+      "emotion": "Admiración",
+      "segment_id": "s001",
+      "narrator": "Sergio",
+      "video_id": "Z3XarHZ3HpY_10_17",
+      "engine": "xtts",
+      "seed": 42,
+      "pipeline_version": "0.1.0"
+    },
+    {
+      "text": "Un tigre avanza, ágil y decidido, entre la vegetación densa",
+      "reference": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/Locutores/Sebastian/04 admiracion.wav",
+      "reference_text": "",
+      "reference_sha256": "f9b5d5bf401a11531af00e1865a345519125002c2f656f3a8b3b54cc49ceb945",
+      "output": "/content/drive/MyDrive/EmotiveAD/V01 Original/resultados_AD_existentes/Z3XarHZ3HpY_10_17/xtts/Sebastian/raw/s001.wav",
+      "emotion": "Admiración",
+      "segment_id": "s001",
+      "narrator": "Sebastian",
+      "video_id": "Z3XarHZ3HpY_10_17",
+      "engine": "xtts",
+      "seed": 42,
+      "pipeline_version": "0.1.0"
+    }
+  ]
+}

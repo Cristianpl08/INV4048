@@ -1,0 +1,62 @@
+[
+  {
+    "frame_index": 0,
+    "frame_number": 40,
+    "timestamp": 1.6,
+    "filename": "keyframe_40.jpg"
+  },
+  {
+    "frame_index": 1,
+    "frame_number": 100,
+    "timestamp": 4.0,
+    "filename": "keyframe_100.jpg"
+  },
+  {
+    "frame_index": 2,
+    "frame_number": 108,
+    "timestamp": 4.32,
+    "filename": "keyframe_108.jpg"
+  },
+  {
+    "frame_index": 3,
+    "frame_number": 112,
+    "timestamp": 4.48,
+    "filename": "keyframe_112.jpg"
+  },
+  {
+    "frame_index": 4,
+    "frame_number": 292,
+    "timestamp": 11.68,
+    "filename": "keyframe_292.jpg"
+  },
+  {
+    "frame_index": 5,
+    "frame_number": 296,
+    "timestamp": 11.84,
+    "filename": "keyframe_296.jpg"
+  },
+  {
+    "frame_index": 6,
+    "frame_number": 304,
+    "timestamp": 12.16,
+    "filename": "keyframe_304.jpg"
+  },
+  {
+    "frame_index": 7,
+    "frame_number": 316,
+    "timestamp": 12.64,
+    "filename": "keyframe_316.jpg"
+  },
+  {
+    "frame_index": 8,
+    "frame_number": 360,
+    "timestamp": 14.4,
+    "filename": "keyframe_360.jpg"
+  },
+  {
+    "frame_index": 9,
+    "frame_number": 396,
+    "timestamp": 15.84,
+    "filename": "keyframe_396.jpg"
+  }
+]

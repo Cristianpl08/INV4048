@@ -1,0 +1,5 @@
+torch==2.5.1
+torchaudio==2.5.1
+coqui-tts==0.27.2
+transformers==4.55.4
+numpy==1.26.4

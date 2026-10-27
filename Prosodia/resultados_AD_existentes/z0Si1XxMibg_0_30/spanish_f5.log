@@ -1,0 +1,51 @@
+/content/emotive-engines/spanish_f5/lib/python3.11/site-packages/transformers/models/whisper/generation_whisper.py:496: FutureWarning: The input name `inputs` is deprecated. Please make sure to use `input_features` instead.
+  warnings.warn(
+You have passed task=transcribe, but also have set `forced_decoder_ids` to [[1, None], [2, 50360]] which creates a conflict. `forced_decoder_ids` will be ignored in favor of task=transcribe.
+Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.43.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Download Vocos from huggingface charactr/vocos-mel-24khz
+
+vocab :  /root/.cache/huggingface/hub/models--jpgallegoar--F5-Spanish/snapshots/4765c14ffd01075479c2fde8615831acc0adca9a/vocab.txt
+token :  custom
+model :  /root/.cache/huggingface/hub/models--jpgallegoar--F5-Spanish/snapshots/4765c14ffd01075479c2fde8615831acc0adca9a/model_1200000.safetensors 
+
+Converting audio...
+Audio is over 12s, clipping short. (2)
+No reference text provided, transcribing reference audio...
+
+ref_text   Hoy me levanté temprano. El sol ya estaba alto en el cielo. Decidí salir a caminar por el barrio. Las calles estaban tranquilas. Se veían algunos coches pasar, de vez en. 
+gen_text 0 Un bebé con camiseta azul y pañales gatea sobre una alfombra clara en una sala de estar. Cerca, un perro bóxer de pelaje marrón yace tranquilo,
+gen_text 1 su cabeza cercana al bebé indica una relación afectuosa y protectora. El perro observa suavemente al niño,
+gen_text 2 reflejando confianza y un vínculo seguro entre ambos. La sala, acogedora y bien iluminada por luz natural, refuerza un ambiente de calma familiar.
+
+
+Generating audio in 3 batches...
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:06<00:12,  6.01s/it] 67%|██████▋   | 2/3 [00:10<00:05,  5.25s/it]100%|██████████| 3/3 [00:16<00:00,  5.68s/it]100%|██████████| 3/3 [00:16<00:00,  5.64s/it]
+/content/emotive-engines/spanish_f5/lib/python3.11/site-packages/transformers/models/whisper/generation_whisper.py:496: FutureWarning: The input name `inputs` is deprecated. Please make sure to use `input_features` instead.
+  warnings.warn(
+Converting audio...
+Audio is over 12s, clipping short. (2)
+No reference text provided, transcribing reference audio...
+
+ref_text   Hoy me levanté temprano. El sol ya estaba alto en el cielo. Decidí salir a caminar por el barrio. Las calles estaban tranquilas. Se veían algunos coches pasar de vez. 
+gen_text 0 Un bebé con camiseta azul y pañales gatea sobre una alfombra clara en una sala de estar. Cerca, un perro bóxer de pelaje marrón yace tranquilo,
+gen_text 1 su cabeza cercana al bebé indica una relación afectuosa y protectora. El perro observa suavemente al niño,
+gen_text 2 reflejando confianza y un vínculo seguro entre ambos. La sala, acogedora y bien iluminada por luz natural, refuerza un ambiente de calma familiar.
+
+
+Generating audio in 3 batches...
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:06<00:12,  6.21s/it] 67%|██████▋   | 2/3 [00:11<00:05,  5.50s/it]100%|██████████| 3/3 [00:17<00:00,  5.95s/it]100%|██████████| 3/3 [00:17<00:00,  5.90s/it]
+/content/emotive-engines/spanish_f5/lib/python3.11/site-packages/transformers/models/whisper/generation_whisper.py:496: FutureWarning: The input name `inputs` is deprecated. Please make sure to use `input_features` instead.
+  warnings.warn(
+Converting audio...
+Audio is over 12s, clipping short. (2)
+No reference text provided, transcribing reference audio...
+
+ref_text   Hoy me levanté temprano. El sol estaba alto en el cielo. Decidí salir a caminar por el barrio. Las calles estaban tranquilas, se veían algunos coches pasar de vez en cuando. 
+gen_text 0 Un bebé con camiseta azul y pañales gatea sobre una alfombra clara en una sala de estar. Cerca, un perro bóxer de pelaje marrón yace tranquilo,
+gen_text 1 su cabeza cercana al bebé indica una relación afectuosa y protectora. El perro observa suavemente al niño,
+gen_text 2 reflejando confianza y un vínculo seguro entre ambos. La sala, acogedora y bien iluminada por luz natural, refuerza un ambiente de calma familiar.
+
+
+Generating audio in 3 batches...
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:06<00:12,  6.40s/it] 67%|██████▋   | 2/3 [00:11<00:05,  5.54s/it]100%|██████████| 3/3 [00:17<00:00,  5.81s/it]100%|██████████| 3/3 [00:17<00:00,  5.82s/it]

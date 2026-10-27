@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "video_id": "YersIyzsOpc_15_30",
+  "video": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/videos prueba mp4/YersIyzsOpc_15_30.mp4",
+  "duration": 15.033333,
+  "source": "existing_ad_reviewed_copy",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 0.0,
+      "end": 15.033333,
+      "text": "Una habitación de paredes crema con atmósfera cálida muestra a un joven de ropa oscura, moviéndose rápido sobre una cama desordenada. Su energía es palpable, y al fondo, elementos decorativos añaden un toque personal.",
+      "emotion": "Aceptación",
+      "prosody": {
+        "main_emotion": "Confianza 100%",
+        "complementary_emotion": "Aceptación",
+        "intensity": "Bajo",
+        "tone": "Medio, cálido, poca variabilidad",
+        "duration": "Moderada",
+        "rhythm": "Regular, fluido, sin cambios bruscos",
+        "tokens_used": 3214
+      }
+    }
+  ]
+}

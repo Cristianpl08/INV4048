@@ -1,0 +1,48 @@
+{
+  "engine": "spanish_f5",
+  "seed": 42,
+  "jobs": [
+    {
+      "text": "Mono capuchino curioso inspecciona una pelota azul sobre alfombra beige.",
+      "reference": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/Locutores/Andrea/15 interes.wav",
+      "reference_text": "",
+      "reference_sha256": "df6832694a91cdbd29ee35c2624a764098fa1c950c01065fc00cfc6193a9988d",
+      "output": "/content/drive/MyDrive/EmotiveAD/V01 Original/resultados_AD_existentes/yAD_TS5L2d4_4_11/spanish_f5/Andrea/raw/s001.wav",
+      "emotion": "Interés",
+      "segment_id": "s001",
+      "narrator": "Andrea",
+      "video_id": "yAD_TS5L2d4_4_11",
+      "engine": "spanish_f5",
+      "seed": 42,
+      "pipeline_version": "0.1.0"
+    },
+    {
+      "text": "Mono capuchino curioso inspecciona una pelota azul sobre alfombra beige.",
+      "reference": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/Locutores/Sergio/15 interes.wav",
+      "reference_text": "",
+      "reference_sha256": "afb3bf5ed2edaa0b9680ba4ba40972a567c1a8293508ef94da9c040b0a0d6820",
+      "output": "/content/drive/MyDrive/EmotiveAD/V01 Original/resultados_AD_existentes/yAD_TS5L2d4_4_11/spanish_f5/Sergio/raw/s001.wav",
+      "emotion": "Interés",
+      "segment_id": "s001",
+      "narrator": "Sergio",
+      "video_id": "yAD_TS5L2d4_4_11",
+      "engine": "spanish_f5",
+      "seed": 42,
+      "pipeline_version": "0.1.0"
+    },
+    {
+      "text": "Mono capuchino curioso inspecciona una pelota azul sobre alfombra beige.",
+      "reference": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/Locutores/Sebastian/15 interes.wav",
+      "reference_text": "",
+      "reference_sha256": "3a1cbaa5f7f5e9b9b333abf5ebba0ce47a7f340813340d27b0b538c120fb264d",
+      "output": "/content/drive/MyDrive/EmotiveAD/V01 Original/resultados_AD_existentes/yAD_TS5L2d4_4_11/spanish_f5/Sebastian/raw/s001.wav",
+      "emotion": "Interés",
+      "segment_id": "s001",
+      "narrator": "Sebastian",
+      "video_id": "yAD_TS5L2d4_4_11",
+      "engine": "spanish_f5",
+      "seed": 42,
+      "pipeline_version": "0.1.0"
+    }
+  ]
+}

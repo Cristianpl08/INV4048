@@ -1,0 +1,72 @@
+[
+  {
+    "frame_number": 0,
+    "filename": "keyframe_0.jpg",
+    "description": "[Quién] Un niño pequeño, que lleva una camiseta de rayas y pantalones cortos azules, está de pie en un campo de golf. Usa zapatos deportivos oscuros. [Qué] Sostiene un palo de golf, alistándose para golpear una pelota blanca situada frente a él. [Dónde] El niño se encuentra sobre césped bien cuidado, probablemente en un campo de golf. [Acción] Está inclinado ligeramente hacia adelante, concentrándose en el golpeo de la pelota.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n1. Personajes: Niño pequeño con ropa casual, concentrado en el juego.\n2. Acciones: Preparación para golpear la pelota con el palo de golf.\n3. Escenarios, clima y atmósfera: Campo de golf con césped cuidado.",
+    "tokens_used": 2274
+  },
+  {
+    "frame_number": 21,
+    "filename": "keyframe_21.jpg",
+    "description": "Un niño pequeño, vestido con una camiseta de rayas y pantalones cortos azules, está de pie en un amplio campo de césped verde. Lleva un gorro azul oscuro que le protege del sol. Parece estar sosteniendo un palo de golf infantil y está listo para golpear una pequeña pelota blanca que yace en el suelo a su lado. La posición del niño indica concentración y anticipación por el golpe. El entorno es un espacio abierto, sugiriendo un día claro y posiblemente cálido.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Niño pequeño con palo de golf, mostrando concentración.\n- Acciones: Preparación para golpear la pelota.\n- Escenarios, clima y atmósfera: Campo de césped verde, día claro.",
+    "tokens_used": 2264
+  },
+  {
+    "frame_number": 39,
+    "filename": "keyframe_39.jpg",
+    "description": "En un campo de golf, un niño pequeño está a punto de golpear una pelota de golf con un palo. Lleva puesta una camiseta a rayas y un pantalón corto azul. Su cabeza está cubierta por un sombrero grande para protegerse del sol. El césped verde y bien cuidado rodea al niño en un ambiente claro y abierto. La postura del niño, con las piernas ligeramente abiertas y el palo levantado, indica concentración y preparación para realizar el golpe.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: Niño pequeño con camiseta a rayas y sombrero grande.\n2. Acción: Niño preparado para golpear la pelota de golf.\n3. Escenarios: Campo de golf con césped verde y bien cuidado.\n4. Postura y Lenguaje Corporal: Postura de concentración del niño.",
+    "tokens_used": 2276
+  },
+  {
+    "frame_number": 195,
+    "filename": "keyframe_195.jpg",
+    "description": "[Quién] Un niño pequeño, con gorra azul y ropa casual, [Qué] sostiene un palo de golf mientras simula un swing con entusiasmo. [Dónde] Se encuentra en un campo de golf, rodeado de césped verde y árboles al fondo. [Acción] Su postura indica movimiento reciente, como si acabara de completar el swing.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n- Personajes: Niño pequeño con gorra y palo de golf.\n- Acciones: Simula un swing de golf.\n- Escenarios, clima y atmósfera: Campo de golf con césped y árboles.",
+    "tokens_used": 2234
+  },
+  {
+    "frame_number": 204,
+    "filename": "keyframe_204.jpg",
+    "description": "Un niño pequeño, con camiseta azul clara y pantalones cortos oscuros, sostiene una cometa en sus manos. Está en un campo verde y amplio, con árboles al fondo bajo un cielo despejado. Lleva un sombrero oscuro que le protege del sol. El niño parece estar equilibrándose mientras sostiene la cometa, sugiriendo emoción y concentración.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Niño pequeño con sombrero y cometa.\n- Escenarios, clima y atmósfera: Campo verde con árboles y cielo despejado.\n- Acciones: Sostener y equilibrarse con la cometa.",
+    "tokens_used": 2237
+  },
+  {
+    "frame_number": 207,
+    "filename": "keyframe_207.jpg",
+    "description": "Un niño pequeño, vestido con una camiseta a rayas, pantalones cortos azules y un sombrero oscuro, sostiene un palo de golf con ambas manos, simulando un golpe. Está de pie en un campo de golf, cubierto de césped verde y rodeado por árboles. La postura del niño, con los brazos extendidos hacia arriba, indica una acción de swing. El ambiente es abierto y tranquilo, posiblemente durante el día, dado el cielo claro y la iluminación.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: El niño con su vestimenta y acción de golf.\n- Acciones: Movimiento de swing del niño.\n- Escenarios: Campo de golf con césped y árboles alrededor.\n- Postura y lenguaje corporal: Posición del swing del niño.",
+    "tokens_used": 2267
+  },
+  {
+    "frame_number": 210,
+    "filename": "keyframe_210.jpg",
+    "description": "Un niño pequeño está en un campo de golf amplio y verde. Lleva puesta una gorra azul y una camiseta a rayas. Sostiene un palo de golf y parece haberlo movido como si acabara de golpear una pelota. El entorno está rodeado de árboles, y el cielo está cubierto de nubes, sugiriendo un día nublado.\n\n- **Personajes**: Niño pequeño con gorra azul y camiseta a rayas.\n- **Acciones**: Mueve un palo de golf, indicando que acaba de golpear algo.\n- **Escenarios, clima y atmósfera**: Campo de golf verde, rodeado de árboles, con un cielo nublado.\n\nEstos elementos resaltan la serenidad del entorno y la acción lúdica del niño en un ambiente al aire libre.",
+    "attention_mechanisms": "",
+    "tokens_used": 2276
+  },
+  {
+    "frame_number": 225,
+    "filename": "keyframe_225.jpg",
+    "description": "Un niño pequeño, de espaldas, camina por un extenso campo de césped verde. Viste un sombrero azul que le cubre la cabeza y parte del cuello, una camiseta de rayas y pantalones cortos azules. La vegetación al fondo sugiere que es un día al aire libre, posiblemente en un parque o campo de golf. No hay otras personas visibles, y el cielo parece despejado, sin elementos que indiquen cambios de clima.\n\n- **Personajes**: Niño, su vestimenta es apropiada para un día soleado.\n- **Escenarios, clima y atmósfera**: Campo de césped extenso, día despejado, ambiente tranquilo.\n- **Acciones**: El niño está caminando.",
+    "attention_mechanisms": "",
+    "tokens_used": 2264
+  },
+  {
+    "frame_number": 246,
+    "filename": "keyframe_246.jpg",
+    "description": "[Quién] Un niño pequeño, vestido con una camiseta azul y pantalones cortos, lleva un gorro del mismo color. \n\n[Qué] Sostiene un palo de golf mientras camina.\n\n[Dónde] Se encuentra en un campo de golf amplio, con césped verde bien cuidado.\n\n[Acción] Camina hacia adelante, dirigiéndose hacia la lejanía.\n\n[Escenario] Al fondo, hay árboles altos y arbustos que delimitan el área del campo.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Niño pequeño con vestimenta azul.\n- Escenarios, clima y atmósfera: Campo de golf tranquilo con vegetación de fondo.\n- Acciones: El niño camina sosteniendo un palo de golf.",
+    "tokens_used": 2261
+  },
+  {
+    "frame_number": 324,
+    "filename": "keyframe_324.jpg",
+    "description": "Un niño pequeño, vestido con una camiseta a rayas y pantalones cortos, corre por un campo de golf llevando un palo en la mano. A cierta distancia, un adulto con pantalones cortos y gorra, también sostiene un palo de golf, observando al niño. El campo es amplio, con césped verde y árboles al fondo, indicando un día al aire libre. La atmósfera es relajada y familiar, con un ligero tono de juego y diversión.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Niño y adulto en acción.\n- Acciones: Niño corriendo con un palo de golf.\n- Escenarios, clima y atmósfera: Campo de golf y ambiente al aire libre.\n- Interacciones: Relación de juego entre el niño y el adulto.",
+    "tokens_used": 2270
+  }
+]

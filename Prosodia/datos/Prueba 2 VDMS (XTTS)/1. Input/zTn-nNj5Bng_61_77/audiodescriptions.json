@@ -1,0 +1,72 @@
+[
+  {
+    "frame_number": 40,
+    "filename": "keyframe_40.jpg",
+    "description": "Un jinete monta un caballo marrón sobre un terreno cubierto de pasto seco. El jinete lleva un casco negro y una chaqueta con el número \"62\" visible en la espalda. El caballo está equipado con una silla de montar roja, y ambos se encuentran en un amplio espacio al aire libre, rodeado por árboles verdes y un ambiente soleado. La escena transmite una sensación de tranquilidad y enfoque en la actividad ecuestre.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Jinete y caballo, con detalles de vestimenta y equipo.\n- Escenarios, clima y atmósfera: Entorno natural al aire libre.\n- Acciones: Jinete y caballo en movimiento.",
+    "tokens_used": 2420
+  },
+  {
+    "frame_number": 100,
+    "filename": "keyframe_100.jpg",
+    "description": "Un jinete, vestido con un jersey negro y un casco, monta un caballo marrón en un campo abierto. El número 62 está visible en la espalda del jinete. El escenario es un campo cubierto de hierba seca y rodeado de abundante vegetación, incluyendo árboles altos a lo lejos. La luz del sol ilumina el área, sugiriendo un ambiente diurno y tranquilo.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Jinete y caballo.\n- Escenarios, clima y atmósfera: Campo abierto con vegetación, ambiente diurno.",
+    "tokens_used": 2397
+  },
+  {
+    "frame_number": 108,
+    "filename": "keyframe_108.jpg",
+    "description": "Un jinete monta un caballo marrón en un campo abierto cubierto de hierba seca. El jinete lleva un casco negro y una chaqueta oscura con el número 62 visible en la espalda. Al fondo, hay una línea de árboles altos y frondosos que delimitan el área. Una cuerda o cinta marca un perímetro en el suelo, sugiriendo un área delimitada o de competencia. La escena transcurre a plena luz del día, bajo un cielo claro.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: Jinete y caballo con especificación de vestimenta y accesorios.\n2. Escenarios, clima y atmósfera: Campo abierto, árboles al fondo, ambiente diurno.\n3. Acciones: Jinete montando al caballo.",
+    "tokens_used": 2439
+  },
+  {
+    "frame_number": 112,
+    "filename": "keyframe_112.jpg",
+    "description": "Un jinete con casco y chaqueta oscura monta un caballo marrón en un campo abierto. El jinete lleva el número 62 en la espalda. A su alrededor, el terreno está cubierto de hierba seca, y al fondo se pueden ver árboles altos y densos. La escena ocurre al aire libre, probablemente durante el día. El jinete y el caballo parecen moverse hacia la derecha.\n\n**",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:**\n- **Personajes:** Jinete con casco y caballo marrón.\n- **Acciones:** Movimiento del jinete y el caballo.\n- **Escenarios, clima y atmósfera:** Campo abierto con árboles al fondo.",
+    "tokens_used": 2416
+  },
+  {
+    "frame_number": 292,
+    "filename": "keyframe_292.jpg",
+    "description": "Un jinete, con casco y vestimenta de equitación oscura, está montado sobre un caballo marrón que avanza por un campo de hierba seca. Al fondo, una persona con sombrero y ropa clara observa desde una distancia media. El entorno es rural, con colinas verdes bajo un cielo despejado.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. **Personajes**: Jinete y observador con accesorios distintivos.\n2. **Acciones**: Avance del caballo montado.\n3. **Escenarios, clima y atmósfera**: Campo abierto con colinas, ambiente tranquilo.",
+    "tokens_used": 2405
+  },
+  {
+    "frame_number": 296,
+    "filename": "keyframe_296.jpg",
+    "description": "Un jinete monta a caballo en un campo abierto de hierba, participando en lo que parece ser una competición ecuestre. El jinete lleva casco y ropa formal de equitación, destacándose por su postura erguida sobre el caballo. El entorno muestra un paisaje natural con césped verde y ligeramente ondulado, transmitiendo tranquilidad. Al fondo, a la derecha, se distingue a una persona sentada en la hierba, mirando hacia la escena, posiblemente como espectador del evento. La imagen tiene un efecto borroso, sugiriendo movimiento tanto del caballo como del jinete.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n1. Personajes: Jinete con ropa de equitación y casco.\n2. Acciones: Caballo y jinete en movimiento.\n3. Escenarios: Campo abierto con césped verde y espectador al fondo.",
+    "tokens_used": 2451
+  },
+  {
+    "frame_number": 304,
+    "filename": "keyframe_304.jpg",
+    "description": "Un jinete con casco negro monta un caballo marrón oscuro en un campo abierto. El jinete viste un atuendo formal de equitación, y el caballo parece avanzar trotando. En el fondo, un par de personas observan, de pie sobre el césped. El entorno es verde y parece ser un día soleado, propicio para actividades al aire libre.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: Jinete con casco y atuendo de equitación, caballo marrón oscuro.\n2. Escenarios, clima y atmósfera: Campo abierto, césped verde, día soleado.\n3. Acciones: El caballo está trotando mientras es montado.",
+    "tokens_used": 2419
+  },
+  {
+    "frame_number": 316,
+    "filename": "keyframe_316.jpg",
+    "description": "[Quién] Un jinete lleva un casco protector oscuro y viste un atuendo formal de equitación, montando un caballo marrón. [Qué] El caballo muestra una postura elegante y concentrada, mientras el jinete mantiene las riendas con firmeza. [Dónde] La escena ocurre en un campo abierto, con hierba seca en el suelo y un telón de fondo verde elevado. Dos personas observan desde la distancia detrás de una pequeña barrera. [Acción] El jinete parece estar guiando al caballo en un recorrido o práctica de equitación.\n\n---",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n- Personajes: Jinete y caballo con detalles de vestimenta y postura.\n- Escenarios, clima y atmósfera: Campo abierto y público observador.\n- Acciones: Movimientos del jinete y caballo en un entorno de equitación.",
+    "tokens_used": 2454
+  },
+  {
+    "frame_number": 360,
+    "filename": "keyframe_360.jpg",
+    "description": "[Quién] Una persona con casco y chaqueta monta un caballo marrón.\n\n[Qué] El jinete parece estar participando en una competencia ecuestre, posiblemente de doma o salto.\n\n[Dónde] La escena transcurre en un campo al aire libre, rodeado de árboles y césped.\n\n[Acción] El caballo se mueve a un ritmo controlado, mostrando elegancia y destreza en sus pasos.\n\n[Escenarios, clima y atmósfera] Es un día soleado, con sombras que evidencian la luz brillante. La atmósfera sugiere calma y concentración.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Jinete con casco y chaqueta, caballo marrón\n- Acciones: Movimiento controlado del caballo\n- Escenarios, clima y atmósfera: Campo al aire libre, día soleado",
+    "tokens_used": 2452
+  },
+  {
+    "frame_number": 396,
+    "filename": "keyframe_396.jpg",
+    "description": "En la imagen se observa a una persona montando un caballo en un campo abierto. La persona lleva un casco y ropa negra, montando con seguridad mientras el caballo trot. El caballo es marrón y muestra una postura elegante. Al fondo, se distinguen árboles y un paisaje verde, sugiriendo una posible competencia al aire libre en un día soleado.\n\n- **Personajes**: Persona montando un caballo; la vestimenta y postura sugieren actividad ecuestre.\n- **Acciones**: Caballo trotando con gracia; la jinete mantiene el control.\n- **Escenarios, clima y atmósfera**: Campo abierto con árboles; indica un ambiente natural y soleado.",
+    "attention_mechanisms": "",
+    "tokens_used": 2420
+  }
+]

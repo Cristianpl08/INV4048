@@ -1,0 +1,79 @@
+[
+  {
+    "frame_number": 0,
+    "filename": "keyframe_0.jpg",
+    "description": "Un bebé pequeño, con cabello claro y vistiendo una camiseta azul, está sentado sobre el lomo de un perro grande de color marrón. El niño parece estar sujetándose del perro mientras ambos están en una sala de estar. A su alrededor, hay muebles visibles, como un sofá beige y una mesa, en un ambiente hogareño con iluminación natural suave. La interacción refleja un momento de juego y confianza entre el bebé y el animal.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Bebé y perro, ropa y color distintivo\n- Interacciones: Juego y confianza entre el bebé y el perro\n- Escenarios y atmósfera: Sala de estar, iluminación natural",
+    "tokens_used": 2248
+  },
+  {
+    "frame_number": 96,
+    "filename": "keyframe_96.jpg",
+    "description": "La imagen muestra a un niño pequeño sentado en el suelo alfombrado de una sala de estar. Está interactuando cariñosamente con un perro grande de color marrón que está tumbado a su lado. El niño toca la cabeza del perro con ambas manos, mientras el perro parece estar tranquilo y relajado, con su cabeza apoyada en el suelo. Cerca de ellos hay un sofá gris, sugiriendo un ambiente hogareño y acogedor. La escena transmite una sensación de ternura y conexión entre el niño y su mascota.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Niño pequeño y perro grande\n- Interacciones: Niño acariciando al perro\n- Escenarios: Sala de estar con alfombra y sofá",
+    "tokens_used": 2259
+  },
+  {
+    "frame_number": 160,
+    "filename": "keyframe_160.jpg",
+    "description": "En la imagen, hay un niño pequeño que parece estar gateando en el suelo, junto a un perro grande de raza bóxer. El niño viste una camiseta azul y parece estar en movimiento, mirando hacia el perro. El perro está acostado en el suelo, con una postura aparentemente relajada y lleva un collar rosa. Ambos están cerca de un sofá en una habitación bien iluminada, lo que sugiere un ambiente doméstico y cómodo. La interacción entre el niño y el perro sugiere curiosidad y una posible relación de amistad.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Niño pequeño y perro bóxer, identificación de sus características.\n- Acciones: El niño está gateando, el perro está acostado.\n- Escenarios, clima y atmósfera: Entorno doméstico y cómodo.",
+    "tokens_used": 2275
+  },
+  {
+    "frame_number": 168,
+    "filename": "keyframe_168.jpg",
+    "description": "La imagen muestra a un perro marrón, de raza grande, tumbado sobre una alfombra junto a un sofá. Junto a él, un niño pequeño gatea. El perro parece estar tranquilo y tiene una actitud protectora o afectuosa hacia el niño, reflejada en su postura relajada y su cercanía al pequeño. El ambiente es hogareño y cálido.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Perro y niño pequeño, destacando su interacción.\n- Interacciones: Relación afectuosa entre el perro y el niño.\n- Escenarios: Descripción del ambiente hogareño.",
+    "tokens_used": 2237
+  },
+  {
+    "frame_number": 176,
+    "filename": "keyframe_176.jpg",
+    "description": "Un niño pequeño, vestido con una camiseta azul y pañales, está tumbado sobre una alfombra clara, en el suelo de una sala de estar. A su lado y en contacto con él, hay un perro de raza grande, de pelaje marrón. El perro parece estar interactuando amigablemente con el niño. La habitación tiene un ambiente acogedor, con un sofá visible al fondo.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Niño pequeño y perro grande, interacción amigable.\n- Interacciones: Contacto cercano entre el niño y el perro.\n- Escenarios, clima y atmósfera: Sala de estar acogedora.",
+    "tokens_used": 2241
+  },
+  {
+    "frame_number": 184,
+    "filename": "keyframe_184.jpg",
+    "description": "En una sala de estar, un perro de raza grande, posiblemente un bóxer, está acostado en el suelo junto a un niño pequeño que gatea. El perro está atento, con su hocico cerca del niño, y parece estar cuidándolo. El niño lleva una camiseta azul y un pañal. La interacción entre ambos transmite una sensación de tranquilidad y protección. El entorno es acogedor, con un sofá y una alfombra clara.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- Personajes: Perro y niño pequeño, cuidando uno del otro.\n- Interacciones: El perro acompaña al niño, mostrando una relación protectora.\n- Escenarios, clima y atmósfera: Sala de estar, ambiente acogedor.",
+    "tokens_used": 2256
+  },
+  {
+    "frame_number": 188,
+    "filename": "keyframe_188.jpg",
+    "description": "La imagen muestra a un perro grande de raza bóxer recostado en el suelo junto a un sofá, apoyando suavemente su cabeza sobre la espalda de un bebé que está a gatas. El bebé lleva puesto un pañal y una camiseta azul. Están en una sala con alfombra clara, y ambos parecen tranquilos y cómodos en su entorno.\n\n- Personajes: Perro bóxer y bebé\n- Acciones: El perro está recostado y el bebé a gatas\n- Escenarios, clima y atmósfera: Sala con alfombra clara, ambiente acogedor",
+    "attention_mechanisms": "",
+    "tokens_used": 2230
+  },
+  {
+    "frame_number": 192,
+    "filename": "keyframe_192.jpg",
+    "description": "En la imagen, hay un bebé gateando por el suelo de una sala de estar. Lleva una camiseta azul y un pañal. Cerca de él, un perro de raza bóxer está acostado, observando atentamente al bebé. El perro tiene una expresión tranquila y una de sus patas delanteras está extendida hacia el bebé, como si estuviera atento a sus movimientos. El entorno parece ser un espacio familiar y acogedor, con un sofá al fondo. La interacción entre el bebé y el perro sugiere una relación de curiosidad y cuidado.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: Bebé y perro bóxer, con énfasis en la interacción.\n2. Acciones: El bebé gatea y el perro observa.\n3. Interacciones: Curiosidad y cuidado entre el perro y el bebé.\n4. Escenarios, clima y atmósfera: Sala de estar acogedora.",
+    "tokens_used": 2298
+  },
+  {
+    "frame_number": 196,
+    "filename": "keyframe_196.jpg",
+    "description": "Un perro marrón está tumbado en el suelo junto a un niño pequeño que gatea. El niño lleva una camiseta azul. Ambos están en el interior de una habitación con suelo claro y un sofá a un lado. El perro parece observador y tranquilo mientras el niño se mueve cerca de él.\n\n- Personajes: Perro marrón y niño pequeño.\n- Acciones: El niño gatea, el perro observa.\n- Entorno: Interior de una habitación con suelo claro.\n- Interacciones: El perro y el niño están cerca, sugiriendo una relación amistosa.",
+    "attention_mechanisms": "",
+    "tokens_used": 2226
+  },
+  {
+    "frame_number": 436,
+    "filename": "keyframe_436.jpg",
+    "description": "En la imagen, un bebé gatea en una alfombra beige mientras un perro grande, posiblemente de raza bóxer, yace junto a él. El perro parece observar atentamente al bebé. Ambos están en una sala de estar, donde se nota un sofá de color neutro en el fondo. La escena transmite tranquilidad y una sensación de compañía entre los dos.",
+    "attention_mechanisms": "Mecanismos de atenciónutilizados:\n\n1. Personajes: El bebé y el perro son los protagonistas, destacando su proximidad y actitud de curiosidad.\n2. Acciones: El bebé está gateando, lo que muestra movimiento y exploración, mientras el perro observa.\n3. Escenarios: La sala de estar y la alfombra proporcionan un contexto hogareño y cálido.",
+    "tokens_used": 2261
+  },
+  {
+    "frame_number": 448,
+    "filename": "keyframe_448.jpg",
+    "description": "La imagen muestra a un perro de raza grande, probablemente un bóxer, acostado en una alfombra de color claro. Junto a él, un niño pequeño también está en posición tumbada y parece estar tocando la pata del perro. Ambos están cerca de un sofá en una sala de estar con luz natural que entra por una ventana. El ambiente es tranquilo y hogareño.\n\nMecanismos de Atención:\n- Personajes: Perro de raza grande y niño pequeño tumbado.\n- Interacciones: El niño toca la pata del perro, sugiriendo una conexión amigable y tranquila entre ambos.\n- Escenarios, clima y atmósfera: Sala de estar iluminada con luz natural, evocando una atmósfera de calma y seguridad.",
+    "attention_mechanisms": "",
+    "tokens_used": 2262
+  }
+]

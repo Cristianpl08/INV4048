@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "video_id": "z0Si1XxMibg_0_30",
+  "video": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/videos prueba mp4/z0Si1XxMibg_0_30.mp4",
+  "duration": 30.066667,
+  "source": "existing_ad_reviewed_copy",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 0.0,
+      "end": 30.066667,
+      "text": "Un bebé con camiseta azul y pañales gatea sobre una alfombra clara en una sala de estar. Cerca, un perro bóxer de pelaje marrón yace tranquilo, su cabeza cercana al bebé indica una relación afectuosa y protectora. El perro observa suavemente al niño, reflejando confianza y un vínculo seguro entre ambos. La sala, acogedora y bien iluminada por luz natural, refuerza un ambiente de calma familiar.",
+      "emotion": "Aceptación",
+      "prosody": {
+        "main_emotion": "Confianza 100%",
+        "complementary_emotion": "Aceptación",
+        "intensity": "Bajo",
+        "tone": "Medio, cálido, poca variabilidad",
+        "duration": "Moderada",
+        "rhythm": "Regular, fluido, sin cambios bruscos",
+        "tokens_used": 3041
+      }
+    }
+  ]
+}

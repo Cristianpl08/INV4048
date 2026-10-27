@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "video_id": "za-9mBZyNfQ_330_336",
+  "video": "/content/drive/MyDrive/EmotiveAD/V01 Original/datos/videos prueba mp4/za-9mBZyNfQ_330_336.mp4",
+  "duration": 4.52,
+  "source": "existing_ad_reviewed_copy",
+  "segments": [
+    {
+      "id": "s001",
+      "start": 0.0,
+      "end": 4.52,
+      "text": "Dos hombres bailan con energía en una sala iluminada.",
+      "emotion": "Éxtasis",
+      "prosody": {
+        "main_emotion": "Alegría 80%",
+        "complementary_emotion": "Éxtasis",
+        "intensity": "Alta",
+        "tone": "Alto, con variaciones amplias",
+        "duration": "Corta, con exclamaciones",
+        "rhythm": "Rápido, enérgico, dinámico",
+        "tokens_used": 3163
+      }
+    }
+  ]
+}

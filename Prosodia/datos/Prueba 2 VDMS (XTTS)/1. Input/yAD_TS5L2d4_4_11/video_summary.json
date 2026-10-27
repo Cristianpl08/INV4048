@@ -1,0 +1,13 @@
+{
+  "main_summary": "Mono capuchino curioso inspecciona una pelota azul sobre alfombra beige.",
+  "attention_mechanisms": "Mecanismos de atenciónutilizados:\n- **Color**: El pelaje marrón y la alfombra beige contrastan con la pelota azul, atrayendo la atención.\n- **Acción**: El movimiento del mono hacia la pelota sugiere curiosidad y actividad.\n- **Postura**: La inclinación del mono resalta su interés en el objeto.",
+  "statistics_summary": "Resumen:- Emoción complementaria: Interés\n- Número total de caracteres: 64\n- Caracteres por segundo: 9.06\n- Rango de caracteres permitido: 59 a 93 caracteres",
+  "emotion": "Interés",
+  "char_count": 72,
+  "chars_per_second": 10.18867924528302,
+  "char_range": [
+    59,
+    93
+  ],
+  "tokens_used": 1429
+}

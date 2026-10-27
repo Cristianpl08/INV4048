@@ -1,0 +1,11 @@
+{
+  "n_videos": 10,
+  "narrators": [
+    "Andrea",
+    "Sergio",
+    "Sebastian"
+  ],
+  "expected_audio_both": 60,
+  "input_dir": "C:\\Users\\alexr\\Downloads\\EmotiveAD\\V01 Original\\datos\\Prueba 2 VDMS (XTTS)\\1. Input",
+  "api_calls": 0
+}

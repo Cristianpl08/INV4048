@@ -1,0 +1,80 @@
+[
+  {
+    "frame_index": 0,
+    "frame_number": 210,
+    "timestamp": 7.0,
+    "filename": "keyframe_210.jpg"
+  },
+  {
+    "frame_index": 1,
+    "frame_number": 212,
+    "timestamp": 7.066666666666666,
+    "filename": "keyframe_212.jpg"
+  },
+  {
+    "frame_index": 2,
+    "frame_number": 214,
+    "timestamp": 7.133333333333334,
+    "filename": "keyframe_214.jpg"
+  },
+  {
+    "frame_index": 3,
+    "frame_number": 216,
+    "timestamp": 7.2,
+    "filename": "keyframe_216.jpg"
+  },
+  {
+    "frame_index": 4,
+    "frame_number": 218,
+    "timestamp": 7.266666666666667,
+    "filename": "keyframe_218.jpg"
+  },
+  {
+    "frame_index": 5,
+    "frame_number": 220,
+    "timestamp": 7.333333333333333,
+    "filename": "keyframe_220.jpg"
+  },
+  {
+    "frame_index": 6,
+    "frame_number": 222,
+    "timestamp": 7.4,
+    "filename": "keyframe_222.jpg"
+  },
+  {
+    "frame_index": 7,
+    "frame_number": 224,
+    "timestamp": 7.466666666666667,
+    "filename": "keyframe_224.jpg"
+  },
+  {
+    "frame_index": 8,
+    "frame_number": 226,
+    "timestamp": 7.533333333333333,
+    "filename": "keyframe_226.jpg"
+  },
+  {
+    "frame_index": 9,
+    "frame_number": 228,
+    "timestamp": 7.6,
+    "filename": "keyframe_228.jpg"
+  },
+  {
+    "frame_index": 10,
+    "frame_number": 230,
+    "timestamp": 7.666666666666667,
+    "filename": "keyframe_230.jpg"
+  },
+  {
+    "frame_index": 11,
+    "frame_number": 232,
+    "timestamp": 7.733333333333333,
+    "filename": "keyframe_232.jpg"
+  },
+  {
+    "frame_index": 12,
+    "frame_number": 240,
+    "timestamp": 8.0,
+    "filename": "keyframe_240.jpg"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "loudness": {
+    "reference_mean": 0.3840375989675522,
+    "reference_std": 0.10566487260777843
+  },
+  "pitch_st": {
+    "reference_mean": 27.094812790552776,
+    "reference_std": 4.1300923290033555
+  },
+  "voiced_rate": {
+    "reference_mean": 2.5897808199127517,
+    "reference_std": 0.3956382287000732
+  },
+  "unvoiced_s": {
+    "reference_mean": 0.17321863817051053,
+    "reference_std": 0.05274723047514689
+  }
+}

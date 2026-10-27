@@ -1,0 +1,13 @@
+{
+  "main_summary": "Manos en movimiento añaden ingredientes frescos a una licuadora. Tomates, cilantro, cebolla y limón se preparan. Cocina animada.\n\n**",
+  "attention_mechanisms": "Mecanismos de AtenciónUtilizados:**\n- **Personajes:** La acción del individuo vistiendo azul, incluye el movimiento de sus manos que añaden ingredientes, haciendo evidente la actividad culinaria.\n- **Acciones:** El movimiento hacia la licuadora subraya la preparación de una receta, capturando el dinamismo en la cocina.\n- **Objetos:** Los ingredientes frescos y la licuadora se destacan como elementos esenciales en el proceso de preparación.\n- **Escenario:** La encimera de granito aporta un contexto visual de la atmósfera culinaria.\n\n**",
+  "statistics_summary": "Resumende la Descripción:**\n- Emoción complementaria utilizada: Aceptación\n- Número total de caracteres de la descripción principal: 117\n- Caracteres por segundo: 12.95\n- Rango de caracteres permitido: 85-134",
+  "emotion": "Aceptación",
+  "char_count": 128,
+  "chars_per_second": 14.169741697416974,
+  "char_range": [
+    85,
+    134
+  ],
+  "tokens_used": 2362
+}
